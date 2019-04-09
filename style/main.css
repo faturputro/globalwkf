@@ -190,6 +190,9 @@ button.btn.btn-md.btn-yellow.text-dark {
   z-index: 100000000;
   height: 40px; }
 
+.page-active {
+  border-bottom: 2px solid #126839; }
+
 .bg-white {
   background-color: white; }
 
@@ -203,6 +206,9 @@ button.btn.btn-md.btn-yellow.text-dark {
   display: flex;
   height: 65%;
   margin-top: 20px; }
+
+ol.carousel-indicators.carousel-header {
+  bottom: 0 !important; }
 
 .carousel-header-img {
   height: 370px;
@@ -364,7 +370,7 @@ a img {
   text-transform: uppercase; }
 
 .counter-wrapper {
-  height: 200px;
+  height: 168px;
   width: 100%;
   background-image: linear-gradient(to right, #3AB54A, #38A495, #126839); }
 
@@ -388,12 +394,14 @@ a img {
     text-align: center;
     color: #e5e808; }
 
-.program-wrapper {
+.tree-title h3 {
+  text-transform: uppercase; }
+
+.program-tree {
   width: 100%;
-  background-image: url("assets/images/Asset 31.png");
+  background-image: url("assets/images/Asset31.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
 
 .tree-wrapper {
   position: relative;
@@ -551,21 +559,24 @@ a img {
   top: -612px; }
 
 .news-wrapper {
+  display: flex;
   position: absolute;
   right: 0;
   border-radius: 46px 0 0 46px;
   background-image: linear-gradient(to right, #3AB54A, #38A495, #126839);
   background-size: cover;
-  height: 434px;
-  width: 85%; }
+  height: 550px;
+  width: 85%;
+  align-items: center; }
 
 .news-thumb {
   position: absolute;
-  top: -125px; }
+  width: 580px;
+  height: 344px;
+  top: -70px;
+  overflow-y: hidden; }
   .news-thumb #firstNews {
     margin: 0 0 20px 20px; }
-    .news-thumb #firstNews img {
-      max-width: 100%; }
 
 .news-sub-thumb {
   position: absolute;
@@ -633,7 +644,6 @@ button.btn.btn-sm.bg-green {
   background-image: url("assets/images/img/bg-grey-sm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-bottom: 100px;
   margin-top: 30px; }
 
@@ -769,10 +779,19 @@ button.btn.btn-sm.bg-green {
     display: flex;
     align-items: center; }
 
+.social-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; }
+  .social-item a img {
+    max-width: 100%; }
+
 .social-item-bottom {
-  margin: 20px; }
-  .social-item-bottom h6 {
-    color: white; }
+  margin-right: 10px;
+  width: 40px;
+  height: 40px; }
+  .social-item-bottom a img {
+    max-width: 100%; }
 
 .bottom-next {
   width: 30px;
