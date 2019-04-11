@@ -39,5 +39,7 @@ function drawLine(container, line){
       $('#fourthNews').removeClass('d-none');
     });
 
-    // Counter
+// Image View
+
+
 

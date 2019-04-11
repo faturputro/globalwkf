@@ -59,6 +59,23 @@ input.form-control.mr-sm-2.search-form {
     }
 }
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
 .btn{
 	text-transform: uppercase;
 	border-radius: 27px !important;
@@ -86,6 +103,9 @@ button.btn.btn-md.btn-yellow.text-dark {
     padding:5px 20px 5px 20px;
     background-color: #bdbd07;
 }
+
+.form-control {
+box-shadow: none!important;}
 
 .header
 {
@@ -265,9 +285,10 @@ button.btn.btn-md.btn-yellow.text-dark {
 	display: flex;
 	height:65%;
 	margin-top: 20px;
+
 }
 
-ol.carousel-indicators.carousel-header {
+ol.carousel-indicators.custom-p {
     bottom: 0 !important;
 }
 
@@ -935,9 +956,10 @@ button.btn.btn-sm.bg-green {
 }
 
 .slider-img{
-	width:240px;
-	height:200px;
+	width:200px;
+	height:150px;
 	overflow:hidden;
+	margin:auto;
 
 	img{
 		height:240px;
