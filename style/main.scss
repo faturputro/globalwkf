@@ -27,6 +27,14 @@ a{
     text-decoration: none !important;
 }
 
+.splitter{
+	letter-spacing: 2px;
+}
+.hr-splitter{
+	width:80%;
+	height: 2px;
+	background-color:#38a788;
+}
 .text-whiter{
 	color:#909090;
 }
@@ -59,6 +67,10 @@ input.form-control.mr-sm-2.search-form {
     }
 }
 
+.bg-grey{
+	background-color:#e8e8e8 !important;
+}
+
 textarea:hover, 
 input:hover, 
 textarea:active, 
@@ -75,6 +87,18 @@ label:focus,
     outline:0px !important;
     -webkit-appearance:none;
 }
+.btn-green{
+	background-color: #b5e22b !important;
+}
+.museo700{
+	font-family: 'museo700' !important; 
+}
+
+.museo300{
+	font-family: 'museo300' !important;
+}
+
+
 
 .btn{
 	text-transform: uppercase;
@@ -871,6 +895,30 @@ button.btn.btn-sm.bg-green {
   cursor: pointer;
 }
 
+// ===========Contact Section============
+.s-contact{
+	width: auto;
+	background-image: url("assets/images/img/bg-brown-sm.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+	margin-top: 30px;
+}
+
+.contact-icon{
+	width:40px;
+	height:40px;
+
+	img{
+		max-width:100%;
+	}
+}
+
+.submit{
+	position: absolute;
+	right:34px;
+}
+
 .brand-section{
 	height: 35%;
 	position: relative;
@@ -989,7 +1037,124 @@ button.btn.btn-sm.bg-green {
 	}
 
 }
+// =========== Contact
+.s-contact{
+	background-image:url('assets/images/img/bg-brown-sm.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:8%;
 
+	h2{
+		display:block;
+		position: absolute;
+    	left: 50%;
+    	transform: translateX(-50%);
+		width:35%;
+		text-transform: uppercase;
+		padding-bottom:30px;
+		border-bottom:2px solid #bfc10d;
+	}
+}
+
+.s-contact .card-wrapper-program {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-top: 15%;
+}
+
+// ========= Profile
+.s-profile{
+	background-image:url('assets/images/img/bg-brown-sm.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:8%;
+	background-attachment: fixed;
+
+	h2{
+		display:block;
+		position: absolute;
+    	left: 50%;
+    	transform: translateX(-50%);
+		width:35%;
+		text-transform: uppercase;
+		padding-bottom:30px;
+		border-bottom:2px solid #bfc10d;
+	}
+
+	.card-wrapper-program{
+		width:100%;
+		max-width:100%;
+		background-color:#fff;
+		border-radius:10px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		margin-top: 15%;
+	}
+}
+
+.facts-box{
+	width:95%;
+	
+	.facts-wrapper{
+
+		h6{
+			letter-spacing:2px;
+			text-transform: uppercase;
+		}
+
+		p{
+		font-size:14px;
+		}
+	}
+}
+
+.p-splitter{
+	display: flex;
+
+	h6{
+		letter-spacing:4px;
+	}
+
+	.p-splitter-hr{
+		height:2px;
+		width:100px;
+		background-color: #38a788;
+	}
+}
+
+.img-splitter{
+	width:100%;
+	height:450px;
+	overflow: hidden;
+
+	img{
+		width:1200px;
+		height:auto;
+	}
+}
+
+.s-majalah{
+	background-image:url('assets/images/feature-bg.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+
+	h2{
+		text-transform: uppercase;
+		padding-top: 100px;
+	}
+}
+
+.cover-container{
+	padding-bottom:100px;
+	.cover-img{
+		height:400px;
+		width:300px;
+		margin-bottom:30px;
+		overflow:hidden;
+	}
+}
 // =====================================
 
 .subscribe-section{

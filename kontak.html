@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Program Global Wakaf</title>
+  <title>Kontak Global Wakaf</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=1024" />
@@ -13,12 +13,12 @@
     crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/assets/bookblock.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- custom demo style -->
   <script src="js/modernizr.custom.js"></script>
-  
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                 </form>
               </li>
               <li>
-                <a href="" class="btn btn-lg btn-wakaf text-green">Wakaf Sekarang</a>
+                <a href="" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
               </li>
             </ul>
           </nav>
@@ -63,32 +63,32 @@
   <section class="top-nav container-fluid bg-white">
     <ul class="nav-list row no-gutters d-flex justify-content-center align-items-bottom">
       <li class="col text-center">
-        <a href="index.html" class="nav-item text-green">Beranda</a>
-      </li>
-      <li class="col text-center nav-active">
-        <a href="program.html" class="nav-item text-green page-active">Program Wakaf</a>
+        <a href="index.html" class="text-green">Beranda</a>
       </li>
       <li class="col text-center">
-        <a href="" class="nav-item text-green">Profil</a>
+        <a href="program.html" class="text-green">Program Wakaf</a>
       </li>
       <li class="col text-center">
-        <a href="" class="nav-item text-green">Sobat Berkah</a>
+        <a href="profile.html" class="text-green">Profil</a>
       </li>
       <li class="col text-center">
-        <a href="" class="nav-item text-green">Berita</a>
+        <a href="sobat.html" class="text-green">Sobat Berkah</a>
       </li>
       <li class="col text-center">
-        <a href="peta.html" class="nav-item text-green">Peta Sebaran</a>
+        <a href="blog.html" class="text-green">Berita</a>
       </li>
       <li class="col text-center">
-        <a href="" class="nav-item text-green">Kontak</a>
+        <a href="peta.html" class="text-green">Peta Sebaran</a>
+      </li>
+      <li class="col text-center">
+        <a href="contact.html" class="text-green page-active">Kontak</a>
       </li>
     </ul>
   </section>
-    <section class="s-program pb-5">
+  <section class="s-contact pb-5 contact">
       <div class="container h-25">
         <div class="row">
-           <h2 class="text-center mt-5 mb-4">Program <strong>Wakaf</strong></h2>
+           <h2 class="text-center mt-5 mb-4"><strong>Kontak</strong></h2>
         </div>
       </div>
      
@@ -98,94 +98,70 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-4 p-3 p-relative">
-                  <div class="program-img">
-                    <img src="style/assets/images/ritel.png">
+                  <div class="contact-details m-auto p-3">
+                    <h5 class="font-weight-bold museo700">Hubungi Kami</h5>
+                    <div class="contact-adress mt-4">
+                      <div class="item-list">
+                        <ul class="contact-address">
+                        <li class="address-list"><i class="fas fa-map-marker"></i></li>
+                        <li class="address-item">Building Name</li>
+                        <li class="address-item">Building Name</li>
+                        <li class="address-item">Building Name</li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="contact-num mt-4">
+                      <div class="item-list">
+                        <ul class="contact-phone">
+                          <li class="phone-item"><i class="fas fa-phone"></i></li>
+                          <li class="phone-item">+628 1234 5678</li>
+                          <li class="phone-item">+628 1234 5678</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="contact-e mt-4">
+                      <div class="item-list">
+                        <ul class="contact-email">
+                          <li class="email-item"><i class="fas fa-envelope-open-text"></i></li>
+                        <li class="email-item"><a href="" class="text-dark">asdfghjkl@gmail.com</a></li>
+                      </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-8 p-3">
-                  <div class="program-sub-category">
-                    <h4 class="text-left"><strong>Ritel Wakaf</strong></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="d-flex align-items-center py-4 p-relative">
-                      <div class="counter-program p-absolute d-flex">
-                        <button href="javascript:;" class="btn btn-md btn-program mr-3 px-5 my-auto"> Ayo Wakaf</button>
-                      <h4 class="counter text-center my-auto"><strong>Rp 1.234.567</strong></h4>
-                      </div>
+                  <form class="p-relative p-3">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Nama</label>
+                      <input type="name" class="form-control bg-grey border-0" id="exampleFormControlInput1" placeholder="Your Name">
                     </div>
-                    <div id="carouselProgram" class="carousel slide" data-ride="carousel" data-interval="false">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row d-flex flex-row">
-                                <div class="col-sm-4 px-0">
-                                  <div class="slider-img">
-                                    <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
-                                  </div>
-                                </div>
-                                <div class="col-sm-4 px-0">
-                                    <div class="slider-img">
-                                        <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
-                                      </div>
-                                </div>
-                                <div class="col-sm-4 px-0">
-                                    <div class="slider-img">
-                                        <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
-                                      </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-4 px-0">
-                                  <div class="slider-img">
-                                    <img src="style/assets/images/img/hero.jpg">
-                                  </div>
-                                </div>
-                                <div class="col-sm-4 px-0">
-                                    <div class="slider-img">
-                                        <img src="style/assets/images/img/hero.jpg">
-                                      </div>
-                                </div>
-                                <div class="col-sm-4 px-0">
-                                    <div class="slider-img">
-                                        <img src="style/assets/images/img/hero.jpg">
-                                      </div>
-                                </div>
-                              </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselProgram" role="button" data-slide="prev">
-              <div class="bottom-prev bg-white mr-5">
-                  <i class="fas fa-angle-left"></i>
-              </div>
-          </a>
-                      <a class="carousel-control-next" href="#carouselProgram" role="button" data-slide="next">
-            <div class="bottom-next bg-white">
-                <i class="fas fa-angle-right"></i>
-            </div>
-          </a>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput2">Email</label>
+                      <input type="email" class="form-control bg-grey border-0" id="exampleFormControlInput2" placeholder="name@example.com">
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-12 m-auto">
-                  <div class="video-container">
-                    <img src="style/assets/images/img/hero.jpg">
-                    <div class="play-button">
-                      <a href=""><img src="style/assets/icons/play-btn.png"></a>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput3">Subject</label>
+                      <input type="subject" class="form-control bg-grey border-0" id="exampleFormControlInput3" placeholder="Subject">
                     </div>
-                  </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Pesan</label>
+                      <textarea class="form-control bg-grey border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="submit-btn p-relative py-4">
+                      <button type="submit" class="btn btn-green px-5 museo700 text-light submit">Kirim</button>
+                    </div>
+                </form>
                 </div>
               </div>  
-            </div>
+            </div> 
           </div>
         </div>
       </div>  
     </section>
-    <div class="subscribe-section">
+  <div class="subscribe-section">
     <div class="container">
         <div class="subscribe-wrapper">
-            <div class="row align-items-center">
+            <div class="row d-flex align-items-center">
                 <div class="col-md-7">
                   <div class="subscribe-container">
                     <h6 class="text-light font-weight-bold mr-5 my-auto">Berlangganan Email</h6>
@@ -211,6 +187,7 @@
         </div>
     </div>
   </div>
+
   <footer>
     <div class="container">
       <div class="row py-5">
@@ -257,19 +234,39 @@
     </div>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <!-- modal news -->
+  <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header"></div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7cLCxYWas8k">
+            </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<!-- Magnific Popup core JS file -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script>
+      AOS.init();
+    </script>
+  <script>
+  
+</script>
 </body>
-</html>
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/D5zieKPEgNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+</html>
