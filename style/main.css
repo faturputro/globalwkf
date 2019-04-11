@@ -902,6 +902,14 @@ button.btn.btn-sm.bg-green {
     margin-bottom: 30px;
     overflow: hidden; }
 
+.s-branch {
+  background-color: #14882d; }
+
+.branc-u {
+  height: 2px;
+  width: 40%;
+  background-color: #bfc10d; }
+
 .subscribe-section {
   display: flex;
   height: 15%;
