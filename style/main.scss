@@ -248,8 +248,7 @@ box-shadow: none!important;}
     top:0;
 	width: 100%;
 	height: 70px;
-	z-index: 100;
-	z-index: 1000000000;
+	z-index:2000;
 }
 .fixed-header .bg-gradient{
 	background-image: $bg-linear;
@@ -288,8 +287,8 @@ box-shadow: none!important;}
     position: fixed;
 	top:70px;
 	text-transform: uppercase;
-	z-index: 100000000;
 	height: 40px;
+	z-index: 2000;
 }
 
 .page-active{

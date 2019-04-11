@@ -40,6 +40,21 @@ function drawLine(container, line){
     });
 
 // Image View
+$('.venobox').venobox(); 
 
 
+    /* custom settings */
+    $('.venobox_custom').venobox({
+        framewidth: '900px',        // default: ''
+        frameheight: '540px',       // default: ''
+        border: '10px',             // default: '0'
+        bgcolor: '#5dff5e',         // default: '#fff'
+        titleattr: 'data-title',    // default: 'title'
+        numeratio: true,            // default: false
+        infinigall: false            // default: false
+    });
+
+$('.venobox-close').on('click',function(){
+  $('.venobox-overlay').addClass('d-none');
+})
 
