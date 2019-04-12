@@ -495,21 +495,31 @@ a img {
 	height:168px;
 	width:100%;
 	background-image: $bg-linear;
-
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	
 }
 
 .counter-item{
-	display: block;
-	position: absolute;
-	transform: translate(50%, 50%);
+	display: flex;
+	justify-content: center;
+	align-items:center;
 
-	h1{
+	.counter-details{
+		position: relative;
+		
+		h5{
+			display:block;
+		}
+
+		h1{
+		display: block; 
 		color:#c4e608 ;
 		font-family: museo700;
+		}
+
 	}
-
-
 }
 
 .counter-title{
@@ -1009,8 +1019,8 @@ button.btn.btn-sm.bg-green {
 	margin:auto;
 
 	img{
-		height:240px;
-		width:auto;
+		width:200px;
+		height:auto;
 	}
 }
 

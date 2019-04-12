@@ -51,7 +51,7 @@ $('.venobox').venobox();
         bgcolor: '#5dff5e',         // default: '#fff'
         titleattr: 'data-title',    // default: 'title'
         numeratio: true,            // default: false
-        infinigall: false            // default: false
+        infinigall: false          // default: false
     });
 
 $('.venobox-close').on('click',function(){

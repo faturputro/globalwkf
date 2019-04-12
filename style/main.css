@@ -409,15 +409,23 @@ a img {
 .counter-wrapper {
   height: 168px;
   width: 100%;
-  background-image: linear-gradient(to right, #3AB54A, #38A495, #126839); }
+  background-image: linear-gradient(to right, #3AB54A, #38A495, #126839);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .counter-item {
-  display: block;
-  position: absolute;
-  transform: translate(50%, 50%); }
-  .counter-item h1 {
-    color: #c4e608;
-    font-family: museo700; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .counter-item .counter-details {
+    position: relative; }
+    .counter-item .counter-details h5 {
+      display: block; }
+    .counter-item .counter-details h1 {
+      display: block;
+      color: #c4e608;
+      font-family: museo700; }
 
 .counter-title {
   display: block; }
@@ -794,8 +802,8 @@ button.btn.btn-sm.bg-green {
   overflow: hidden;
   margin: auto; }
   .slider-img img {
-    height: 240px;
-    width: auto; }
+    width: 200px;
+    height: auto; }
 
 .video-container {
   display: block;
