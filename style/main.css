@@ -917,6 +917,96 @@ button.btn.btn-sm.bg-green {
   width: 40%;
   background-color: #bfc10d; }
 
+.s-blog {
+  background-image: url("assets/images/img/bg-white-full.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 8%; }
+  .s-blog h2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #bfc10d; }
+
+.blog-wrapper {
+  margin-top: 100px;
+  padding-bottom: 100px; }
+  .blog-wrapper .blog-img-container {
+    height: auto;
+    width: 90%;
+    overflow: hidden; }
+    .blog-wrapper .blog-img-container img {
+      height: auto;
+      width: 100%; }
+
+.blog-post {
+  padding-top: 50px; }
+
+.blog-btn {
+  display: flex;
+  justify-content: center; }
+
+.blog-preview {
+  width: 90%; }
+
+.sidebar-wrapper {
+  margin-top: 150px; }
+  .sidebar-wrapper .profile-box {
+    background-color: #147139;
+    /* padding: 20px; */
+    height: 300px;
+    width: 300px;
+    border-radius: 8px; }
+    .sidebar-wrapper .profile-box p {
+      font-size: 12px; }
+  .sidebar-wrapper .profile-logo {
+    width: 150px; }
+
+.social-sidebar {
+  margin: 10px 0 0 0; }
+  .social-sidebar .social-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px; }
+    .social-sidebar .social-list .social-item {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      background-color: #147139;
+      border-radius: 50px; }
+      .social-sidebar .social-list .social-item a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 24px;
+        text-align: center;
+        transform: translate(-50%, -50%); }
+
+.sidebar-category h4 {
+  text-transform: uppercase; }
+
+.sidebar-category .sidebar-category-list .sidebar-cat-item {
+  margin-bottom: 10px; }
+  .sidebar-category .sidebar-category-list .sidebar-cat-item .sidebar-splitter {
+    height: 2px;
+    width: 100%;
+    background-color: #147139; }
+
+.sidebar-archive .sidebar-splitter {
+  height: 2px;
+  width: 100%;
+  background-color: #147139; }
+
+.sidebar-archive h4 {
+  text-transform: uppercase; }
+
+.sidebar-archive .sidebar-archive-list .sidebar-arc-item {
+  margin-bottom: 10px; }
+
 .subscribe-section {
   display: flex;
   height: 15%;
