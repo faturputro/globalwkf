@@ -1317,7 +1317,50 @@ button.btn.btn-sm.bg-green {
 	}
 }
 
+// ============= Sobat Section============
 
+.s-sobat{
+	background-image:url('assets/images/img/bg-grey-sm.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:8%;
+
+	h2{
+		display:block;
+		position: absolute;
+    	left: 50%;
+    	transform: translateX(-50%);
+		width:35%;
+		text-transform: uppercase;
+		padding-bottom:30px;
+		border-bottom:2px solid #bfc10d;
+	}
+
+	.card-wrapper-sobat{
+		margin-top: 15%;
+	}
+}
+
+.partner-box{
+	width:100%;
+	border-radius:8px;
+
+	.partner-logo{
+		display: flex;
+		align-items:center;
+		height:100px;
+		width:200px;
+
+		img{
+			max-width:100%;
+		}
+	}
+}
+
+.sobat-btn{
+	display: flex;
+	justify-content: center;
+}
 // =====================================
 
 .subscribe-section{
