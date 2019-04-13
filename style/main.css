@@ -938,7 +938,8 @@ button.btn.btn-sm.bg-green {
   .blog-wrapper .blog-img-container {
     height: auto;
     width: 90%;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 430px; }
     .blog-wrapper .blog-img-container img {
       height: auto;
       width: 100%; }
