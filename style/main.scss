@@ -1348,8 +1348,9 @@ button.btn.btn-sm.bg-green {
 	.partner-logo{
 		display: flex;
 		align-items:center;
-		height:100px;
-		width:200px;
+		height:250px;
+		width:250px;
+		padding:20px;
 
 		img{
 			max-width:100%;
@@ -1360,6 +1361,88 @@ button.btn.btn-sm.bg-green {
 .sobat-btn{
 	display: flex;
 	justify-content: center;
+}
+
+.s-single{
+	background-image:url('assets/images/img/bg-grey-sm.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:8%;
+
+	h2{
+		display:block;
+		position: absolute;
+    	left: 50%;
+    	transform: translateX(-50%);
+		width:35%;
+		text-transform: uppercase;
+		padding-bottom:30px;
+		border-bottom:2px solid #bfc10d;
+	}
+
+	.card-wrapper-single{
+		width:100%;
+		max-width:100%;
+		background-color:#fff;
+		border-radius:10px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		margin-top: 15%;
+	}
+}
+
+.single-logo-container{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width:250px;
+	height:250px;
+
+	img{
+		max-width: 100%;
+	}
+}
+
+.single-desc{
+	width:90%;
+}
+
+.single-img-container{
+	width:100%;
+	height:200px;
+	overflow: hidden;
+
+	img{
+		height:200px;
+		width:auto;
+	}
+}
+
+.single-video-container{
+	position:relative;
+	width:100%;
+
+	.single-video-container{
+	display:block;
+	position: relative;
+	width:100%;
+	height: 400px;
+	overflow-y: hidden;
+	padding-bottom:10px;
+
+	img{
+		width: 100%;
+	}
+
+	.single-play-button{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		height:100px;
+		width:100px;
+	}
+
+}
 }
 // =====================================
 
