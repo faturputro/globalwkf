@@ -461,7 +461,6 @@ a img {
     height: 77rem;
     margin: 0 auto;
     max-width: 130rem;
-    pointer-events: none;
     position: absolute;
     top: 10.8rem;
     width: 100%; }
@@ -475,59 +474,105 @@ a img {
       position: absolute;
       top: 50%; }
     .tree-wrapper .program-category .category-1 {
-      background-image: url("assets/images/ritel.png");
-      height: 320px;
-      width: 320px;
+      height: 300px;
+      width: 300px;
       margin: -755px 0 0 114px; }
       .tree-wrapper .program-category .category-1 a {
-        height: 320px;
-        width: 320px;
+        height: 300px;
+        width: 100%;
         background: transparent; }
+        .tree-wrapper .program-category .category-1 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-2 {
-      background-image: url("assets/images/perahu.png");
-      height: 310px;
-      width: 310px;
+      height: 300px;
+      width: 300px;
       margin: -703px 0 0 -33%; }
+      .tree-wrapper .program-category .category-2 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-2 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-3 {
-      background-image: url("assets/images/mobile.png");
-      height: 280px;
-      width: 280px;
+      height: 3200px;
+      width: 320px;
       margin: -360px 0 0 5%; }
+      .tree-wrapper .program-category .category-3 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-3 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-4 {
-      background-image: url("assets/images/sumur.png");
-      height: 290px;
-      width: 290px;
+      height: 300px;
+      width: 300px;
       margin: -379px 0 0 -41%; }
+      .tree-wrapper .program-category .category-4 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-4 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-5 {
-      background-image: url("assets/images/warung.png");
-      height: 320px;
-      width: 320px;
+      height: 300px;
+      width: 300px;
       margin: -227px 0 0 26%; }
+      .tree-wrapper .program-category .category-5 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-5 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-6 {
-      background-image: url("assets/images/lumbung.png");
-      height: 320px;
-      width: 320px;
+      height: 300px;
+      width: 300px;
       margin: -97px 0 0 -30%; }
+      .tree-wrapper .program-category .category-6 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-6 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-7 {
-      background-image: url("assets/images/mikro.png");
-      height: 260px;
-      width: 260px;
+      height: 300px;
+      width: 300px;
       margin: 81px 0 0 17%; }
+      .tree-wrapper .program-category .category-7 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-7 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-8 {
-      background-image: url("assets/images/saham.png");
-      height: 320px;
-      width: 320px;
+      height: 300px;
+      width: 300px;
       margin: 243px 0 0 -39%; }
+      .tree-wrapper .program-category .category-8 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-8 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-9 {
-      background-image: url("assets/images/pangan.png");
       height: 300px;
       width: 300px;
       margin: 419px 0 0 9%; }
+      .tree-wrapper .program-category .category-9 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-9 a img {
+          max-width: 100%; }
     .tree-wrapper .program-category .category-10 {
-      background-image: url("assets/images/bottom.png");
-      height: 245px;
-      width: 245px;
+      height: 300px;
+      width: 300px;
       margin: 490px 0 0 -17%; }
+      .tree-wrapper .program-category .category-10 a {
+        height: 300px;
+        width: 100%;
+        background: transparent; }
+        .tree-wrapper .program-category .category-10 a img {
+          max-width: 100%; }
 
 .img-place {
   position: relative;
@@ -712,6 +757,14 @@ button.btn.btn-sm.bg-green {
   height: 50px;
   border-radius: 50%;
   cursor: pointer; }
+
+.s-branch-map {
+  background-color: #14882d; }
+
+.branc-u-map {
+  height: 2px;
+  width: 40%;
+  background-color: #bfc10d; }
 
 .s-contact {
   width: auto;

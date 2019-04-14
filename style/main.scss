@@ -570,7 +570,7 @@ a img {
 		height: 77rem;
 		margin: 0 auto;
 		max-width: 130rem;
-		pointer-events: none;
+		
 		position: absolute;
 		top: 10.8rem;
 		width: 100%;
@@ -589,75 +589,157 @@ a img {
 		}
 
 		.category-1{
-			background-image:url('assets/images/ritel.png');
-			height:320px;
-			width:320px;
+			
+			height:300px;
+			width:300px;
 			margin: -755px 0 0 114px;
 
 			a{
-			height: 320px;
-			width:320px;
-			background:transparent;			
-		}
+			height: 300px;
+			width:100%;
+			background:transparent;	
 
-
+			img{
+				max-width:100%;
+			}		
 		}
+	}
+
 		.category-2{
-			background-image:url('assets/images/perahu.png');
-			height:310px;
-			width:310px;
+			height:300px;
+			width:300px;
 			margin: -703px 0 0 -33%;
+			a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
+
 		}
+
+	}
 		.category-3{
-			background-image:url('assets/images/mobile.png');
-			height:280px;
-			width:280px;
+		
+			height:3200px;
+			width:320px;
 			margin: -360px 0 0 5%;
+			a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 		.category-4{
-			background-image:url('assets/images/sumur.png');
-			height:290px;
-			width:290px;
+			
+			height:300px;
+			width:300px;
 			margin: -379px 0 0 -41%;
+
+			a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 		.category-5{
-			background-image:url('assets/images/warung.png');
-			height:320px;
-			width:320px;
+			height:300px;
+			width:300px;
 			margin: -227px 0 0 26%;
+			a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 		.category-6{
-			background-image:url('assets/images/lumbung.png');
-			height:320px;
-			width:320px;
+			height:300px;
+			width:300px;
 			margin: -97px 0 0 -30%;
+			a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 		.category-7{
-			background-image:url('assets/images/mikro.png');
-			height: 260px;
-			width: 260px;
+			
+			height: 300px;
+			width: 300px;
 			margin: 81px 0 0 17%;
 
-		}
-		.category-8{
-			background-image:url('assets/images/saham.png');
-			height:320px;
-			width:320px;
-			margin: 243px 0 0 -39%;
+		a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
 
+			img{
+				max-width:100%;
+			}		
 		}
+	}
+		.category-8{
+			
+			height:300px;
+			width:300px;
+			margin: 243px 0 0 -39%;
+		a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
+		}
+	}
 		.category-9{
-			background-image:url('assets/images/pangan.png');
+			
 			height:300px;
 			width:300px;
 			margin: 419px 0 0 9%;
+		a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 		.category-10{
-			background-image:url('assets/images/bottom.png');
-			height:245px;
-			width:245px;
+			height:300px;
+			width:300px;
 			margin: 490px 0 0 -17%;
+		a{
+			height: 300px;
+			width:100%;
+			background:transparent;	
+
+			img{
+				max-width:100%;
+			}		
 		}
+	}
 
 	}
 
@@ -902,6 +984,16 @@ button.btn.btn-sm.bg-green {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.s-branch-map{
+	background-color:#14882d;
+}
+
+.branc-u-map{
+	height:2px;
+	width:40%;
+	background-color:#bfc10d;
 }
 
 // ===========Contact Section============
