@@ -599,8 +599,16 @@ a img {
 			width:100%;
 			background:transparent;	
 
+			a:hover{
+				-webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+			}
+
 			img{
 				max-width:100%;
+				transform: scale(1,1);
 			}		
 		}
 	}
@@ -741,7 +749,7 @@ a img {
 		}
 	}
 
-	}
+}
 
 	
 }

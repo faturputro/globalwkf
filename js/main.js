@@ -58,7 +58,10 @@ $('.venobox-close').on('click',function(){
   $('.venobox-overlay').addClass('d-none');
 });
 
-$('#itemFirst').on('click',function(){
-  $('#sBranch').removeClass('d-none');
-  console.log('jengjet');
+$("#areaFilter option").change(function(){
+      var class = $('#sBranch').html();
+      console.log('test');
+      $('#sBranch').html().removeClass('d-none');     
 });
+
+

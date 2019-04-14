@@ -481,8 +481,14 @@ a img {
         height: 300px;
         width: 100%;
         background: transparent; }
+        .tree-wrapper .program-category .category-1 a a:hover {
+          -webkit-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
         .tree-wrapper .program-category .category-1 a img {
-          max-width: 100%; }
+          max-width: 100%;
+          transform: scale(1, 1); }
     .tree-wrapper .program-category .category-2 {
       height: 300px;
       width: 300px;
