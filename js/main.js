@@ -58,10 +58,5 @@ $('.venobox-close').on('click',function(){
   $('.venobox-overlay').addClass('d-none');
 });
 
-$("#areaFilter option").change(function(){
-      var class = $('#sBranch').html();
-      console.log('test');
-      $('#sBranch').html().removeClass('d-none');     
-});
 
 
