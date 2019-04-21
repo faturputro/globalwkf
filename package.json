@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/faturputro/global#readme",
   "dependencies": {
+    "baguettebox.js": "^1.11.0",
     "ejs": "^2.6.1"
   }
 }

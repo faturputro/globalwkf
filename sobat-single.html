@@ -17,7 +17,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- custom demo style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.6.0/venobox.min.css" type="text/css" media="screen" /> 
+  <link rel="stylesheet" type="text/css" href="style/baguetteBox.min.css">
+  <script type="text/javascript" src="style/baguetteBox.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
   
 </head>
@@ -36,7 +37,7 @@
           <nav class="main_nav">
             <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
               <li>
-                <a href=""><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
+                <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
               </li>
               <li class="d-flex align-items-center">
                <form class="example" action="action_page.php">
@@ -67,13 +68,13 @@
         <a href="index.html" class="nav-item text-green">Beranda</a>
       </li>
       <li class="col text-center nav-active">
-        <a href="program.html" class="nav-item text-green page-active">Program Wakaf</a>
+        <a href="program.html" class="nav-item text-green">Program Wakaf</a>
       </li>
       <li class="col text-center">
         <a href="profile.html" class="nav-item text-green">Profil</a>
       </li>
       <li class="col text-center">
-        <a href="sobat.html" class="nav-item text-green">Sobat Berkah</a>
+        <a href="sobat.html" class="nav-item text-green page-active">Sobat Berkah</a>
       </li>
       <li class="col text-center">
         <a href="blog.html" class="nav-item text-green">Berita</a>
@@ -105,7 +106,7 @@
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                </div>
               </div>
-              <div class="row mt-3 px-5">
+              <div id="sobat-gallery" class="row mt-3 px-5">
                 <div class="col-md-3">
                   <div class="single-img-container" data-aos="fade-up" data-aos-duration="300">
                     <a href="style/assets/images/img/hero.jpg" class="venobox"><img src="style/assets/images/img/hero.jpg"></a>
@@ -130,10 +131,9 @@
               <div class="row">
                 <div class="col-12 col-md-12 mt-4 px-5 pb-4" data-aos="fade-up" data-aos-duration="300">
                   <div class="video-container">
-                    <img src="style/assets/images/img/hero.jpg">
-                    <div class="play-button">
-                      <a class="venobox_custom" data-vbtype="iframe" href="https://www.youtube.com/embed/7cLCxYWas8k"><img src="style/assets/icons/play-btn.png"></a>
-                    </div>
+                    <iframe
+            src="https://www.youtube.com/embed/7cLCxYWas8k" style="width:100%;height:100%;border:none;">
+            </iframe>
                   </div>
                 </div>
               </div>  
@@ -233,6 +233,9 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script>
    AOS.init();
+</script>
+<script>
+  baguetteBox.run('#sobat-gallery');
 </script>
 </body>
 </html>
