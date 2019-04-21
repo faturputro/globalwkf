@@ -7,6 +7,61 @@
 	src: url(assets/fonts/Museo-700.otf);
   }
 
+ @font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica'), url('Helvetica.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Compressed';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Compressed'), url('helvetica-compressed-5871d14b6903a.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Rounded Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Bold Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Bold Oblique'), url('Helvetica-BoldOblique.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Helvetica Light';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
+}
+
 $bg-linear: linear-gradient(to right ,  #3AB54A , #38A495 , #126839);
 $green: #126839;
 $black: #000;
@@ -25,6 +80,13 @@ body{
 a{
     color:$white !important;
     text-decoration: none !important;
+}
+
+p{
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0.5px;
 }
 
 .splitter{
@@ -69,6 +131,10 @@ input.form-control.mr-sm-2.search-form {
 
 .bg-grey{
 	background-color:#e8e8e8 !important;
+}
+
+.bg-card {
+    background-color: #106939 !important;
 }
 
 textarea:hover, 
@@ -158,7 +224,7 @@ box-shadow: none!important;}
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-    left: 100px;
+    left: 108px;
     
     .logo {
         a{
@@ -291,6 +357,7 @@ box-shadow: none!important;}
 	z-index: 2000;
 }
 
+
 .page-active{
 	border-bottom:2px solid #126839;
 }
@@ -306,9 +373,26 @@ box-shadow: none!important;}
 
 .header-carousel{
 	display: flex;
-	height:65%;
-	margin-top: 20px;
+	height:70vh;
+	margin-top: 7.3vh;
 
+}
+
+a.gallery-program{
+	img{
+		max-width: 100%;
+	}
+}
+
+.carousel-header-container{
+	height:100%;
+	width:100%;
+
+	img{
+		max-width:100%;
+		height:100%;
+		width:100%;
+	}
 }
 
 ol.carousel-indicators.custom-p {
@@ -492,7 +576,7 @@ a img {
 
 
 .counter-wrapper{
-	height:168px;
+	height:18vh;
 	width:100%;
 	background-image: $bg-linear;
 	display: flex;
@@ -766,13 +850,18 @@ a img {
 
 .feature-wrapper{
 	position: relative;
-	height:250%;
-	width: 100%;
+	height:auto;
+	width: 102%;
 	background-image: url("assets/images/feature-bg.png");
 	background-size:cover;
 	background-repeat: no-repeat;
-	top:50px;
+	background-position:-5px 5%;
+	padding-bottom: 50px;
 }
+
+
+
+// =================
 
 .feature-1{
 	padding-top: 100px;
@@ -848,19 +937,19 @@ a img {
 
 .news-section{
 	position: relative;
-	top: -612px;
+	margin-top:50px;
+	background-image: $bg-linear;
+	min-height: 60vh;
+	height:60vh;
 }
 
 .news-wrapper{
 	display: flex;
-	position: absolute;
-	right: 0;
-	border-radius:46px 0 0 46px;
-	background-image: $bg-linear;
 	background-size: cover;
-	height: 550px;
-	width: 85%;
+	height: auto;
+	width: 100%;
 	align-items:center;
+	margin-top:10%;
 }
 
 .news-thumb{
@@ -874,6 +963,22 @@ a img {
 		margin : 0 0 20px 20px;
 
 	}
+}
+
+.nav-tabs{
+	border:none !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: transparent !important;
+    border:none !important;
+}
+
+ul#nav-tab {
+    position: absolute;
+    bottom: 0;
+    right:0;
 }
 
 .news-sub-thumb{
@@ -890,14 +995,14 @@ a img {
 }
 
 .sub-news {
-    height: auto;
-    width: 100%;
-    margin: auto auto auto 25px;
+    height: 100;
+    width: 180px;
     position: relative;
-    top: 292%;
-
-	img{
-		max-width: 100%;
+    
+	a{
+		img{
+			max-width:100%;
+		}
 	}
 }
 
@@ -905,16 +1010,16 @@ a img {
   overflow: hidden;
 }
 
-.news-thumb .thumb img {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+// .news-thumb .thumb img {
+//   -webkit-transition: all 0.3s ease 0s;
+//   -moz-transition: all 0.3s ease 0s;
+//   -o-transition: all 0.3s ease 0s;
+//   transition: all 0.3s ease 0s;
+// }
 
-.news-thumb:hover .thumb img {
-  transform: scale(1.1);
-}
+// .news-thumb:hover .thumb img {
+//   transform: scale(1.1);
+// }
 
 
 .text-brown{
@@ -953,10 +1058,23 @@ button.btn.btn-sm.bg-green {
 	justify-content: center;
 	margin-left: 10px;
 	
-	i{
-		font-size: 30px;
-		color: white;
+	.social-item{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		position:relative;
+		border-radius:50%;
+
+		a{
+			margin: auto;
+			// position: absolute;
+			// top:50%;
+			// left:50%;
+			// transform: (-50%,-50%);
+			font-size:24px;
+		}
 	}
+
 }
 
 .maps-section{
@@ -965,7 +1083,6 @@ button.btn.btn-sm.bg-green {
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 100px;
-	margin-top: 30px;
 }
 
 .maps-wrapper{
@@ -1360,8 +1477,7 @@ button.btn.btn-sm.bg-green {
 			position:relative;
 			height:40px;
 			width:40px;
-			background-color:#147139;
-			border-radius: 50px;
+			border-radius: 50%;
 
 			a {
 				position:absolute;
@@ -1420,9 +1536,11 @@ button.btn.btn-sm.bg-green {
 // ============= Sobat Section============
 
 .s-sobat{
-	background-image:url('assets/images/img/bg-grey-sm.jpg');
+	background-image:url('assets/images/feature-bg.png');
 	background-size:cover;
 	background-repeat:no-repeat;
+	background-position:-5px 0%;
+	width:102%;
 	margin-top:8%;
 
 	h2{
@@ -1588,14 +1706,18 @@ button.btn.btn-sm.bg-green {
 }
 
 .social-item-bottom{
+	position:relative;
 	margin-right: 10px;
 	width: 40px;
 	height: 40px;
+	border-radius:50%;
 
 	a{
-		img{
-			max-width:100%;
-		}
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		font-size:24px;
 	}
 }
 
@@ -1667,7 +1789,7 @@ footer {
 	width: 40%;
 	height: auto;
 	position:absolute;
-	bottom: 0;
+	top: 0;
 	left:150px;
 
 		img{

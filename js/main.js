@@ -12,7 +12,6 @@ $(window).scroll(function() {
   drawLine( $('#route'),
             document.getElementById('path') );
 
-//draw the line
 function drawLine(container, line){
   
   var pathLength = line.getTotalLength(),
@@ -21,28 +20,15 @@ function drawLine(container, line){
       length = (percentDone * pathLength)*1.246;
   line.style.strokeDasharray = [ length ,pathLength].join(' ');
 }
-
 });
+ 
+  $('#nav-tab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 
-   $('.news-1').on('click',function(){
-      $('#defaultNews').addClass('d-none');
-      $('#secondNews').removeClass('d-none');
-    });
-
-   $('.news-2').on('click',function(){
-      $('#defaultNews').addClass('d-none');
-      $('#thirdNews').removeClass('d-none');
-    });
-
-   $('.news-3').on('click',function(){
-      $('#defaultNews').addClass('d-none');
-      $('#fourthNews').removeClass('d-none');
-    });
-
-// Image View
+// Image View 
 $('.venobox').venobox(); 
-
-
     /* custom settings */
     $('.venobox_custom').venobox({
         framewidth: '900px',        // default: ''

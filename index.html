@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
@@ -17,6 +18,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- custom demo style -->
   <script src="js/modernizr.custom.js"></script>
 </head>
@@ -28,14 +31,14 @@
         <div class="container">
           <!-- Logo -->
           <div class="logo">
-            <a href="#"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
+            <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
           </div>
 
           <!-- Main Nav -->
           <nav class="main_nav">
             <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
               <li>
-                <a href=""><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
+                <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
               </li>
               <li class="d-flex align-items-center">
                <form class="example" action="action_page.php">
@@ -118,13 +121,19 @@
   </ol>
   <div class="carousel-inner mh-100">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="style/assets/images/banner-book.png" alt="First slide">
+      <div class="carousel-header-container">
+        <img class="d-block" src="style/assets/images/banner-book.png" alt="First slide">
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="style/assets/images/banner-book.png" alt="Second slide">
+      <div class="carousel-header-container">
+        <img class="d-block" src="style/assets/images/banner-book.png" alt="First slide">
+      </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="style/assets/images/banner-book.png" alt="Third slide">
+     <div class="carousel-header-container">
+        <img class="d-block" src="style/assets/images/banner-book.png" alt="First slide">
+      </div>
     </div>
   </div>
       </div>
@@ -252,7 +261,7 @@
   </div>
 </section>
   <div class="feature-wrapper">
-    <div class="container">
+    <div class="container pb-5">
       <div class="feature-1 row">
         <div class="col-6">
           <h3>SOBAT BERKAH <strong>GLOBAL WAKAF</strong></h3>
@@ -325,7 +334,6 @@
                   <div class="col-sm-4">
                     <div class="carousel-feature">
                       <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
-                      
                       <h6 class="bg-green">Barokah Tour & Travel</h6>
                     </div>
                   </div>
@@ -360,95 +368,77 @@
                 <i class="fas fa-angle-right"></i>
             </div>
           </a>
-              <button href="" class="btn btn-md mt-5 bg-white btn-green">Selengkapnya</button>
+              <a href="" class="btn btn-md mt-5 bg-white btn-green text-dark museo700">Selengkapnya</a>
           </div>
 
         </div>
       </div>
 
     </div>
-  </div>
-  <div class="news-section container-fluid">
-    <div class="news-wrapper">
+     <div class="news-section shadow">
+    <div class="news-wrapper container">
       <div class="news-bar">
-        <div class="row">
+          <div class="row">
           <div class="col-sm-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="news-thumb">
-                  <div class="thumb">
-                    <a id="firstNews" href="https://www.youtube.com/embed/7cLCxYWas8k" class="venobox-custom" data-vbtype="iframe"><img src="style/assets/images/Asset 25.png"></a>
-                  </div>
-                  
+            <div class="news-thumb px-4">
+                  <iframe
+            src="https://www.youtube.com/embed/7cLCxYWas8k" style="width:100%;height:100%;border:none;">
+            </iframe>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="sub-news">
-                        <a href="javascript:;" class="news-1">
-                            <img src="style/assets/images/Asset 27.png">
+                <ul class="nav nav-tabs d-flex" id="nav-tab" role="tablist">
+                    <li class="sub-news">
+                      <a id="nav-home-tab" href="#nav-home" class="nav-item news-1 nav-link active" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">
+                          <img src="style/assets/images/Asset 27.png">
                         </a>
-                        
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="sub-news">
-                            <a href="javascript:;" class="news-2">
-                                <img src="style/assets/images/Asset24.png">
+                    </li>
+                    <li class="sub-news">
+                       <a href="#nav-profile" class="news-2 nav-item nav-link" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false">
+                              <img src="style/assets/images/Asset24.png">
                             </a>
-                          </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="sub-news">
-                            <a href="javascript:;" class="news-3">
-                                <img src="style/assets/images/Asset26.png">
-                            </a>
-                          </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            
+                    </li>
+                    <li class="sub-news">
+                       <a href="#nav-contact" id="tab3" class="news-3 nav-item nav-link" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="false">
+                              <img src="style/assets/images/Asset26.png">
+                            </a> 
+                    </li>
+                  </ul>
           </div>
           <div class="col-sm-6">
-            <h5 class="text-brown berita">BERITA <span class="font-weight-bold">WAKAF</span></h5>
-            <div class="news-title">
-              <div id="defaultNews" class="defaultNews">
-                <h1 id="newsHeader" class="text-light actives">Perahu Wakaf Memberdayakan Masyarakat Lampung</h1>
-              <p id="newsPreview" class="text-light actives">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <h5 class="text-brown berita">BERITA <span class="museo700">WAKAF</span></h5>
+            <div class="tab-content pl-4" id="nav-tabContent">
+              <div class="tab-pane fade show active news-preview p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h1 id="newsHeader" class="text-light museo700">Perahu Wakaf Memberdayakan Masyarakat Lampung</h1>
+              <p id="newsPreview" class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Veritatis earum asperiores voluptate, ipsam unde minima incidunt
                   blanditiis doloribus maxime id doloremque perspiciatis velit est
                   quas fugit eos harum accusamus quasi.</p>
               </div>
-              <div id="secondNews" class="secondNews d-none">
-                <h1 id="newsHeaderSecond" class="text-light">Perahu Wakaf Memberdayakan Masyarakat Jakarta</h1>
+              <div class="tab-pane fade news-previews" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <h1 id="newsHeaderSecond" class="text-light museo700">Perahu Wakaf Memberdayakan Masyarakat Jakarta</h1>
               <p id="newsPreview" class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Veritatis earum asperiores voluptate, ipsam unde minima incidunt
                   blanditiis perspiciatis velit est
                   quas fugit eos harum accusamus quasi.</p>
               </div>
-              <div id="thirdNews" class="thirdNews d-none">
-                <h1 id="newsHeaderThird" class="text-light">Perahu Wakaf Memberdayakan Masyarakat Kalimalang</h1>
+              <div class="tab-pane fade news-preview" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h1 id="newsHeaderThird" class="text-light museo700">Perahu Wakaf Memberdayakan Masyarakat Kalimalang</h1>
               <p id="newsPreview" class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Veritatis earum asperiores voluptate, iincidunt
                   blanditiis doloribus maxime id doloremque perspiciatis velit est
                   quas fugit eos harum accusamus quasi.</p>
               </div>
-              <div id="thirdNews" class="thirdNews d-none">
-                <h1 id="newsHeaderThird" class="text-light">Perahu Wakaf Memberdayakan Masyarakat Surabaya</h1>
-              <p id="newsPreview" class="text-light">L consectetur adipisicing elit.
-                  Veritatis earum asperiores voluptate, ipsam unde minima incidunt
-                  blanditiis doloribus maxime id doloremque perspiciatis velit est
-                  quas fugit eos harum accusamus quasi.</p>
-              </div>
-              <a href="javascript:;"><h6>Selengkapnya <i class="fas fa-arrow-right"></i></h6></a>
-              <div class="row">
+              <a href="javascript:;" class="pb-5">
+                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                </h6>
+              </a>
+              <div class="row mt-5">
                 <div class="col-sm-6 d-flex align-items-center">
                   <p class="text-light">Bagikan</p>
                   <ul class="social-news pl-1">
-                    <li class="social-item "><a href="google.com"><img src="style/assets/icons/facebook.png" alt="facebook"></a></li>
-                     <li class="social-item"><a href="google.com"><img src="style/assets/icons/twitter.png" alt="twitter"></a></li>
-                      <li class="social-item"><a href="google.com"><img src="style/assets/icons/gplus.png" alt="gPlus"></a></li>
-                       <li class="social-item"><a href="google.com"><img src="style/assets/icons/ig.png" alt="instagram"></a></li>
+                    <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                      <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                       <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
+                       <li class="social-item bg-white"><a href="https://google.com" class="text-dark"><i class="fab fa-instagram"></i></a></li>
                   </ul>
                 </div>
                 <div class="col-sm-6">
@@ -458,8 +448,10 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="maps-section">
     <h3 class="text-center text-dark pt-5">PETA SEBARAN <span class="font-weight-bold"> WAKAF</span></h3>
@@ -494,7 +486,7 @@
        </ul>
       </div>
       
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="1100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=global%20wakaf&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1100px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1100px;border-radius: 8px;}</style></div>
+      <div class="mapouter"><div class="gmap_canvas "><iframe width="1100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=global%20wakaf&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1100px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1100px;border-radius: 8px;}</style></div>
     </div>
   </div>
   <div class="brand-section">
@@ -511,32 +503,32 @@
               <div class="row">
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset8.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset4.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset5.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset7.svg">
                   </div>
                 </div>
               </div>
@@ -545,32 +537,32 @@
                <div class="row">
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset8.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset4.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset5.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset7.svg">
                   </div>
                 </div>
               </div>
@@ -579,32 +571,32 @@
               <div class="row">
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset8.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset4.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset5.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset6.svg">
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="brand-card">
-                    <img src="style/assets/images/Asset 24.png">
+                    <img src="style/assets/images/Asset7.svg">
                   </div>
                 </div>
               </div>
@@ -641,11 +633,11 @@
                   <div class="social-footer">
                       <ul class="social-bottom my-auto">
                         <h6 class="text-light font-weight-bold mr-5 my-auto">Ikuti Kami</h6>
-                        <li class="social-item-bottom"><a href=""><img src="style/assets/icons/facebook.png" alt="facebook"></a></li>
-                        <li class="social-item-bottom"><a href=""><img class="" src="style/assets/icons/twitter.png" alt="twitter"></a></li>
-                        <li class="social-item-bottom"><a href=""><img class="" src="style/assets/icons/ig.png" alt="instagram"></a></li>
-                        <li class="social-item-bottom"><a href=""><img class="" src="style/assets/icons/gplus.png" alt="gPlus"></a></li>
-                        <li class="social-item-bottom"><a href=""><img class="" src="style/assets/icons/youtube.png" alt="youtube"></a></li>
+                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-youtube"></i></a></li>
                       </ul>
                   </div>
                 </div>
@@ -665,7 +657,7 @@
               <li class="program-item"><a href="#"><h6>Perahu Wakaf</h6></a></li>
               <li class="program-item"><a href="#"><h6>Warung Wakaf</h6></a></li>
               <li class="program-item"><a href="#"><h6>Sumur Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Lumbung Ternak</h6></a</li>
+              <li class="program-item"><a href="#"><h6>Lumbung Ternak</h6></a></li>
               <li class="program-item"><a href="#"><h6>Warung Wakaf Mikro</h6></a></li>
               <li class="program-item"><a href="#"><h6>Lumbung pangan</h6></a></li>
               <li class="program-item"><a href="#"><h6>Wakaf Saham</h6></a></li>
@@ -727,7 +719,9 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
 
 <!-- VENOBOX -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script>
@@ -755,8 +749,10 @@ function drawLine(container, line){
       percentDone = $(window).scrollTop() / maxScrollTop,
       length = (percentDone * pathLength)*1.5;
   line.style.strokeDasharray = [ length ,pathLength].join(' ');
-}
-
+};
+</script>
+<script type="text/javascript">
+   $( "#tabs" ).tabs();
 </script>
 </body>
 
