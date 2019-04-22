@@ -17,8 +17,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- custom demo style -->
-  <link rel="stylesheet" type="text/css" href="style/baguetteBox.min.css">
-  <script type="text/javascript" src="style/baguetteBox.min.js"></script>
+
   <script src="js/modernizr.custom.js"></script>
   
 </head>
@@ -71,14 +70,14 @@
         <a href="program.html" class="nav-item text-green">Program Wakaf</a>
       </li>
       <li class="col text-center dropdown text-green">
-        <a href="profile.html" class="text-green">Profil</a>
+        <a href="profile.html" class="text-green page-active">Profil</a>
             <ul class="dropdown-menu">
               <li class="pl-2 py-2"><a href="profile.html" class="text-green text-center">Tentang Wakaf</a></li>
               <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Konsultasi Wakaf</a></li>
             </ul>
       </li>
       <li class="col text-center">
-        <a href="sobat.html" class="nav-item text-green page-active">Sobat Berkah</a>
+        <a href="sobat.html" class="nav-item text-green">Sobat Berkah</a>
       </li>
       <li class="col text-center">
         <a href="blog.html" class="nav-item text-green">Berita</a>
@@ -94,53 +93,124 @@
     <section class="s-single pb-5">
       <div class="container h-25">
         <div class="row">
-           <h2 class="text-center mt-5 mb-4"><strong>Sobat Berkah</strong></h2>
+           <h2 class="text-center mt-5 mb-4">Konsultasi <strong>Wakaf</strong></h2>
         </div>
       </div>
      
       <div class="container">
         <div class="row">
-          <div class="card-wrapper-single pb-3">
-            <div class="container">
-              <div class="row d-flex justify-content-center">
-               <div class="single-logo-container">
-                 <img src="style/assets/images/garuda.jpg" alt="logo">
-               </div>
-               <div class="single-desc">
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-               </div>
-              </div>
-              <div id="sobat-gallery" class="row mt-3 px-5">
-                <div class="col-md-3">
-                  <div class="single-img-container" data-aos="fade-up" data-aos-duration="300">
-                    <a href="style/assets/images/img/hero.jpg" class="venobox"><img src="style/assets/images/img/hero.jpg"></a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="single-img-container" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                    <a href="style/assets/images/img/hero.jpg" class="venobox"><img src="style/assets/images/img/hero.jpg"></a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="single-img-container" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
-                    <a href="style/assets/images/img/hero.jpg" class="venobox"><img src="style/assets/images/img/hero.jpg"></a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="single-img-container" data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">
-                    <a href="style/assets/images/img/hero.jpg" class="venobox"><img src="style/assets/images/img/hero.jpg"></a>
-                  </div>
-                </div>
-              </div>
+          <div id="card-faq" class="card-wrapper-single pb-3">
+            <div class="container p-5">
               <div class="row">
-                <div class="col-12 col-md-12 mt-4 px-5 pb-4" data-aos="fade-up" data-aos-duration="300">
-                  <div class="video-container">
-                    <iframe
-            src="https://www.youtube.com/embed/7cLCxYWas8k" style="width:100%;height:100%;border:none;">
-            </iframe>
+               <div class="col-md-6">
+                 <div class="single-desc">
+                  <h3 class="museo700">Tanya Jawab Ustadz</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                 <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Nama<span class="text-danger">*</span></label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nama Anda" required>
                   </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Subject<span class="text-danger">*</span></label>
+                    <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Subject Pesan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email<span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Pesan Anda</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+               </div> 
+               </div>
+               <div class="col-md-6 overflow-auto">
+                 <h3 class="museo700">FAQ</h3>
+                <div class="faq-container">
+                   <div class="faq-wrapper">
+                  <div class="accordion" id="accordionExample">
+
+  <div class="card-header border-0 mb-2" id="headingOne">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Question number one?
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  <div class="card-header border-0 mb-2" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Question number Two?
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card-header border-0 mb-2" id="headingThree">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Question number Three?
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div class="card-header border-0 mb-2" id="headingFour">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Question number four?
+        </a>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div class="card-header border-0 mb-2" id="headingFive">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Question number five?
+        </a>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div class="card-header border-0 mb-2" id="headingSix">
+      <h5 class="mb-0">
+        <a class="branch-accordion text-dark" href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Question number six?
+        </a>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+</div>
                 </div>
-              </div>  
+                 </div>
+               </div>
             </div>
           </div>
         </div>
@@ -236,9 +306,6 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script>
    AOS.init();
-</script>
-<script>
-  baguetteBox.run('#sobat-gallery');
 </script>
 </body>
 </html>

@@ -27,22 +27,13 @@ function drawLine(container, line){
   $(this).tab('show')
 })
 
-// Image View 
-$('.venobox').venobox(); 
-    /* custom settings */
-    $('.venobox_custom').venobox({
-        framewidth: '900px',        // default: ''
-        frameheight: '540px',       // default: ''
-        border: '10px',             // default: '0'
-        bgcolor: '#5dff5e',         // default: '#fff'
-        titleattr: 'data-title',    // default: 'title'
-        numeratio: true,            // default: false
-        infinigall: false          // default: false
-    });
+$('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+  });
 
-$('.venobox-close').on('click',function(){
-  $('.venobox-overlay').addClass('d-none');
-});
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+  });
 
 
 
