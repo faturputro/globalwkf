@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Peta Sebaran Global Wakaf</title>
+  <title>Program Global Wakaf</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=1024" />
@@ -13,12 +13,14 @@
     crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" type="text/css" href="style/assets/bookblock.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- custom demo style -->
+  <link rel="stylesheet" type="text/css" href="style/baguetteBox.min.css">
+  <script type="text/javascript" src="style/baguetteBox.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
+  
 </head>
 
 <body>
@@ -35,7 +37,7 @@
           <nav class="main_nav">
             <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
               <li>
-                <a href=""><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
+                <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
               </li>
               <li class="d-flex align-items-center">
                <form class="example" action="action_page.php">
@@ -44,7 +46,7 @@
                 </form>
               </li>
               <li>
-                <a href="" class="btn btn-lg btn-wakaf">Wakaf Sekarang</a>
+                <a href="" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
               </li>
             </ul>
           </nav>
@@ -65,7 +67,7 @@
       <li class="col text-center">
         <a href="index.html" class="text-green">Beranda</a>
       </li>
-      <li class="col text-center dropdown text-green">
+      <li class="col text-center dropdown text-green page-active">
         <span class="py-2">Program Wakaf</span>
             <ul class="dropdown-menu border-0 px-3">
               <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
@@ -93,97 +95,99 @@
         <a href="blog.html" class="text-green">Berita</a>
       </li>
       <li class="col text-center">
-        <a href="peta.html" class="text-green page-active">Peta Sebaran</a>
+        <a href="peta.html" class="text-green">Peta Sebaran</a>
       </li>
       <li class="col text-center">
         <a href="kontak.html" class="text-green">Kontak</a>
       </li>
     </ul>
   </section>
-  <div class="maps-section">
-    <h3 class="text-center text-dark pt-5">PETA SEBARAN <span class="font-weight-bold"> WAKAF</span></h3>
-    <div class="maps-wrapper container">
-      <div class="maps-filter">
-       <ul class="d-flex align-items-center">
-        <li class="mr-4"> Filter By <i class="fas fa-filter"></i></li>
-         <li class="mr-2">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle px-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Program
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a id="itemFirst" class="dropdown-item text-dark" href="#">Action</a>
-              <a id="itemSecond" class="dropdown-item text-dark" href="#">Another action</a>
-              <a id="itemThird" class="dropdown-item text-dark" href="#">Something else here</a>
+    <section class="s-program pb-5">
+      <div class="container h-25">
+        <div class="row">
+           <h2 class="text-center mt-5 mb-4">Program <strong>Wakaf</strong></h2>
+        </div>
+      </div>
+     
+      <div class="container">
+        <div class="row">
+          <div class="card-wrapper-program pb-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 p-3 p-relative">
+                  <div class="program-img">
+                    <img src="style/assets/images/lumbung.png">
+                  </div>
+                </div>
+                <div class="col-md-8 px-3 pb-0">
+                  <div class="program-sub-category">
+                    <h4 class="text-left">Lumbung Ternak <strong>Wakaf</strong></h4>
+                    <p class="mb-0">MPeternakan merupakan satu sarana usaha yang hasilnya amat menjanjikan. Banyak saudara kita yang ahli dalam mengelola peternakan namun kesulitan dalam hal permodalan. Untuk itu Global Wakaf hadir mengajak sahabat sekalian untuk patungan membangun sebuah peternakan yang nantinya akan memberdayakan para peternak itu dan juga hasilnya akan menjadi hewan ternak dengan kualitas unggulan namun harganya amat terjangkau. Sehingga, rakyat mampu menikmati daging dengan harga yang terjangkau terutama saat Hari Raya Qurban.</p>
+                    <div class="d-flex align-items-center py-4 p-relative">
+                      <div class="counter-program p-absolute d-flex">
+                        <a href="https://payment.act.id" class="btn btn-md btn-program btn-green mr-3 px-5 my-auto text-dark"> Ayo Wakaf</a>
+                      <h4 class="counter text-center my-auto invisible"><strong>Rp 1.234.567</strong></h4>
+                      <h6 class="my-auto ml-4 font-weight-bold invisible">Dana wakaf terkumpul</h6>
+                      </div>
+                    </div>
+                    <div id="carouselProgram" class="carousel slide pb-3" data-ride="carousel" data-interval="false">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                                <div class="col-sm-4 px-2">
+                                  <a class="gallery-program" href="style/assets/images/img/hero.jpg"><img src="style/assets/images/img/hero.jpg"></a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselProgram" role="button" data-slide="prev">
+              <div class="bottom-prev bg-white mr-5">
+                  <i class="fas fa-angle-left"></i>
+              </div>
+          </a>
+                      <a class="carousel-control-next" href="#carouselProgram" role="button" data-slide="next">
+            <div class="bottom-next bg-white">
+                <i class="fas fa-angle-right"></i>
+            </div>
+          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-12 m-auto">
+                  <div class="video-container">
+                    <iframe
+            src="https://www.youtube.com/embed/hSUkPEoVaLk" style="width:100%;height:100%;border:none;">
+            </iframe>
+                  </div>
+                </div>
+              </div>  
             </div>
           </div>
-         </li>
-         <li>
-           <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle px-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Area
-  </button>
-  <div class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton">
-    <a id="itemAreaFirst" class="dropdown-item text-dark" href="#">Action</a>
-    <a id="itemAreaSecond" class="dropdown-item text-dark" href="#">Another action</a>
-    <a id="itemAreaThird" class="dropdown-item text-dark" href="#">Something else here</a>
-  </div>
-</div>
-         </li>
-       </ul>
-      </div>
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="1100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=global%20wakaf&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1100px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1100px;border-radius: 8px;}</style></div>
-    </div>
-  </div>
-      <section id="sBranch" class="s-branch-map d-none">
-      <div class="container p-4">
-       <div class="row">
-          <div class="col-md-3">
-          <h5 class="text-light museo700">BRANCH NAME</h5>
         </div>
-       </div>
-      <div class="branch-u-map my-3"></div>
-        <div class="row">
-          <div class="col-md-3">
-           <ul class="branch-details">
-              <li> <h6 class="text-light museo700 mb-3">Branch Location</h6></li>
-              <li class="text-light">Jl. Aasdasd Ssdasd</li>
-              <li class="text-light">Bdasl Bkasdbwlef</li>
-              <li class="text-light">+62 81298765432</li>
-              <li class="text-light">Jakarta</li>
-           </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="branch-details">
-              <li> <h6 class="text-light museo700 mb-3">Branch Location</h6></li>
-              <li class="text-light">Jl. Aasdasd Ssdasd</li>
-              <li class="text-light">Bdasl Bkasdbwlef</li>
-              <li class="text-light">+62 81298765432</li>
-              <li class="text-light">Jakarta</li>
-           </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="branch-details">
-              <li> <h6 class="text-light museo700 mb-3">Branch Location</h6></li>
-              <li class="text-light">Jl. Aasdasd Ssdasd</li>
-              <li class="text-light">Bdasl Bkasdbwlef</li>
-              <li class="text-light">+62 81298765432</li>
-              <li class="text-light">Jakarta</li>
-           </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="branch-details">
-              <li> <h6 class="text-light museo700 mb-3">Branch Location</h6></li>
-              <li class="text-light">Jl. Aasdasd Ssdasd</li>
-              <li class="text-light">Bdasl Bkasdbwlef</li>
-              <li class="text-light">+62 81298765432</li>
-              <li class="text-light">Jakarta</li>
-           </ul>
-          </div>
-        </div>
-      </div>
+      </div>  
     </section>
-  <div class="subscribe-section">
+    <div class="subscribe-section">
     <div class="container">
         <div class="subscribe-wrapper">
             <div class="row d-flex align-items-center">
@@ -258,22 +262,22 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script>
-      AOS.init();
-    </script>
-  <script>
-  
+   AOS.init();
+</script>
+<script>
+  baguetteBox.run('#carouselProgram');
 </script>
 </body>
-
 </html>

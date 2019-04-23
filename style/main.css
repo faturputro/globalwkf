@@ -68,6 +68,12 @@ p {
   font-weight: normal;
   letter-spacing: 0.5px; }
 
+ol li {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5px; }
+
 .splitter {
   letter-spacing: 2px; }
 

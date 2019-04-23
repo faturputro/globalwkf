@@ -64,29 +64,40 @@
   <section class="top-nav container-fluid bg-white">
     <ul class="nav-list row no-gutters d-flex justify-content-center align-items-bottom">
       <li class="col text-center">
-        <a href="index.html" class="nav-item text-green">Beranda</a>
-      </li>
-      <li class="col text-center nav-active">
-        <a href="program.html" class="nav-item text-green">Program Wakaf</a>
+        <a href="index.html" class="text-green">Beranda</a>
       </li>
       <li class="col text-center dropdown text-green">
-        Profil
-            <ul class="dropdown-menu">
+        <span class="py-2">Program Wakaf</span>
+            <ul class="dropdown-menu border-0 px-3">
+              <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>
+              <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
+              <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
+              <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
+            </ul>
+      </li>
+      <li class="col text-center dropdown text-green">
+        <span class="py-2">Profil</span>
+            <ul class="dropdown-menu border-0">
               <li class="pl-2 py-2"><a href="profile.html" class="text-green text-center">Tentang Wakaf</a></li>
               <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Konsultasi Wakaf</a></li>
             </ul>
       </li>
-      <li class="col text-center">
-        <a href="sobat.html" class="nav-item text-green  page-active">Sobat Berkah</a>
+      <li class="col text-center page-active">
+        <a href="sobat.html" class="text-green">Sobat Berkah</a>
       </li>
       <li class="col text-center">
-        <a href="blog.html" class="nav-item text-green">Berita</a>
+        <a href="blog.html" class="text-green">Berita</a>
       </li>
       <li class="col text-center">
-        <a href="peta.html" class="nav-item text-green">Peta Sebaran</a>
+        <a href="peta.html" class="text-green">Peta Sebaran</a>
       </li>
       <li class="col text-center">
-        <a href="kontak.html" class="nav-item text-green">Kontak</a>
+        <a href="kontak.html" class="text-green">Kontak</a>
       </li>
     </ul>
   </section>
@@ -101,8 +112,19 @@
       <div class="card-wrapper-sobat pb-5">
         <div class="container">
         <div class="row">
-          <p class="text-center mb-5 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="col-md-4">
+          <p class="text-left text-light">Sobat Berkah hadir untuk memfasilitasi para pengusaha muslim untuk turut memberikan kontribusinya dalam wakaf. Sesuai dengan namanya, para pengusaha yang bergabung menjadi Sobat Berkah akan menjadi wakif tetap atau agen wakaf, yang insya Allah akan lebih bersahabat dengan keberkahan.</p>
+          <p class="text-left text-light">Dengan menyisihkan keuntungan dari penjualan, wakaf dari Sobat Berkah ini tidak hanya mengajak para pengusaha, tapi juga mengajak dan memberi edukasi kepada para konsumennya agar turut menunaikan wakaf.</p>
+          <p class="text-left text-light">Harapannya, Sobat Berkah ini akan mencapai tujuan yang diharapkan, diantaranya adalah:
+            <ol class="text-light pt-0 mb-5">
+              <li>Bersama-sama menyelamatkan umat dari bencana kemiskinan</li>  
+              <li>Bisnis semakin berkah & maju</li>
+              <li>Menggalang kekuatan pengusaha muslim</li>
+              <li>Mengokohkan ekonomi umat</li>
+              <li>Mewujudkan baldatun thayyibatun wa rabbun ghafur</li>  
+            </ol>
+          </p>
+          <div class="row">
+            <div class="col-md-4">
             <div class="partner-box bg-white shadow" data-aos="fade-up" data-aos-duration="300">
               <div class="partner-logo mx-auto">
                 <img src="style/assets/images/Logo_Bukalapak5.png" class="">
@@ -135,116 +157,105 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
       </div>    
       </div>
-      <div class="sobat-slider container-fluid bg-carousel shadow">
-        <div id="carouselSobatBerkah" class="carousel slide" data-ride="carousel">
-          <div class="container">
+      <div class="container">
+        <div id="carouselSobat" class="carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo7.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo2.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo3.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo4.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo5.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo6.png" alt="logo">
+            <div class="carousel-item active">
+              <div class="carousel-card">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                      
+                      <h6 class="bg-green">Barokah Tour & Travel</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                      <h6 class="bg-green">Gudang Rottie</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                      <h6 class="bg-green">Elzatta Hijab</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo7.png" alt="logo">
+            <div class="carousel-item">
+               <div class="row">
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                      
+                      <h6 class="bg-green">Barokah Tour & Travel</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                      <h6 class="bg-green">Gudang Rottie</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                      <h6 class="bg-green">Elzatta Hijab</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo2.png" alt="logo">
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                      <h6 class="bg-green">Barokah Tour & Travel</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                      <h6 class="bg-green">Gudang Rottie</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="carousel-feature">
+                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                      <h6 class="bg-green">Elzatta Hijab</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo3.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo4.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo5.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo6.png" alt="logo">
-                </div>
-              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo7.png" alt="logo">
-                </div>
+          <div class="row d-flex justify-content-center">
+            <a class="carousel-control-prev" href="#carouselSobat" role="button" data-slide="prev">
+              <div class="bottom-prev bg-white mr-5">
+                  <i class="fas fa-angle-left"></i>
               </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo2.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo3.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo4.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo5.png" alt="logo">
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="sobat-logo">
-                  <img src="style/assets/images/logos/logo6.png" alt="logo">
-                </div>
-              </div>
+          </a>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselSobat" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselSobat" data-slide-to="1"></li>
+              <li data-target="#carouselSobat" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-next" href="#carouselSobat" role="button" data-slide="next">
+            <div class="bottom-next bg-white">
+                <i class="fas fa-angle-right"></i>
             </div>
+          </a>
+              <a href="sobat.html" class="btn btn-md mt-5 bg-white btn-green text-dark museo700">Selengkapnya</a>
           </div>
+
+        </div>
       </div>
         </div>
         
