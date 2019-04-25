@@ -20,6 +20,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
   <!-- custom demo style -->
   <script src="js/modernizr.custom.js"></script>
 </head>
@@ -77,7 +78,7 @@
               <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
               <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
               <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
               <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
               <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
             </ul>
@@ -128,27 +129,12 @@
 </nav>
   </section>
   <section class="header-carousel">
-       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators custom-p">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-  </ol>
-  <div class="carousel-inner mh-100">
-    <div class="carousel-item active">
-      <div class="carousel-header-container">
-        <img class="d-block" src="style/assets/images/banner-book.png" alt="First slide">
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="carousel-header-container">
-        <img class="d-block" src="style/assets/images/GW.jpeg" alt="First slide">
-      </div>
-    </div>
-  </div>
-      </div>
-    </div>
-    </div>
-    </div>
+        <div>
+          <img class="d-block w-100" src="style/assets/images/banner-book.png" alt="First slide">
+        </div>
+        <div>
+          <img class="d-block w-100" src="style/assets/images/GW.jpeg" alt="First slide">
+        </div>
   </section>
   <section class="counter-wrapper">
     <div class="container">
@@ -724,13 +710,9 @@
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   
-
-<!-- VENOBOX -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script>
-  <script>
-     
-    </script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.js"></script>
   <script>
    AOS.init();
 </script>
@@ -756,6 +738,16 @@ function drawLine(container, line){
 </script>
 <script type="text/javascript">
    $( "#tabs" ).tabs();
+</script>
+<script>
+  $('.header-carousel').slick({
+    dots:true,
+    adativeHeight:true,
+    autoplay:true,
+    arrows:false,
+    autoplaySpeed:5000,
+    fade:true
+  });
 </script>
 </body>
 
