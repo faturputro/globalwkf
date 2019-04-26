@@ -1,0 +1,21 @@
+<svg id="route" width="1500" height="1600" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect fill="none" id="canvas_background" height="1602" width="1502" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="none" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <path id="path" d="m746.42857,49.99998c0,0 0,1148.57093 0,1148.57093c0,0 0,-1148.57093 0,-1148.57093z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_3" d="m746.42857,255.71417c0,0 145.71422,-24.2857 145.71422,-24.2857l-145.71422,24.2857z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_4" d="m746.42857,297.14273c0,0 -167.14279,-38.57141 -167.85741,-38.57142l167.85741,38.57142z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_5" d="m746.42857,642.85686c0,0 85.71425,-37.14284 84.99962,-37.14285l-84.99962,37.14285z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_6" d="m746.42857,668.57114c0,0 -355.71413,-69.99997 -355.71413,-69.99997l355.71413,69.99997z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_7" d="m746.42857,822.85678c0,0 394.28554,-88.57139 394.28554,-88.57139l-394.28554,88.57139z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_8" d="m746.42857,869.99962c0,0 -137.1428,-5.71428 -137.85742,-5.7143l137.85742,5.7143z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_9" d="m746.42857,942.85673c0,0 258.57131,44.2857 258.57131,44.2857l-258.57131,-44.2857z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_10" d="m746.42857,982.85671c0,0 -294.28559,137.1428 -294.28559,137.1428l294.28559,-137.1428z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_11" d="m746.42857,1108.57095c0,0 189.99991,159.99993 189.28528,159.99989l-189.28528,-159.99989z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+  <path id="svg_12" d="m746.42857,1194.28519c0,0 -72.85711,115.71424 -73.57173,115.7142l73.57173,-115.7142z" stroke-width="9" stroke="#ececec" fill="#fff"/>
+ </g>
+</svg>

@@ -35,7 +35,14 @@ $('.panel-collapse').on('show.bs.collapse', function () {
     $(this).siblings('.panel-heading').removeClass('active');
   });
 
- $('.header-carousel').slick();
+  $('.header-carousel').slick({
+    dots:true,
+    adativeHeight:true,
+    autoplay:true,
+    arrows:false,
+    autoplaySpeed:5000,
+    fade:true
+  });
 
 
 
