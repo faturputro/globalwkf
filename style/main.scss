@@ -1116,17 +1116,25 @@ ul#nav-tab {
 }
 
 .sub-news {
-    height: 10px;
+    height: 100px;
     width: 180px;
     position: relative;
     overflow: hidden;
 	a{
+		position:absolute;
 
 		img{
 			width:220px;
 			height:auto;
 		}
 	}
+}
+
+a.nav-item:hover{
+	border-bottom:none;
+	border-right:none;
+	border-left:none;
+	border-top:2px solid #fff;
 }
 
 .news-thumb .thumb {
