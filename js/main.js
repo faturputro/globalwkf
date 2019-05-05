@@ -44,5 +44,10 @@ $('.panel-collapse').on('show.bs.collapse', function () {
     fade:true
   });
 
-
+// Get Form Values
+$('#formVal').on('click',function(){
+    $('form-review').removeClass('d-none');
+    $(this).hide();
+    console.log('clicked wakaf');
+   });
 
