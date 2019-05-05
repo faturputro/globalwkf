@@ -1,7 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wakaf Sekarang Global Wakaf</title>
+  <title>Payment Global Wakaf</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=1024" />
@@ -11,13 +11,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- custom demo style -->
-  <link rel="stylesheet" type="text/css" href="style/smart_cart.css">
   <script src="js/modernizr.custom.js"></script>
   
 </head>
@@ -38,7 +34,7 @@
               <li>
                 <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
               </li>
-               <li class="d-flex align-items-center">
+              <li class="d-flex align-items-center">
                <form class="example" action="action_page.php">
                 <button type="submit"><i class="fa fa-search"></i></button>
                   <input type="text" placeholder="Search.." name="search">  
@@ -67,7 +63,7 @@
         <a href="index.html" class="text-green">Beranda</a>
       </li>
       <li class="col text-center dropdown text-green">
-        <span class="py-2">Program Wakaf</span>
+        <span class="py-2 page-active">Program Wakaf</span>
             <ul class="dropdown-menu border-0 px-3">
               <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
               <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
@@ -104,68 +100,78 @@
     <section class="s-program pb-5">
       <div class="container h-25">
         <div class="row">
-           <h2 class="text-center mt-5 mb-4"><strong>Wakaf </strong>Sekarang</h2>
+           <h2 class="text-center mt-5 mb-4">Payment <strong>Wakaf</strong></h2>
         </div>
       </div>
      
-      <div class="container wakaf-form">
+      <div class="container">
         <div class="row">
-          <div class="card-wrapper-program pb-3 mt-2">
-            <div class="container">
-              <form>
-  <div class="form-row px-5 pt-5">
-    <div class="form-group col-md-6">
-      <label for="nameDonater">Nama Lengkap <span class="text-danger">*</span></label>
-      <input type="text" class="form-control from-wakaf" id="nameDonater" placeholder="Nama Depan" required="">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="lastNameDonater" class="invisible">nama</label>
-      <input type="text" class="form-control form-wakaf" id="lastNameDonater" placeholder="Nama Belakang" required="">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="emailDonater">Email<span class="text-danger"> *</span></label>
-      <input type="email" class="form-control form-wakaf" id="emailDonater" placeholder="Email" required="">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="phoneDonater">No. Telp</label>
-      <input type="text" class="form-control form-wakaf" id="phoneDonater" placeholder="No. Telp" required="">
-    </div>
-  </div>
- <div class="form-row px-5">
-  <div class="form-group col-md-6">
-      <label for="inputProgram">Program Wakaf</label>
-      <select id="inputProgram" class="form-control form-wakaf">
-        <option selected>Ritel Wakaf</option>
-        <option>Perahu Wakaf</option>
-        <option>Warung Wakaf</option>
-        <option>Warung Wakaf Mobile</option>
-        <option>Warung Wakaf Mikro</option>
-        <option>Wakaf Sumur</option>
-        <option>Lumbung Ternak Wakaf</option>
-        <option>Lumbung Pangan Wakaf</option>
-        <option>Wakaf Saham</option>
-      </select>
-    </div>
-    <div class="form-group col-md-6">
-    <label for="donateVal">Jumlah Wakaf</label>
-    <input type="number" class="form-control form-wakaf" id="donateVal" placeholder="Rp.">
-  </div>
- </div>
- <div class="form-row px-5">
-   <div class="form-group col-md-12">
-     <label for="inputChannel">Jenis Payment</label>
-     <select id="inputChannel" class="form-control">
-       <option selected>Bank Transfer</option>
-       <option>Virtual Account</option>
-       <option>Credit Card</option>
-       <option>Debit Card</option>
-     </select>
-   </div>
- </div> 
-  <div class="form-group px-5 pt-4 d-flex justify-content-center">
-    <a href="payment-confirmation.html" id="formVal" type="submit" class="btn btn-md btn-program btn-green px-5 my-auto text-dark">Berwakaf Sekarang</a>
-  </div>
-</form>
+          <div class="card-wrapper-program pb-3">
+            <div class="container p-5">
+              <h3 class="text-green museo700 text-center pb-5">SUKSES</h3>
+               <div class="payment-title">
+                  <h3 class="text-green">Detail Pembayaran</h3>
+                  <hr>
+                </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="d-flex">
+                    <h5 class="text-dark museo700 mr-3">Nomor Invoice: </h5>
+                    <h5 class="text-dark museo700">#123456</h5>
+                  </div>
+                  <div class="d-flex pt-3">
+                    <h6 class="text-dark mr-3">Pilihan Program: </h5>
+                    <h6 class="text-danger">Ritel Wakaf</h5>
+                  </div>
+                  <div class="d-flex pt-3">
+                    <h6 class="text-dark mr-3">Jumlah Wakaf: </h5>
+                    <h6 class="text-dark">Rp. 10.000.000</h5>
+                  </div>
+                  <div class="d-flex pt-3">
+                    <h6 class="text-dark mr-3">Metode Pembayaran: </h5>
+                    <h6 class="text-dark">Virtual Account</h5>
+                  </div>
+                  <div class="d-flex pt-3">
+                    <h6 class="text-dark mr-3 my-auto">Nomor Virtual Account: </h5>
+                    <input id="copy" value="812719823" readonly="">
+                    <button class="btn ml-2" data-clipboard-target="#copy">
+                    <i class="far fa-copy"></i></button>
+                  </div>
+                  <div class="d-flex pt-3">
+                    <h6 class="text-dark mr-3">Deadline Pembayaran: </h5>
+                    <h6 class="text-dark">30-02-2019</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="payment-title pt-5">
+                  <h3 class="text-green">Cara Melakukan Pembayaran</h3>
+                  <hr>
+                </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <h6 class="museo700 text-green">BCA Virtual Account</h6>
+                  <ol class="steps-list">
+                    <li class="steps-item">Select Menu "Transaksi Lainnya" </li>
+                    <li class="steps-item">Select "Transfer"  </li>
+                    <li class="steps-item">Select "Ke rekening BCA Virtual Account"</li>
+                    <li class="steps-item">Input Virtual Account Number, eg. "123456789012XXXX" </li>
+                    <li class="steps-item"> Pick your payment receipt </li>
+                  </ol>
+                  </div>
+                  <div class="mb-3">
+                    <h6 class="museo700 text-green">Internet Banking BCA</h6>
+                  <ol class="steps-list">
+                    <li class="steps-item">Select Menu "Transaksi Lainnya" </li>
+                    <li class="steps-item">Select "Transfer"  </li>
+                    <li class="steps-item">Select "Ke rekening BCA Virtual Account"</li>
+                    <li class="steps-item">Input Virtual Account Number, eg. "123456789012XXXX" </li>
+                    <li class="steps-item"> Pick your payment receipt </li>
+                  </ol>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -212,7 +218,7 @@
               <li class="program-item"><a href="#"><h6>Perahu Wakaf</h6></a></li>
               <li class="program-item"><a href="#"><h6>Warung Wakaf</h6></a></li>
               <li class="program-item"><a href="#"><h6>Sumur Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Lumbung Ternak</h6></a></li>
+              <li class="program-item"><a href="#"><h6>Lumbung Ternak</h6></a</li>
               <li class="program-item"><a href="#"><h6>Warung Wakaf Mikro</h6></a></li>
               <li class="program-item"><a href="#"><h6>Lumbung pangan</h6></a></li>
               <li class="program-item"><a href="#"><h6>Wakaf Saham</h6></a></li>
@@ -252,10 +258,13 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.smartCart.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript">
-   
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        new ClipboardJS('#copy');
+      });
+    </script>
 </body>
 </html>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/D5zieKPEgNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
