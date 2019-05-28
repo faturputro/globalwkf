@@ -50,6 +50,7 @@
   src: local("Helvetica Light"), url("helvetica-light-587ebe5a59211.woff") format("woff"); }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -260,9 +261,9 @@ button.btn.btn-md.btn-yellow.text-dark {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 70px;
-  z-index: 2000; }
+  z-index: 4000; }
 
 .fixed-header .bg-gradient {
   background-image: linear-gradient(to right, #3AB54A, #38A495, #126839); }
@@ -470,6 +471,9 @@ a:active {
 
 a img {
   border: none; }
+
+.nav-toggle {
+  display: none; }
 
 .s-home {
   width: 100%;
@@ -795,7 +799,8 @@ a img {
   position: relative;
   margin-top: 50px;
   background-image: linear-gradient(to right, #3AB54A, #38A495, #126839);
-  min-height: 61.5vh; }
+  min-height: 61.5vh;
+  max-height: 70vh; }
 
 .news-wrapper {
   display: flex;
@@ -807,8 +812,8 @@ a img {
 
 .news-thumb {
   position: absolute;
-  width: 580px;
-  height: 344px;
+  width: 100%;
+  height: 370px;
   top: -70px;
   overflow-y: hidden; }
   .news-thumb #firstNews {
@@ -832,8 +837,7 @@ a img {
 
 ul#nav-tab {
   position: absolute;
-  bottom: 0;
-  right: 0; }
+  bottom: 0; }
 
 .news-sub-thumb {
   position: absolute;
@@ -902,7 +906,7 @@ button.btn.btn-sm.bg-green {
       font-size: 24px; }
 
 .maps-section {
-  width: auto;
+  width: 100%;
   background-image: url("assets/images/img/bg-grey-sm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -916,6 +920,10 @@ button.btn.btn-sm.bg-green {
     width: 100%; }
 
 .mapouter {
+  position: relative;
+  text-align: right;
+  height: 65vh;
+  width: 100%;
   margin-top: 8px;
   margin-bottom: 50px;
   border-radius: 10px;
@@ -967,8 +975,8 @@ button.btn.btn-sm.bg-green {
 
 .brand-card {
   display: block;
-  height: 100%;
-  width: 100%;
+  height: 100px;
+  width: 160px;
   margin: auto;
   background-color: white;
   border-radius: 0 22px 0 22px;
@@ -1093,7 +1101,6 @@ button.btn.btn-sm.bg-green {
     margin-top: 15%; }
 
 #card-faq {
-  height: 90vh;
   overflow-y: hidden; }
 
 .faq-container {
@@ -1329,7 +1336,7 @@ button.btn.btn-sm.bg-green {
 
 .s-single {
   background-image: url("assets/images/img/bg-grey-sm.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: 8%;
@@ -1507,3 +1514,109 @@ footer {
 
 .form-review {
   display: none; }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .fixed-header {
+    position: fixed; }
+  .main_nav {
+    display: none; }
+  .nav-toggle {
+    display: flex;
+    position: relative; }
+    .nav-toggle a {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      .nav-toggle a span {
+        font-size: 20px; }
+  .logo {
+    left: 0;
+    padding-left: 1rem; }
+  .header-carousel {
+    margin-top: 0; }
+  .top-nav {
+    display: none; }
+  .counter-wrapper {
+    height: auto;
+    padding: 20px 0; }
+  .counter-item {
+    margin: 10px 0; }
+  .program-tree {
+    height: 120vh; }
+  .svg-container {
+    width: 80vw; }
+  .tree-wrapper .program-category {
+    height: 120vh;
+    padding-bottom: 20px; }
+    .tree-wrapper .program-category .category-1, .tree-wrapper .program-category .category-2, .tree-wrapper .program-category .category-3, .tree-wrapper .program-category .category-4, .tree-wrapper .program-category .category-5, .tree-wrapper .program-category .category-6, .tree-wrapper .program-category .category-7, .tree-wrapper .program-category .category-8, .tree-wrapper .program-category .category-9, .tree-wrapper .program-category .category-10 {
+      height: 120px;
+      width: 120px; }
+  .carousel-feature {
+    width: 100%; }
+  .feature-1-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .sub-news {
+    width: 120px; }
+  .bottom-next {
+    right: 10%;
+    bottom: 60%; }
+  .bottom-prev {
+    left: 10%;
+    bottom: 60%; }
+  .tab-pane h1 {
+    max-height: 500px; }
+  .brand-section {
+    height: auto;
+    padding-bottom: 1rem; }
+    .brand-section .brand-wrapper {
+      top: 0;
+      transform: translateY(0); }
+  .brand-card {
+    width: 150px;
+    min-height: 50px; }
+    .brand-card img {
+      max-width: 100%; }
+  .s-program h2 {
+    margin-top: 5rem !important; }
+  .program-img {
+    position: relative;
+    height: auto;
+    width: 60vw; }
+  .section-title {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0 !important;
+    position: relative !important;
+    top: initial;
+    left: initial;
+    transform: none; }
+  .search-form {
+    max-width: 70%; }
+  .social-footer .social-bottom {
+    padding-left: 0; }
+  .subscribe-section {
+    height: auto;
+    padding: 20px 0; }
+  .subscribe-container {
+    display: block; }
+    .subscribe-container h6 {
+      margin: 10px 0; }
+    .subscribe-container form {
+      margin: 10px 0; }
+    .subscribe-container button {
+      position: relative !important;
+      margin-bottom: 20px; }
+  .social-item-bottom {
+    height: 30px;
+    width: 30px; }
+    .social-item-bottom a {
+      font-size: 18px; }
+  .nav-footer ul {
+    padding-left: 0; } }
