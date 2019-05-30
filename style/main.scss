@@ -1550,11 +1550,11 @@ button.btn.btn-sm.bg-green {
 
 .img-splitter{
 	width:100%;
-	height:450px;
+	height:auto;
 	overflow: hidden;
 
 	img{
-		width:1200px;
+		width:100%;
 		height:auto;
 	}
 }
@@ -2282,6 +2282,32 @@ footer {
 	.footer-logo {
 		left: 0;
 		margin-left:1rem;
+	}
+
+	.feature-profile {
+		img {
+			max-width:100%;
+		}
+	}
+
+	#sobat-gallery {
+		padding: 0 !important;
+	}
+
+	.container-pers {
+		h1 {
+			position: relative;
+			top:initial;
+			left: initial;
+			transform: none;
+			margin-left:1rem;
+			margin-right:1rem;
+			margin-top:1.5rem;
+		}
+	}
+
+	.partner-box {
+		margin-bottom:1rem;
 	}
 }
 
