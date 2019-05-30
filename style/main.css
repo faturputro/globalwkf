@@ -382,6 +382,9 @@ button.btn.btn-md.btn-yellow.text-dark {
   .slick-dots li.slick-active button {
     background-color: red; }
 
+.gallery-program {
+  margin-bottom: 20px; }
+
 a.gallery-program img {
   max-width: 100%; }
 
@@ -1546,8 +1549,6 @@ footer {
     padding: 20px 0; }
   .counter-item {
     margin: 10px 0; }
-  .program-tree {
-    height: 120vh; }
   .svg-container {
     width: 80vw; }
   .tree-wrapper .program-category {
@@ -1557,6 +1558,8 @@ footer {
       height: 120px;
       width: 120px; }
   .carousel-feature {
+    width: 100%; }
+  .feature-wrapper {
     width: 100%; }
   .feature-1-wrapper {
     padding-left: 1rem;
@@ -1619,4 +1622,27 @@ footer {
     .social-item-bottom a {
       font-size: 18px; }
   .nav-footer ul {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .news-thumb {
+    position: relative !important; }
+  ul#nav-tab {
+    position: relative !important;
+    margin: 0 !important; }
+  .berita {
+    position: relative !important;
+    top: initial;
+    margin-top: 10px; }
+  .news-section {
+    max-height: 100%; }
+  .tab-content {
+    padding: 0 !important; }
+  button.btn.btn-sm.bg-green {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+  footer {
+    height: 125%; }
+  .footer-logo {
+    left: 0;
+    margin-left: 1rem; } }
