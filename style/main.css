@@ -1584,6 +1584,15 @@ footer {
       .tree-wrapper .program-category .category-1, .tree-wrapper .program-category .category-2, .tree-wrapper .program-category .category-3, .tree-wrapper .program-category .category-4, .tree-wrapper .program-category .category-5, .tree-wrapper .program-category .category-6, .tree-wrapper .program-category .category-7, .tree-wrapper .program-category .category-8, .tree-wrapper .program-category .category-9, .tree-wrapper .program-category .category-10 {
         height: 120px;
         width: 120px; }
+  .nav-list {
+    top: 0;
+    transform: none; }
+  .nav-logo-mobile {
+    width: 50%; }
+    .nav-logo-mobile img {
+      max-width: 100%; }
+  a.btn.btn-md.btn-wakaf.text-green.museo700.h6 {
+    background-color: #B5E22B; }
   .carousel-feature {
     width: 100%; }
   .feature-wrapper {

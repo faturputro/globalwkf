@@ -2146,6 +2146,23 @@ footer {
 		}    
     }
 
+    .nav-list {
+    	top:0;
+    	transform: none;
+    }
+
+    .nav-logo-mobile {
+    	width:50%;
+
+    	img {
+    		max-width:100%;
+    	}
+    }
+
+a.btn.btn-md.btn-wakaf.text-green.museo700.h6 {
+	background-color: #B5E22B;
+}
+
     .carousel-feature {
     	width:100%;
     }
