@@ -759,10 +759,11 @@ a img {
   background-color: #3AB54A; }
 
 .sub-brand {
-  height: 100px;
-  width: 154px;
+  width: 35%;
   position: absolute;
   right: 0; }
+  .sub-brand img {
+    max-width: 100%; }
 
 .feature-1-wrapper {
   display: flex;
@@ -1512,17 +1513,40 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.mobile-container
+#menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  left: -260px;
+  height: 100%;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease; }
+
+#menu.active {
+  -webkit-transform: translate(260px, 0px);
+  -moz-transform: translate(260px, 0px);
+  -o-transform: translate(260px, 0px);
+  -ms-transform: translate(260px, 0px);
+  transform: translate(260px, 0px); }
+
 .container.wakaf-form {
   padding: 0 200px; }
 
 .form-review {
   display: none; }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 320px) and (max-width: 480px) {
   .fixed-header {
     position: fixed; }
   .main_nav {
@@ -1536,7 +1560,8 @@ footer {
       top: 50%;
       transform: translateY(-50%); }
       .nav-toggle a span {
-        font-size: 20px; }
+        font-size: 30px;
+        opacity: 0.87; }
   .logo {
     left: 0;
     padding-left: 1rem; }
@@ -1551,19 +1576,28 @@ footer {
     margin: 10px 0; }
   .svg-container {
     width: 80vw; }
-  .tree-wrapper .program-category {
-    height: 120vh;
-    padding-bottom: 20px; }
-    .tree-wrapper .program-category .category-1, .tree-wrapper .program-category .category-2, .tree-wrapper .program-category .category-3, .tree-wrapper .program-category .category-4, .tree-wrapper .program-category .category-5, .tree-wrapper .program-category .category-6, .tree-wrapper .program-category .category-7, .tree-wrapper .program-category .category-8, .tree-wrapper .program-category .category-9, .tree-wrapper .program-category .category-10 {
-      height: 120px;
-      width: 120px; }
+  .tree-wrapper {
+    overflow-x: hidden; }
+    .tree-wrapper .program-category {
+      height: 120vh;
+      padding-bottom: 20px; }
+      .tree-wrapper .program-category .category-1, .tree-wrapper .program-category .category-2, .tree-wrapper .program-category .category-3, .tree-wrapper .program-category .category-4, .tree-wrapper .program-category .category-5, .tree-wrapper .program-category .category-6, .tree-wrapper .program-category .category-7, .tree-wrapper .program-category .category-8, .tree-wrapper .program-category .category-9, .tree-wrapper .program-category .category-10 {
+        height: 120px;
+        width: 120px; }
   .carousel-feature {
     width: 100%; }
   .feature-wrapper {
     width: 100%; }
+  .feature-1 {
+    padding-top: 1.5rem;
+    flex-direction: column-reverse !important; }
   .feature-1-wrapper {
     padding-left: 1rem;
     padding-right: 1rem; }
+  .sub-brand {
+    position: relative !important;
+    float: right;
+    margin-bottom: 1rem; }
   .sub-news {
     width: 120px; }
   .bottom-next {
@@ -1642,7 +1676,7 @@ footer {
     margin-bottom: 10px;
     padding-bottom: 10px; }
   footer {
-    height: 125%; }
+    height: 125vh; }
   .footer-logo {
     left: 0;
     margin-left: 1rem; }

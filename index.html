@@ -8,18 +8,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="style/main.css" />
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css" type="text/css" media="screen" /> 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
   <!-- custom demo style -->
   <script src="js/modernizr.custom.js"></script>
@@ -35,7 +32,7 @@
             <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
           </div>
           <div class="nav-toggle">
-            <a href="Javascript:;">
+            <a href="Javascript:;" id="nav-toggle">
               <span class="txt-light">
                 <i class="fas fa-bars"></i>
               </span>
@@ -65,7 +62,7 @@
           <div class="language header_language">
             <ul class="d-flex flex-row align-items-center justify-content-center">
               <li class="language-item mr-3">
-               <div href="#" class="dropdown text-light font-weight-bold">ID <i class="fas fa-sort-down"></i>
+               <div href="#" class="dropdown text-light font-weight-bold d-flex"><span class="mr-1">ID</span> <i class="fas fa-sort-down"></i>
                   <ul class="lang dropdown-menu border-0 shadow">
                     <li class="p-0 language-list">
                       <a href="#" class="text-dark text-center">EN</a>
@@ -77,6 +74,50 @@
           </div>
         </div>
       </div>
+     <div class="mobile-container">
+        <nav id="menu" class="bg-light shadow">
+          <ul class="mobile-nav" id="mobile">
+            <ul class="nav-list">
+      <li class="text-center">
+        <a href="index.html" class="text-green page-active">Beranda</a>
+      </li>
+      <li class="text-center dropdown text-green">
+        <span class="py-2">Program Wakaf</span>
+            <ul class="dropdown-menu border-0 px-3">
+              <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>
+              <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
+              <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
+              <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
+            </ul>
+      </li>
+      <li class="text-center dropdown text-green">
+        <span class="py-2">Profil</span>
+            <ul class="dropdown-menu border-0">
+              <li class="pl-2 py-2"><a href="profile.html" class="text-green text-center">Tentang Wakaf</a></li>
+              <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Konsultasi Wakaf</a></li>
+            </ul>
+      </li>
+      <li class="text-center">
+        <a href="sobat.html" class="text-green">Sobat Berkah</a>
+      </li>
+      <li class="text-center">
+        <a href="blog.html" class="text-green">Berita</a>
+      </li>
+      <li class="text-center">
+        <a href="peta.html" class="text-green">Peta Sebaran</a>
+      </li>
+      <li class="text-center">
+        <a href="kontak.html" class="text-green">Kontak</a>
+      </li>
+    </ul>
+          </ul>
+        </nav>
+     </div>
     </header>
   </section>
   <section class="top-nav container-fluid bg-white">
@@ -230,47 +271,47 @@
 <div class="program-category">
 
   <div class="category category-1" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="ritel.html">
       <img src="style/assets/images/ritel.png">
     </a>
   </div>
   <div class="category category-2" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="perahu.html">
       <img src="style/assets/images/perahu.png">
     </a>
   </div>
   <div class="category category-3" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="sumur.html">
       <img src="style/assets/images/sumur.png">
     </a>
   </div>
   <div class="category category-4" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="warung-mobile.html">
       <img src="style/assets/images/mobile.png">
     </a>
   </div>
   <div class="category category-5" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="ternak-wakaf.html">
       <img src="style/assets/images/lumbung.png">
     </a>
   </div>
   <div class="category category-6" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="warung.html">
       <img src="style/assets/images/warung.png">
     </a>
   </div>
   <div class="category category-7" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="warung-mikro.html">
       <img src="style/assets/images/mikro.png">
     </a>
   </div>
   <div class="category category-8" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="wakaf-saham.html">
       <img src="style/assets/images/saham.png">
     </a>
   </div>
   <div class="category category-9" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
+    <a href="lumbung-pangan-wakaf.html">
       <img src="style/assets/images/pangan.png">
     </a>
   </div>
@@ -292,7 +333,7 @@
             Sobat Berkah hadir utuk memfasilitasi para pengusaha muslim untuk turut memberikan kontribusinya dalam wakaf. Sesuai dengan namanya, para pengusaha yang bergabung menjadi Sobat Berkah akan menjadi wakif teta atau agen wakaf, yang insya Allah akan lebih bersahabat dengan keberkahan.
           </p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-sm-12">
           <div class="sub-brand">
             <img src="style/assets/icons/sobat-logo.svg" />
           </div>
@@ -331,7 +372,6 @@
                   <div class="p-2">
                     <div class="carousel-feature">
                       <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
-                      
                       <h6 class="bg-green">Barokah Tour & Travel</h6>
                     </div>
                   </div>
@@ -429,19 +469,27 @@
               <div class="tab-pane fade show active news-preview p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h1 id="newsHeader" class="text-light museo700">Kelola Warung Wakaf, Kembangkan Sekolah</h1>
               <p id="newsPreview" class="text-light">Bermula dari sebuah saung bambu tempat anak-anak jalanan belajar, seiring waktu Yayasan As-Sakinah bertransformasi menjadi lembaga pendidikan untuk PAUD, SD, SMP. Lembaga pendidikan formal yang dipimpin oleh Ustaz Yusuf Maulana ini juga dilengkapi dengan pondok yang rata-rata ditempati oleh siswa SMP. </p>
+               <a href="javascript:;">
+                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                </h6>
+              </a>
               </div>
               <div class="tab-pane fade news-previews" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <h1 id="newsHeaderSecond" class="text-light museo700">Menilik Produktivitas Lahan Wakaf Serai Wangi</h1>
               <p id="newsPreview" class="text-light"> Tepat setahun, lahan wakaf seluas 110 hektare di Desa Lhok Geulumpang, Kecamatan Setia Bakti, Kabupaten Aceh Jaya dikelola menjadi area budi daya serai wangi. Saat ini, budi daya serai wangi di lahan wakaf tersebut tengah dikembangkan secara bertahap.</p>
+               <a href="javascript:;">
+                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                </h6>
+              </a>
               </div>
               <div class="tab-pane fade news-preview" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <h1 id="newsHeaderThird" class="text-light museo700">Dua Tahun Warga Lebak Manfaatkan Sumur Wakaf</h1>
               <p id="newsPreview" class="text-light">Selama bertahun-tahun, minimnya air bersih menjadi masalah di Kampung Ciomas, Desa Sindangsari, Kecamatan Sajira, Kabupaten Lebak. Biasanya, ketika kemarau datang, sungai yang menjadi sumber air warga sekitar mengalami kekeringan. Debit air akan mengecil, bahkan jika kemarau cukup..</p>
-              </div>
-              <a href="javascript:;" class="pb-5">
+               <a href="javascript:;">
                 <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
                 </h6>
               </a>
+              </div>
               <div class="row mt-5">
                 <div class="col-sm-6 d-flex align-items-center">
                   <p class="text-light">Bagikan</p>
@@ -453,7 +501,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-6">
-                  <button class="btn btn-sm bg-green">Berita Lain</button>
+                  <button class="btn btn-sm bg-green py-2 px-4">Berita Lain</button>
                 </div>
               </div>
             </div>
@@ -637,7 +685,7 @@
                       <form class="form-inline">
                           <input class="form-control mr-sm-2 search-form" type="email" placeholder="Email" aria-label="Search" />
                       </form>
-                      <button class="btn btn-sm bg-green">Berlangganan</button>
+                      <button class="btn btn-sm bg-green py-2 px-4">Berlangganan</button>
                   </div>
                 </div>
                 <div class="col-md-5">
@@ -730,48 +778,11 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick/slick.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
   <script>
    AOS.init();
-</script>
-<script>
-  $(window).scroll(function() {
-  drawLine( $('#route'),
-            document.getElementById('path') );
-});
-
-// init the line length
-  drawLine( $('#route'),
-            document.getElementById('path') );
-
-//draw the line
-function drawLine(container, line){
-  
-  var pathLength = line.getTotalLength(),
-      maxScrollTop = $(document).height() - $(window).height(),
-      percentDone = $(window).scrollTop() / maxScrollTop,
-      length = (percentDone * pathLength)*1.5;
-  line.style.strokeDasharray = [ length ,pathLength].join(' ');
-};
-</script>
-<script type="text/javascript">
-   $('[data-hover="tab"]').hover(function() {
-  $(this).tab('show')
-});
-</script>
-<script>
-  $('.header-carousel').slick({
-    dots:false,
-    adativeHeight:true,
-    autoplay:true,
-    arrows:false,
-    autoplaySpeed:5000,
-    fade:true
-  });
 </script>
 </body>
 
