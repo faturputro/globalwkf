@@ -1596,6 +1596,7 @@ footer {
   .carousel-feature {
     width: 100%; }
   .feature-wrapper {
+    background-image: url("assets/images/mobile-feature-bg.png");
     width: 100%; }
   .feature-1 {
     padding-top: 1.5rem;
