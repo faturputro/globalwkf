@@ -54,5 +54,9 @@ $("#nav-toggle").click(function(){
       $("#menu").toggleClass("active");
       $(".mobile-container").toggleClass("active");
 });
+// chevron rotate
+$(".rotate").click(function(){
+ $(this).toggleClass("down")  ; 
+})
 
 });
