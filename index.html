@@ -32,12 +32,11 @@
             <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
           </div>
           <div class="nav-toggle">
-            <a href="Javascript:;" id="nav-toggle">
-              <span class="txt-light">
-                <i class="fas fa-bars"></i>
-              </span>
-            </a>
-          
+              <button  id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
           </div>
 
           <!-- Main Nav -->
@@ -804,6 +803,27 @@
 <script type="text/javascript" src="js/main.js"></script>
   <script>
    AOS.init();
+</script>
+<script>
+  $(window).scroll(function() {
+  drawLine( $('#route'),
+            document.getElementById('path') );
+});
+
+// init the line length
+  drawLine( $('#route'),
+            document.getElementById('path') );
+
+//draw the line
+function drawLine(container, line){
+  
+  var pathLength = line.getTotalLength(),
+      maxScrollTop = $(document).height() - $(window).height(),
+      percentDone = $(window).scrollTop() / maxScrollTop,
+      length = (percentDone * pathLength)*1.5;
+  line.style.strokeDasharray = [ length ,pathLength].join(' ');
+};
+ 
 </script>
 </body>
 

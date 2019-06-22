@@ -16,6 +16,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- custom demo style -->
 
   <script src="js/modernizr.custom.js"></script>
@@ -32,12 +33,11 @@
             <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
           </div>
           <div class="nav-toggle">
-            <a href="Javascript:;" id="nav-toggle">
-              <span class="txt-light">
-                <i class="fas fa-bars"></i>
-              </span>
-            </a>
-          
+              <button  id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
           </div>
 
           <!-- Main Nav -->
@@ -73,8 +73,9 @@
           </div>
         </div>
       </div>
-           <div class="mobile-container">
-        <nav id="menu" class="bg-dark shadow">
+          <div class="mobile-container">
+      <!-- mobile nav -->
+        <nav id="menu" class="bg-dark shadow overflow-auto">
           <div class="w-100 d-flex justify-content-center mt-3 mb-4">
             <div class="nav-logo-mobile py-3">
               <img src="style/assets/icons/logo.svg">
@@ -89,13 +90,14 @@
               </li>
           </div>
           <ul class="mobile-nav pl-0" id="mobile">
-            <ul class="nav-list pl-4">
+            <ul class="nav-list pl-4" id="accordionExample">
               <li class="mb-3">
                 <a href="index.html" class="text-white page-active">Beranda</a>
               </li>
-              <li class="dropdown text-white mb-3">
-                <span class="py-2">Program Wakaf</span>
-            <ul class="dropdown-menu border-0 px-3 bg-dark">
+              <li class="text-white mb-3">
+                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Program Wakaf<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
+                <div id="collapseOne" class="collapse" aria-labelledby="nav" data-parent="#accordionExample">
+            <ul class="border-0 px-3 bg-dark">
               <li class="pl-2 py-2"><a href="perahu.html" class="text-white text-center">Perahu Wakaf</a></li>
               <li class="pl-2 py-2"><a href="ritel.html" class="text-white text-center">Ritel Wakaf</a></li>
               <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf Mobile</a></li>
@@ -106,13 +108,16 @@
               <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-white text-center">Wakaf Saham</a></li>
               <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-white text-center">Lumbung Pangan Wakaf</a></li>
             </ul>
+            </div>  
           </li>
-      <li class="dropdown text-white mb-3">
-        <span class="py-2">Profil</span>
-            <ul class="dropdown-menu border-0">
+      <li class="text-white mb-3">
+        <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Profil</a></span>
+        <div id="collapseTwo" class="collapse" aria-labelledby="nav2" data-parent="accordionExample">
+          <ul class="border-0 px-3 bg-dark">
               <li class="pl-2 py-2"><a href="profile.html" class="text-white text-center">Tentang Wakaf</a></li>
               <li class="pl-2 py-2"><a href="konsultasi.html" class="text-white text-center">Konsultasi Wakaf</a></li>
             </ul>
+        </div>     
       </li>
       <li class="mb-3">
         <a href="sobat.html" class="text-white">Sobat Berkah</a>
@@ -387,7 +392,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
   <script>
    AOS.init();
 </script>

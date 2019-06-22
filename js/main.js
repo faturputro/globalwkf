@@ -3,25 +3,6 @@
 
     $(document).ready(function(){
 
-$(window).scroll(function() {
-  drawLine( $('#route'),
-            document.getElementById('path') );
-});
-
-// init the line length
-  drawLine( $('#route'),
-            document.getElementById('path') );
-
-//draw the line
-function drawLine(container, line){
-  
-  var pathLength = line.getTotalLength(),
-      maxScrollTop = $(document).height() - $(window).height(),
-      percentDone = $(window).scrollTop() / maxScrollTop,
-      length = (percentDone * pathLength)*1.5;
-  line.style.strokeDasharray = [ length ,pathLength].join(' ');
-};
- 
  // News Tab
    $('.sub-news a').hover(function(e){
     e.preventDefault();
@@ -50,10 +31,16 @@ $('#formVal').on('click',function(){
    });
 
 // Mobile Toggle
-$("#nav-toggle").click(function(){
+$(".toggle-nav").click(function(){
       $("#menu").toggleClass("active");
       $(".mobile-container").toggleClass("active");
 });
+
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
 // chevron rotate
 $(".rotate").click(function(){
  $(this).toggleClass("down")  ; 
