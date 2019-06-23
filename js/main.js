@@ -14,8 +14,7 @@
   });
 
   // Slick
-  $('.header-carousel').slick({
-    dots:true,
+  $('.header-carousel , .header-carousel-mobile').slick({
     adativeHeight:true,
     autoplay:true,
     arrows:false,

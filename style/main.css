@@ -630,6 +630,9 @@ ul.offCanvas_menu_social li a:hover {
     .header-carousel div img {
       max-height: 100%; }
 
+.header-carousel-mobile {
+  display: none !important; }
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -1184,7 +1187,7 @@ ul#nav-tab {
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .hamburger--squeeze .hamburger-inner::before {
-  transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+  transition: top 0.075s 0.12s ease, 0.075s ease; }
 
 .hamburger--squeeze .hamburger-inner::after {
   transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
@@ -1197,7 +1200,7 @@ ul#nav-tab {
 .hamburger--squeeze.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+  transition: top 0.075s ease, 0.075s 0.12s ease; }
 
 .hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1921,8 +1924,11 @@ footer {
       top: 50%;
       transform: translateY(-50%); }
       .nav-toggle button span {
-        font-size: 30px;
-        opacity: 0.87; }
+        font-size: 30px; }
+  .header-carousel {
+    display: none !important; }
+  .header-carousel-mobile {
+    display: block !important; }
   .header_language {
     display: none; }
   .logo {
@@ -2068,4 +2074,10 @@ footer {
   .partner-box {
     margin-bottom: 1rem; }
   .wakaf-form {
-    padding: 0 !important; } }
+    padding: 0 !important; }
+  .sidebar-wrapper {
+    display: none; }
+  .blog-img-container {
+    margin: auto;
+    width: 100% !important;
+    min-height: 0 !important; } }
