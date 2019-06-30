@@ -7,14 +7,6 @@
 	src: url(assets/fonts/Museo-700.otf);
   }
 
- @font-face {
-font-family: 'Helvetica';
-font-style: normal;
-font-weight: normal;
-src: local('Helvetica'), url('Helvetica.woff') format('woff');
-}
-
-
 @font-face {
 font-family: 'Helvetica Oblique';
 font-style: normal;
@@ -37,15 +29,6 @@ font-style: normal;
 font-weight: normal;
 src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
 }
-
-
-@font-face {
-font-family: 'Helvetica';
-font-style: normal;
-font-weight: normal;
-src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
-}
-
 
 @font-face {
 font-family: 'Helvetica Bold Oblique';
@@ -111,7 +94,7 @@ ol{
 	color:#909090;
 }
 
-strong{
+strong {
 	font-family: museo700;
 }
 
@@ -133,12 +116,12 @@ label{
 }
 input.form-control.mr-sm-2.search-form {
     border-radius: 27px;
-    width:280px;
+    width:110%;
     height:32px;
     border: none;
 
     &:active,
-    &:focues{
+    &:focus{
     	border:none;
     }
 }
@@ -732,7 +715,7 @@ ul.offCanvas_menu_social li a:hover {
 
 .header-carousel{
 	height:70vh;
-	margin-top: 7.3vh;
+	margin-top: 14.3vh;
 	z-index: -1000;
 
 	div{
@@ -1623,6 +1606,10 @@ button.btn.btn-sm.bg-green {
 	margin-bottom: 50px;
 	border-radius: 10px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#gmap_canvas {
+	border-radius:10px;
 }
 
 .marker{
@@ -2530,6 +2517,47 @@ footer {
     			height: 120px;
     			width: 120px;
 			}
+
+			 .category-1 {
+    			margin:-111% 0 0 65px !important;
+		    }
+
+		    .category-2 {
+		    	margin: -96% 0 0 -46% !important;
+		    }
+
+		    .category-3 {
+		    	margin: -7% 0 0 9% !important;
+		    }
+
+		    .category-4 {
+		    	margin:0 0 0 -49% !important;
+		    }
+
+		    .category-5 {
+		    	margin:38% 0 0 19% !important;
+		    }
+
+		    .category-6 {
+		    	margin:60% 1px 0 -43% !important;
+		    }
+
+		    .category-7 {
+		    	margin:89% 0 0 17% !important;
+		    }
+
+		    .category-8 {
+		    	margin:108% 0 0 -50% !important;
+		    }
+
+		    .category-9 {
+		    	margin:159% 0 0 17% !important;
+		    } 
+
+		    .category-10 {
+		    	margin:190% 0 0 -43% !important;
+		    }
+
 		}    
     }
 
@@ -2576,7 +2604,7 @@ a.btn.btn-md.btn-wakaf.text-green.museo700.h6 {
     }
 
     .sub-news {
-    	width: 120px;
+    	width: 32%;
     }
 
     // bootstrap overrides
