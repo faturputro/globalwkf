@@ -1908,6 +1908,9 @@ footer {
 .form-review {
   display: none; }
 
+.sobat-item {
+  display: none; }
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2000,6 +2003,8 @@ footer {
     background-color: #B5E22B; }
   .carousel-feature {
     width: 100%; }
+  #carouselProgram .carousel-inner .carousel-item .row .col-sm-4.px-2 {
+    margin-bottom: 2.5rem; }
   .feature-wrapper {
     background-image: url("assets/images/mobile-feature-bg.png");
     width: 100%; }
@@ -2117,3 +2122,8 @@ footer {
     margin: auto;
     width: 100% !important;
     min-height: 0 !important; } }
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .brand-card {
+    width: 125px;
+    height: 70px; } }

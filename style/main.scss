@@ -2533,6 +2533,10 @@ footer {
     display: none;
 }
 
+.sobat-item {
+	display: none;
+}
+
 // =====================================
 // ============== RESPONSIVE ===========
 //======================================
@@ -2613,7 +2617,7 @@ footer {
         position: relative;
         width: auto;
         height: 1000px;
-       
+
         svg {
             position: relative;
         }
@@ -2677,6 +2681,19 @@ footer {
 
     .carousel-feature {
         width: 100%;
+    }
+
+    #carouselProgram {
+
+    	.carousel-inner {
+    		.carousel-item {
+    			.row {
+    				.col-sm-4.px-2 {
+    					margin-bottom: 2.5rem;
+    				}
+    			}
+    		}
+    	}
     }
 
     .feature-wrapper {
@@ -2885,4 +2902,13 @@ footer {
         width: 100% !important;
         min-height: 0 !important;
     }
+}
+
+// Small Devices
+
+@media (min-width: 320px) and (max-width: 568px) {
+	.brand-card {
+		width:125px;
+		height:70px;
+	}
 }
