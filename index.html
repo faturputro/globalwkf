@@ -1,817 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Global Wakaf</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style/main.css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous" />
+    <title>Global Wakaf</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-  <!-- custom demo style -->
-  <script src="js/modernizr.custom.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <!-- custom demo style -->
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
-  <section>
-    <header class="fixed-header bg-gradient">
-      <div class="header_wrap d-flex flex-row align-items-center justify-content-center py-0">
+    <section>
+        <header class="fixed-header bg-gradient">
+            <div class="header_wrap d-flex flex-row align-items-center justify-content-center py-0">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
+                    </div>
+                    <div class="nav-toggle">
+                        <button id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Main Nav -->
+                    <nav class="main_nav">
+                        <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
+                            <li>
+                                <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <form class="example" action="action_page.php">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                    <input type="text" placeholder="Search.." name="search">
+                                </form>
+                            </li>
+                            <li>
+                                <a href="wakaf-form.html" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- language -->
+                    <div class="language header_language">
+                        <ul class="d-flex flex-row align-items-center justify-content-center">
+                            <li class="language-item mr-3">
+                                <div href="#" class="dropdown text-light font-weight-bold d-flex"><span class="mr-1">ID</span> <i class="fas fa-sort-down"></i>
+                                    <ul class="lang dropdown-menu border-0 shadow">
+                                        <li class="p-0 language-list">
+                                            <a href="#" class="text-dark text-center">EN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-container">
+                <!-- mobile nav -->
+                <nav id="menu" class="bg-dark shadow overflow-auto">
+                    <div class="w-100 d-flex justify-content-center mt-3 mb-4">
+                        <div class="nav-logo-mobile py-3">
+                            <img src="style/assets/icons/logo.svg">
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-5 d-flex justify-content-center">
+                        <li class="d-flex align-items-center">
+                            <form class="example" action="action_page.php">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                                <input type="text" placeholder="Search.." name="search">
+                            </form>
+                        </li>
+                    </div>
+                    <ul class="mobile-nav pl-0" id="mobile">
+                        <ul class="nav-list pl-4" id="accordionExample">
+                            <li class="mb-3">
+                                <a href="index.html" class="text-white page-active">Beranda</a>
+                            </li>
+                            <li class="text-white mb-3">
+                                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Program Wakaf<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
+                                <div id="collapseOne" class="collapse" aria-labelledby="nav" data-parent="#accordionExample">
+                                    <ul class="border-0 px-3 bg-dark">
+                                        <li class="pl-2 py-2"><a href="perahu.html" class="text-white text-center">Perahu Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="ritel.html" class="text-white text-center">Ritel Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf Mobile</a></li>
+                                        <li class="pl-2 py-2"><a href="sumur.html" class="text-white text-center">Sumur Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-white text-center">Lumbung Ternak Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf Mikro</a></li>
+                                        <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-white text-center">Wakaf Saham</a></li>
+                                        <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-white text-center">Lumbung Pangan Wakaf</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="text-white mb-3">
+                                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Profil<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="nav2" data-parent="#accordionExample">
+                                    <ul class="border-0 px-3 bg-dark">
+                                        <li class="pl-2 py-2"><a href="profile.html" class="text-white text-center">Tentang Wakaf</a></li>
+                                        <li class="pl-2 py-2"><a href="konsultasi.html" class="text-white text-center">Konsultasi Wakaf</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="sobat.html" class="text-white">Sobat Berkah</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="blog.html" class="text-white">Berita</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="peta.html" class="text-white">Peta Sebaran</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="kontak.html" class="text-white">Kontak</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a href="wakaf-form.html" class="btn btn-md btn-wakaf text-green museo700 h6 mt-3 px-4">Wakaf Sekarang</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="top-nav container-fluid bg-white">
+        <ul class="nav-list row no-gutters d-flex justify-content-center align-items-bottom">
+            <li class="col text-center">
+                <a href="index.html" class="text-green page-active">Beranda</a>
+            </li>
+            <li class="col text-center dropdown text-green">
+                <span class="py-2">Program Wakaf</span>
+                <ul class="dropdown-menu border-0 px-3">
+                    <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>h
+                    <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
+                    <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
+                    <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
+                </ul>
+            </li>
+            <li class="col text-center dropdown text-green">
+                <span class="py-2">Profil</span>
+                <ul class="dropdown-menu border-0">
+                    <li class="pl-2 py-2"><a href="profile.html" class="text-green text-center">Tentang Wakaf</a></li>
+                    <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Konsultasi Wakaf</a></li>
+                </ul>
+            </li>
+            <li class="col text-center">
+                <a href="sobat.html" class="text-green">Sobat Berkah</a>
+            </li>
+            <li class="col text-center">
+                <a href="blog.html" class="text-green">Berita</a>
+            </li>
+            <li class="col text-center">
+                <a href="peta.html" class="text-green">Peta Sebaran</a>
+            </li>
+            <li class="col text-center">
+                <a href="kontak.html" class="text-green">Kontak</a>
+            </li>
+        </ul>
+    </section>
+    <section class="header-carousel">
+        <div>
+            <img class="d-block w-100" src="style/assets/images/WEBBANNER-01.jpg" alt="First slide">
+            <img class="d-block" src="">
+        </div>
+        <div>
+            <img class="d-block w-100" src="style/assets/images/WEBBANNER-02.jpg" alt="Second slide">
+        </div>
+        <div>
+            <img class="d-block w-100" src="style/assets/images/WEBBANNER-03.jpg" alt="Third slide">
+        </div>
+        <div>
+            <img class="d-block w-100" src="style/assets/images/WEBBANNER-04.jpg" alt="Fourth slide">
+        </div>
+        <div>
+            <img class="d-block w-100" src="style/assets/images/WEBBANNER-05.jpg" alt="Fifth slide">
+        </div>
+    </section>
+    <section class="header-carousel-mobile">
+        <div>
+            <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
+        </div>
+        <div>
+            <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
+        </div>
+        <div>
+            <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
+        </div>
+    </section>
+    <section class="counter-wrapper">
         <div class="container">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
-          </div>
-          <div class="nav-toggle">
-              <button  id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
-          </div>
-
-          <!-- Main Nav -->
-          <nav class="main_nav">
-            <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
-              <li>
-                <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
-              </li>
-              <li class="d-flex align-items-center">
-               <form class="example" action="action_page.php">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                  <input type="text" placeholder="Search.." name="search">  
-                </form>
-              </li>
-              <li>
-                <a href="wakaf-form.html" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- language -->
-          <div class="language header_language">
-            <ul class="d-flex flex-row align-items-center justify-content-center">
-              <li class="language-item mr-3">
-               <div href="#" class="dropdown text-light font-weight-bold d-flex"><span class="mr-1">ID</span> <i class="fas fa-sort-down"></i>
-                  <ul class="lang dropdown-menu border-0 shadow">
-                    <li class="p-0 language-list">
-                      <a href="#" class="text-dark text-center">EN</a>
-                    </li>
-                  </ul>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-4 p-0">
+                    <div class="counter-item">
+                        <div class="counter-details">
+                            <h5 class="text-center text-light">Jumlah Pewakaf</h5>
+                            <h1>
+                                123890 <img src="style/assets/icons/Asset 7.svg" class="h-30" />
+                            </h1>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-     <div class="mobile-container">
-      <!-- mobile nav -->
-        <nav id="menu" class="bg-dark shadow overflow-auto">
-          <div class="w-100 d-flex justify-content-center mt-3 mb-4">
-            <div class="nav-logo-mobile py-3">
-              <img src="style/assets/icons/logo.svg">
-            </div>
-          </div>
-          <div class="mt-3 mb-5 d-flex justify-content-center">
-            <li class="d-flex align-items-center">
-               <form class="example" action="action_page.php">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                  <input type="text" placeholder="Search.." name="search">  
-                </form>
-              </li>
-          </div>
-          <ul class="mobile-nav pl-0" id="mobile">
-            <ul class="nav-list pl-4" id="accordionExample">
-              <li class="mb-3">
-                <a href="index.html" class="text-white page-active">Beranda</a>
-              </li>
-              <li class="text-white mb-3">
-                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Program Wakaf<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
-                <div id="collapseOne" class="collapse" aria-labelledby="nav" data-parent="#accordionExample">
-            <ul class="border-0 px-3 bg-dark">
-              <li class="pl-2 py-2"><a href="perahu.html" class="text-white text-center">Perahu Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="ritel.html" class="text-white text-center">Ritel Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf Mobile</a></li>
-              <li class="pl-2 py-2"><a href="sumur.html" class="text-white text-center">Sumur Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-white text-center">Lumbung Ternak Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-white text-center">Warung Wakaf Mikro</a></li>
-              <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-white text-center">Wakaf Saham</a></li>
-              <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-white text-center">Lumbung Pangan Wakaf</a></li>
-            </ul>
-            </div>  
-          </li>
-      <li class="text-white mb-3">
-        <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Profil<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
-        <div id="collapseTwo" class="collapse" aria-labelledby="nav2" data-parent="#accordionExample">
-          <ul class="border-0 px-3 bg-dark">
-              <li class="pl-2 py-2"><a href="profile.html" class="text-white text-center">Tentang Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="konsultasi.html" class="text-white text-center">Konsultasi Wakaf</a></li>
-            </ul>
-        </div>     
-      </li>
-      <li class="mb-3">
-        <a href="sobat.html" class="text-white">Sobat Berkah</a>
-      </li>
-      <li class="mb-3">
-        <a href="blog.html" class="text-white">Berita</a>
-      </li>
-      <li class="mb-3">
-        <a href="peta.html" class="text-white">Peta Sebaran</a>
-      </li>
-      <li class="mb-3">
-        <a href="kontak.html" class="text-white">Kontak</a>
-      </li>
-    </ul>
-          </ul>
-        <div class="d-flex justify-content-center">
-          <a href="wakaf-form.html" class="btn btn-md btn-wakaf text-green museo700 h6 mt-3 px-4">Wakaf Sekarang</a>
-        </div>    
-        </nav>
-     </div>
-    </header>
-  </section>
-  <section class="top-nav container-fluid bg-white">
-    <ul class="nav-list row no-gutters d-flex justify-content-center align-items-bottom">
-      <li class="col text-center">
-        <a href="index.html" class="text-green page-active">Beranda</a>
-      </li>
-      <li class="col text-center dropdown text-green">
-        <span class="py-2">Program Wakaf</span>
-            <ul class="dropdown-menu border-0 px-3">
-              <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>
-              <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
-              <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
-              <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
-            </ul>
-      </li>
-      <li class="col text-center dropdown text-green">
-        <span class="py-2">Profil</span>
-            <ul class="dropdown-menu border-0">
-              <li class="pl-2 py-2"><a href="profile.html" class="text-green text-center">Tentang Wakaf</a></li>
-              <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Konsultasi Wakaf</a></li>
-            </ul>
-      </li>
-      <li class="col text-center">
-        <a href="sobat.html" class="text-green">Sobat Berkah</a>
-      </li>
-      <li class="col text-center">
-        <a href="blog.html" class="text-green">Berita</a>
-      </li>
-      <li class="col text-center">
-        <a href="peta.html" class="text-green">Peta Sebaran</a>
-      </li>
-      <li class="col text-center">
-        <a href="kontak.html" class="text-green">Kontak</a>
-      </li>
-    </ul>
-  </section>
-  <section class="header-carousel">
-        <div>
-          <img class="d-block w-100" src="style/assets/images/WEBBANNER-01.jpg" alt="First slide">
-          <img class="d-block" src="">
-        </div>
-        <div>
-          <img class="d-block w-100" src="style/assets/images/WEBBANNER-02.jpg" alt="Second slide">
-        </div>
-        <div>
-          <img class="d-block w-100" src="style/assets/images/WEBBANNER-03.jpg" alt="Third slide">
-        </div>
-        <div>
-          <img class="d-block w-100" src="style/assets/images/WEBBANNER-04.jpg" alt="Fourth slide">
-        </div>
-        <div>
-          <img class="d-block w-100" src="style/assets/images/WEBBANNER-05.jpg" alt="Fifth slide">
-        </div>
-  </section>
-  <section class="header-carousel-mobile">
-    <div>
-      <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
-    </div>
-     <div>
-      <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
-    </div>
-     <div>
-      <img src="style/assets/images/header.jpg" class="img-fluid" alt="header">
-    </div>
-  </section>
-  <section class="counter-wrapper">
-    <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-4 p-0">
-          <div class="counter-item">
-             <div class="counter-details">
-                <h5 class="text-center text-light">Jumlah Pewakaf</h5>
-              <h1>
-                123890 <img src="style/assets/icons/Asset 7.svg" class="h-30" />
-              </h1>
-             </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="counter-item">
-            <div class="counter-details">
-              <h5 class="text-center text-light">Harta Wakaf Dalam Rupiah</h5>
-              <h1 class="mx-4">
-                123890 <img src="style/assets/icons/Asset 6.svg" class="h-30" />
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="counter-item">
-           <div class="counter-details">
-              <h5 class="text-center text-light">Penerima Wakaf</h5>
-              <h1>
-                123890 <img src="style/assets/icons/Asset 5.svg" class="h-30" />
-              </h1>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<section class="program-tree">
-    <div class="tree-title my-4">
-    <h3 class="text-center">Program <strong>Wakaf</strong> </h3>
-  </div>
-  <div class="program-wrapper d-flex justify-content-center">
-    <div class="tree-wrapper">
-      <svg id="route" width="1500" height="1600" xmlns="http://www.w3.org/2000/svg">
-        <g>
-         <title>Layer 1</title>
-         <g id="svg_1">
-          <rect x="-1" y="-1" width="1502" height="1602" id="canvas_background" fill="none"/>
-          <g id="canvasGrid" display="none">
-           <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="none"/>
-          </g>
-         </g>
-         <g id="svg_13">
-          <path id="path" fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,49.99998c0,0 0,1148.57093 0,1148.57093c0,0 0,-1148.57093 0,-1148.57093z" id="path"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,255.71417c0,0 145.71422,-24.2857 145.71422,-24.2857l-145.71422,24.2857z" id="svg_3"/> 
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,297.14273c0,0 -167.14279,-38.57141 -167.85741,-38.57142l167.85741,38.57142z" id="svg_4"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,642.85686c0,0 85.71425,-37.14284 84.99962,-37.14285l-84.99962,37.14285z" id="svg_5"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,668.57114c0,0 -355.71413,-69.99997 -355.71413,-69.99997l355.71413,69.99997z" id="svg_6"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,822.85678c0,0 394.28554,-88.57139 394.28554,-88.57139l-394.28554,88.57139z" id="svg_7"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,869.99962c0,0 -137.1428,-5.71428 -137.85742,-5.7143l137.85742,5.7143z" id="svg_8"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,942.85673c0,0 258.57131,44.2857 258.57131,44.2857l-258.57131,-44.2857z" id="svg_9"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,982.85671c0,0 -294.28559,137.1428 -294.28559,137.1428l294.28559,-137.1428z" id="svg_10"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,1108.57095c0,0 189.99991,159.99993 189.28528,159.99989l-189.28528,-159.99989z" id="svg_11"/>
-          <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,1194.28519c0,0 -72.85711,115.71424 -73.57173,115.7142l73.57173,-115.7142z" id="svg_12"/>
-         </g>
-         <ellipse ry="13.5" rx="13.5" id="svg_14" cy="36.5" cx="746.5" stroke-width="9" stroke="#ececec" fill="#fff"/>
-        </g>
-       </svg>
-<div class="program-category">
-
-  <div class="category category-1" data-aos="fade-up" data-aos-duration="500">
-    <a href="ritel.html">
-      <img src="style/assets/images/ritel.png">
-    </a>
-  </div>
-  <div class="category category-2" data-aos="fade-up" data-aos-duration="500">
-    <a href="perahu.html">
-      <img src="style/assets/images/perahu.png">
-    </a>
-  </div>
-  <div class="category category-3" data-aos="fade-up" data-aos-duration="500">
-    <a href="sumur.html">
-      <img src="style/assets/images/sumur.png">
-    </a>
-  </div>
-  <div class="category category-4" data-aos="fade-up" data-aos-duration="500">
-    <a href="warung-mobile.html">
-      <img src="style/assets/images/mobile.png">
-    </a>
-  </div>
-  <div class="category category-5" data-aos="fade-up" data-aos-duration="500">
-    <a href="ternak-wakaf.html">
-      <img src="style/assets/images/lumbung.png">
-    </a>
-  </div>
-  <div class="category category-6" data-aos="fade-up" data-aos-duration="500">
-    <a href="warung.html">
-      <img src="style/assets/images/warung.png">
-    </a>
-  </div>
-  <div class="category category-7" data-aos="fade-up" data-aos-duration="500">
-    <a href="warung-mikro.html">
-      <img src="style/assets/images/mikro.png">
-    </a>
-  </div>
-  <div class="category category-8" data-aos="fade-up" data-aos-duration="500">
-    <a href="wakaf-saham.html">
-      <img src="style/assets/images/saham.png">
-    </a>
-  </div>
-  <div class="category category-9" data-aos="fade-up" data-aos-duration="500">
-    <a href="lumbung-pangan-wakaf.html">
-      <img src="style/assets/images/pangan.png">
-    </a>
-  </div>
-    <div class="category category-10" data-aos="fade-up" data-aos-duration="500">
-    <a href="program.html">
-      <img src="style/assets/images/bottom.png">
-    </a>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-  <div class="feature-wrapper">
-    <div class="container pb-5">
-      <div class="feature-1 row">
-        <div class="col-lg-6 col-sm-12">
-          <h3>SOBAT BERKAH <strong>GLOBAL WAKAF</strong></h3>
-          <p>
-            Sobat Berkah hadir utuk memfasilitasi para pengusaha muslim untuk turut memberikan kontribusinya dalam wakaf. Sesuai dengan namanya, para pengusaha yang bergabung menjadi Sobat Berkah akan menjadi wakif teta atau agen wakaf, yang insya Allah akan lebih bersahabat dengan keberkahan.
-          </p>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="sub-brand">
-            <img src="style/assets/icons/sobat-logo.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="feature-1-wrapper row">
-        <div id="carouselSobat" class="carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-card">
-                <div class="d-flex">
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
-                      
-                      <h6 class="bg-green">Barokah Tour & Travel</h6>
+                <div class="col-md-4 p-0">
+                    <div class="counter-item">
+                        <div class="counter-details">
+                            <h5 class="text-center text-light">Harta Wakaf Dalam Rupiah</h5>
+                            <h1 class="mx-4">
+                                123890 <img src="style/assets/icons/Asset 6.svg" class="h-30" />
+                            </h1>
+                        </div>
                     </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
-                      <h6 class="bg-green">Gudang Rottie</h6>
-                    </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
-                      <h6 class="bg-green">Elzatta Hijab</h6>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-               <div class="d-flex">
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
-                      <h6 class="bg-green">Barokah Tour & Travel</h6>
+                <div class="col-md-4 p-0">
+                    <div class="counter-item">
+                        <div class="counter-details">
+                            <h5 class="text-center text-light">Penerima Wakaf</h5>
+                            <h1>
+                                123890 <img src="style/assets/icons/Asset 5.svg" class="h-30" />
+                            </h1>
+                        </div>
                     </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
-                      <h6 class="bg-green">Gudang Rottie</h6>
-                    </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
-                      <h6 class="bg-green">Elzatta Hijab</h6>
-                    </div>
-                  </div>
                 </div>
             </div>
-            <div class="carousel-item">
-              <div class="d-flex">
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
-                      <h6 class="bg-green">Barokah Tour & Travel</h6>
-                    </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
-                      <h6 class="bg-green">Gudang Rottie</h6>
-                    </div>
-                  </div>
-                  <div class="p-2">
-                    <div class="carousel-feature">
-                      <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
-                      <h6 class="bg-green">Elzatta Hijab</h6>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <a class="carousel-control-prev" href="#carouselSobat" role="button" data-slide="prev">
-              <div class="bottom-prev bg-white mr-5">
-                  <i class="fas fa-angle-left"></i>
-              </div>
-          </a>
-            <ol class="carousel-indicators">
-              <li data-target="#carouselSobat" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselSobat" data-slide-to="1"></li>
-              <li data-target="#carouselSobat" data-slide-to="2"></li>
-            </ol>
-            <a class="carousel-control-next" href="#carouselSobat" role="button" data-slide="next">
-            <div class="bottom-next bg-white">
-                <i class="fas fa-angle-right"></i>
-            </div>
-          </a>
-              <a href="sobat.html" class="btn btn-md mt-5 bg-white btn-green text-dark museo700">Selengkapnya</a>
-          </div>
-
         </div>
-      </div>
-
-    </div>
-     <div class="news-section shadow">
-    <div class="news-wrapper container">
-      <div class="news-bar">
-          <div class="row">
-          <div class="col-sm-6 p-0">
-            <div class="news-thumb p-0">
-                  <iframe
-            src="https://www.youtube.com/embed/7cLCxYWas8k" style="border:none;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 h-100">
-            </iframe>
-                </div>
-                <ul class="nav nav-tabs d-flex w-100 mx-2" id="nav-tab" role="tablist" data-hover="tab">
-                    <li class="sub-news">
-                      <a id="nav-home-tab" href="#nav-home" class="nav-item news-1 border-0 nav-link active" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">
-                          <img src="style/assets/images/article1.jpeg">
+    </section>
+    <section class="program-tree">
+        <div class="tree-title my-4">
+            <h3 class="text-center">Program <strong>Wakaf</strong> </h3>
+        </div>
+        <div class="program-wrapper d-flex justify-content-center pb-5">
+            <div class="tree-wrapper">
+                <svg id="route" width="1500" height="1600" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <g id="svg_1">
+                            <rect x="-1" y="-1" width="1502" height="1602" id="canvas_background" fill="none" />
+                            <g id="canvasGrid" display="none">
+                                <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="none" />
+                            </g>
+                        </g>
+                        <g id="svg_13">
+                            <path id="path" fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,49.99998c0,0 0,1148.57093 0,1148.57093c0,0 0,-1148.57093 0,-1148.57093z" id="path" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,255.71417c0,0 145.71422,-24.2857 145.71422,-24.2857l-145.71422,24.2857z" id="svg_3" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,297.14273c0,0 -167.14279,-38.57141 -167.85741,-38.57142l167.85741,38.57142z" id="svg_4" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,642.85686c0,0 85.71425,-37.14284 84.99962,-37.14285l-84.99962,37.14285z" id="svg_5" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,668.57114c0,0 -355.71413,-69.99997 -355.71413,-69.99997l355.71413,69.99997z" id="svg_6" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,822.85678c0,0 394.28554,-88.57139 394.28554,-88.57139l-394.28554,88.57139z" id="svg_7" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,869.99962c0,0 -137.1428,-5.71428 -137.85742,-5.7143l137.85742,5.7143z" id="svg_8" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,942.85673c0,0 258.57131,44.2857 258.57131,44.2857l-258.57131,-44.2857z" id="svg_9" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,982.85671c0,0 -294.28559,137.1428 -294.28559,137.1428l294.28559,-137.1428z" id="svg_10" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,1108.57095c0,0 189.99991,159.99993 189.28528,159.99989l-189.28528,-159.99989z" id="svg_11" />
+                            <path fill="#fff" stroke="#ececec" stroke-width="9" d="m746.42857,1194.28519c0,0 -72.85711,115.71424 -73.57173,115.7142l73.57173,-115.7142z" id="svg_12" />
+                        </g>
+                        <ellipse ry="13.5" rx="13.5" id="svg_14" cy="36.5" cx="746.5" stroke-width="9" stroke="#ececec" fill="#fff" />
+                    </g>
+                </svg>
+                <div class="program-category">
+                    <div class="category category-1" data-aos="fade-up" data-aos-duration="500">
+                        <a href="ritel.html">
+                            <img src="style/assets/images/ritel.png">
                         </a>
+                    </div>
+                    <div class="category category-2" data-aos="fade-up" data-aos-duration="500">
+                        <a href="perahu.html">
+                            <img src="style/assets/images/perahu.png">
+                        </a>
+                    </div>
+                    <div class="category category-3" data-aos="fade-up" data-aos-duration="500">
+                        <a href="sumur.html">
+                            <img src="style/assets/images/sumur.png">
+                        </a>
+                    </div>
+                    <div class="category category-4" data-aos="fade-up" data-aos-duration="500">
+                        <a href="warung-mobile.html">
+                            <img src="style/assets/images/mobile.png">
+                        </a>
+                    </div>
+                    <div class="category category-5" data-aos="fade-up" data-aos-duration="500">
+                        <a href="ternak-wakaf.html">
+                            <img src="style/assets/images/lumbung.png">
+                        </a>
+                    </div>
+                    <div class="category category-6" data-aos="fade-up" data-aos-duration="500">
+                        <a href="warung.html">
+                            <img src="style/assets/images/warung.png">
+                        </a>
+                    </div>
+                    <div class="category category-7" data-aos="fade-up" data-aos-duration="500">
+                        <a href="warung-mikro.html">
+                            <img src="style/assets/images/mikro.png">
+                        </a>
+                    </div>
+                    <div class="category category-8" data-aos="fade-up" data-aos-duration="500">
+                        <a href="wakaf-saham.html">
+                            <img src="style/assets/images/saham.png">
+                        </a>
+                    </div>
+                    <div class="category category-9" data-aos="fade-up" data-aos-duration="500">
+                        <a href="lumbung-pangan-wakaf.html">
+                            <img src="style/assets/images/pangan.png">
+                        </a>
+                    </div>
+                    <div class="category category-10" data-aos="fade-up" data-aos-duration="500">
+                        <a href="program.html">
+                            <img src="style/assets/images/bottom.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tree-wrapper-mobile">
+                <svg width="375" height="999.9999999999999" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect fill="none" id="canvas_background" height="1002" width="377" y="-1" x="-1" />
+                        <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                            <rect fill="none" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+                        </g>
+                    </g>
+                    <g>
+                        <ellipse ry="9.28571" rx="9.28571" id="svg_1" cy="47.62499" cx="193.64278" stroke-width="5" stroke="#ececec" fill="#fff" />
+                        <path stroke="#ececec" id="svg_2" d="m193.92857,59.19643c0,0 -1.42857,896.45614 -2.5,895.66061c1.07143,0.79554 2.5,-895.66061 2.5,-895.66061z" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="#fff" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="955.92756" x2="306.49998" y1="953.92756" x1="78.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="170.87501" x2="308.49998" y1="168.87501" x1="80.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="350.87499" x2="308.49998" y1="348.87499" x1="80.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="550.87498" x2="308.49998" y1="548.87498" x1="80.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_7" y2="756.87496" x2="306.49998" y1="754.87496" x1="78.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
+                    </g>
+                </svg>
+               <div class="d-flex justify-content-center">
+               	 <div class="program-category-mobile">
+                	<div class="row no-gutters">
+                		<div class="col">
+                			 <div class="category category-1 mr-1">
+                        <a href="ritel.html">
+                            <img src="style/assets/images/ritel.png">
+                        </a>
+                    </div>
+                		</div>
+                		<div class="col">
+                			<div class="category category-2">
+                        <a href="perahu.html">
+                            <img src="style/assets/images/perahu.png">
+                        </a>
+                    </div>
+                		</div>
+                	</div>
+                	<div class="row no-gutters mb-4">
+                		<div class="col">
+                			 <div class="category category-3">
+                        <a href="sumur.html">
+                            <img src="style/assets/images/sumur.png">
+                        </a>
+                    </div>
+                		</div>
+                		<div class="col">
+                			 <div class="category category-4">
+                        <a href="warung-mobile.html">
+                            <img src="style/assets/images/mobile.png">
+                        </a>
+                    </div>
+                		</div>
+                	</div>
+                	<div class="row no-gutters mb-4">
+                		<div class="col">
+                			  <div class="category category-5">
+                        <a href="ternak-wakaf.html">
+                            <img src="style/assets/images/lumbung.png">
+                        </a>
+                    </div>
+                		</div>
+                		<div class="col">
+                			 <div class="category category-6">
+                        <a href="warung.html">
+                            <img src="style/assets/images/warung.png">
+                        </a>
+                    </div>
+                		</div>
+                	</div>
+                	<div class="row no-gutters mb-4">
+                		<div class="col">
+                			 <div class="category category-7 mr-2">
+                        <a href="warung-mikro.html">
+                            <img src="style/assets/images/mikro.png">
+                        </a>
+                    </div>
+                		</div>
+                		<div class="col">
+                			 <div class="category category-8">
+                        <a href="wakaf-saham.html">
+                            <img src="style/assets/images/saham.png">
+                        </a>
+                    </div>
+                		</div>
+                	</div>
+                	<div class="row no-gutters">
+                		<div class="col">
+                			  <div class="category category-9">
+                        <a href="lumbung-pangan-wakaf.html">
+                            <img src="style/assets/images/pangan.png">
+                        </a>
+                    </div>
+                		</div>
+                		<div class="col">
+                			 <div class="category category-10">
+                        <a href="program.html">
+                            <img src="style/assets/images/bottom.png">
+                        </a>
+                    </div>
+                		</div>
+                	</div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <div class="feature-wrapper">
+        <div class="container pb-5">
+            <div class="feature-1 row">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>SOBAT BERKAH <strong>GLOBAL WAKAF</strong></h3>
+                    <p>
+                        Sobat Berkah hadir utuk memfasilitasi para pengusaha muslim untuk turut memberikan kontribusinya dalam wakaf. Sesuai dengan namanya, para pengusaha yang bergabung menjadi Sobat Berkah akan menjadi wakif teta atau agen wakaf, yang insya Allah akan lebih bersahabat dengan keberkahan.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="sub-brand">
+                        <img src="style/assets/icons/sobat-logo.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="feature-1-wrapper row">
+                <div id="carouselSobat" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-card">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <div class="carousel-feature">
+                                            <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                                            <h6 class="bg-green">Barokah Tour & Travel</h6>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="carousel-feature">
+                                            <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                                            <h6 class="bg-green">Gudang Rottie</h6>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="carousel-feature">
+                                            <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                                            <h6 class="bg-green">Elzatta Hijab</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                                        <h6 class="bg-green">Barokah Tour & Travel</h6>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                                        <h6 class="bg-green">Gudang Rottie</h6>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                                        <h6 class="bg-green">Elzatta Hijab</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 28.png" /></div>
+                                        <h6 class="bg-green">Barokah Tour & Travel</h6>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 29.png" /></div>
+                                        <h6 class="bg-green">Gudang Rottie</h6>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="carousel-feature">
+                                        <div class="thumb"><img src="style/assets/images/Asset 30.png" /></div>
+                                        <h6 class="bg-green">Elzatta Hijab</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <a class="carousel-control-prev" href="#carouselSobat" role="button" data-slide="prev">
+                            <div class="bottom-prev bg-white mr-5">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselSobat" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselSobat" data-slide-to="1"></li>
+                            <li data-target="#carouselSobat" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-next" href="#carouselSobat" role="button" data-slide="next">
+                            <div class="bottom-next bg-white">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <a href="sobat.html" class="btn btn-md mt-5 bg-white btn-green text-dark museo700">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-section shadow">
+            <div class="news-wrapper container">
+                <div class="news-bar">
+                    <div class="row">
+                        <div class="col-sm-6 p-0">
+                            <div class="news-thumb p-0">
+                                <iframe src="https://www.youtube.com/embed/7cLCxYWas8k" style="border:none;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 w-100 h-100">
+                                </iframe>
+                            </div>
+                            <ul class="nav nav-tabs d-flex w-100 mx-2" id="nav-tab" role="tablist" data-hover="tab">
+                                <li class="sub-news">
+                                    <a id="nav-home-tab" href="#nav-home" class="nav-item news-1 border-0 nav-link active" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        <img src="style/assets/images/article1.jpeg">
+                                    </a>
+                                </li>
+                                <li class="sub-news">
+                                    <a href="#nav-profile" class="news-2 nav-item nav-link border-0" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        <img src="style/assets/images/article2.jpeg">
+                                    </a>
+                                </li>
+                                <li class="sub-news">
+                                    <a href="#nav-contact" id="tab3" class="news-3 nav-item nav-link border-0" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <img src="style/assets/images/article3.jpeg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="text-brown berita">BERITA <span class="museo700">WAKAF</span></h5>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active news-preview p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <h1 id="newsHeader" class="text-light museo700">Kelola Warung Wakaf, Kembangkan Sekolah</h1>
+                                    <p id="newsPreview" class="text-light">Bermula dari sebuah saung bambu tempat anak-anak jalanan belajar, seiring waktu Yayasan As-Sakinah bertransformasi menjadi lembaga pendidikan untuk PAUD, SD, SMP. Lembaga pendidikan formal yang dipimpin oleh Ustaz Yusuf Maulana ini juga dilengkapi dengan pondok yang rata-rata ditempati oleh siswa SMP. </p>
+                                    <a href="javascript:;">
+                                        <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                                        </h6>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade news-previews" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <h1 id="newsHeaderSecond" class="text-light museo700">Menilik Produktivitas Lahan Wakaf Serai Wangi</h1>
+                                    <p id="newsPreview" class="text-light"> Tepat setahun, lahan wakaf seluas 110 hektare di Desa Lhok Geulumpang, Kecamatan Setia Bakti, Kabupaten Aceh Jaya dikelola menjadi area budi daya serai wangi. Saat ini, budi daya serai wangi di lahan wakaf tersebut tengah dikembangkan secara bertahap.</p>
+                                    <a href="javascript:;">
+                                        <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                                        </h6>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade news-preview" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <h1 id="newsHeaderThird" class="text-light museo700">Dua Tahun Warga Lebak Manfaatkan Sumur Wakaf</h1>
+                                    <p id="newsPreview" class="text-light">Selama bertahun-tahun, minimnya air bersih menjadi masalah di Kampung Ciomas, Desa Sindangsari, Kecamatan Sajira, Kabupaten Lebak. Biasanya, ketika kemarau datang, sungai yang menjadi sumber air warga sekitar mengalami kekeringan. Debit air akan mengecil, bahkan jika kemarau cukup..</p>
+                                    <a href="javascript:;">
+                                        <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
+                                        </h6>
+                                    </a>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-sm-6 d-flex align-items-center">
+                                        <p class="text-light">Bagikan</p>
+                                        <ul class="social-news pl-1">
+                                            <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li class="social-item bg-white"><a href="https://google.com" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-sm bg-green py-2 px-4">Berita Lain</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="maps-section">
+        <h3 class="text-center text-dark pt-5">PETA SEBARAN <span class="font-weight-bold"> WAKAF</span></h3>
+        <div class="maps-wrapper container">
+            <div class="maps-filter">
+                <ul class="d-flex align-items-center">
+                    <li class="mr-4"> Filter By <i class="fas fa-filter"></i></li>
+                    <li class="mr-2">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary btn-sm shadow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Program
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item text-dark" href="#">Action</a>
+                                <a class="dropdown-item text-dark" href="#">Another action</a>
+                                <a class="dropdown-item text-dark" href="#">Something else here</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="sub-news">
-                       <a href="#nav-profile" class="news-2 nav-item nav-link border-0" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false">
-                              <img src="style/assets/images/article2.jpeg">
-                            </a>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary btn-sm shadow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Area
+                            </button>
+                            <div class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item text-dark" href="#">Action</a>
+                                <a class="dropdown-item text-dark" href="#">Another action</a>
+                                <a class="dropdown-item text-dark" href="#">Something else here</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="sub-news">
-                      <a href="#nav-contact" id="tab3" class="news-3 nav-item nav-link border-0" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="false">
-                        <img src="style/assets/images/article3.jpeg">
-                      </a> 
-                    </li>
-                  </ul>
-          </div>
-          <div class="col-sm-6">
-            <h5 class="text-brown berita">BERITA <span class="museo700">WAKAF</span></h5>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active news-preview p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <h1 id="newsHeader" class="text-light museo700">Kelola Warung Wakaf, Kembangkan Sekolah</h1>
-              <p id="newsPreview" class="text-light">Bermula dari sebuah saung bambu tempat anak-anak jalanan belajar, seiring waktu Yayasan As-Sakinah bertransformasi menjadi lembaga pendidikan untuk PAUD, SD, SMP. Lembaga pendidikan formal yang dipimpin oleh Ustaz Yusuf Maulana ini juga dilengkapi dengan pondok yang rata-rata ditempati oleh siswa SMP. </p>
-               <a href="javascript:;">
-                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
-                </h6>
-              </a>
-              </div>
-              <div class="tab-pane fade news-previews" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <h1 id="newsHeaderSecond" class="text-light museo700">Menilik Produktivitas Lahan Wakaf Serai Wangi</h1>
-              <p id="newsPreview" class="text-light"> Tepat setahun, lahan wakaf seluas 110 hektare di Desa Lhok Geulumpang, Kecamatan Setia Bakti, Kabupaten Aceh Jaya dikelola menjadi area budi daya serai wangi. Saat ini, budi daya serai wangi di lahan wakaf tersebut tengah dikembangkan secara bertahap.</p>
-               <a href="javascript:;">
-                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
-                </h6>
-              </a>
-              </div>
-              <div class="tab-pane fade news-preview" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <h1 id="newsHeaderThird" class="text-light museo700">Dua Tahun Warga Lebak Manfaatkan Sumur Wakaf</h1>
-              <p id="newsPreview" class="text-light">Selama bertahun-tahun, minimnya air bersih menjadi masalah di Kampung Ciomas, Desa Sindangsari, Kecamatan Sajira, Kabupaten Lebak. Biasanya, ketika kemarau datang, sungai yang menjadi sumber air warga sekitar mengalami kekeringan. Debit air akan mengecil, bahkan jika kemarau cukup..</p>
-               <a href="javascript:;">
-                <h6 class="text-light">Selengkapnya <i class="fas fa-arrow-right"></i>
-                </h6>
-              </a>
-              </div>
-              <div class="row mt-5">
-                <div class="col-sm-6 d-flex align-items-center">
-                  <p class="text-light">Bagikan</p>
-                  <ul class="social-news pl-1">
-                    <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-twitter"></i></a></li>
-                      <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
-                       <li class="social-item bg-white"><a href="google.com" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
-                       <li class="social-item bg-white"><a href="https://google.com" class="text-dark"><i class="fab fa-instagram"></i></a></li>
-                  </ul>
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-sm bg-green py-2 px-4">Berita Lain</button>
-                </div>
-              </div>
+                </ul>
             </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="maps-section">
-    <h3 class="text-center text-dark pt-5">PETA SEBARAN <span class="font-weight-bold"> WAKAF</span></h3>
-    <div class="maps-wrapper container">
-      <div class="maps-filter">
-       <ul class="d-flex align-items-center">
-        <li class="mr-4"> Filter By <i class="fas fa-filter"></i></li>
-         <li class="mr-2">
-          <div class="dropdown">
-            <button class="btn btn-secondary btn-sm shadow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Program
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item text-dark" href="#">Action</a>
-              <a class="dropdown-item text-dark" href="#">Another action</a>
-              <a class="dropdown-item text-dark" href="#">Something else here</a>
+            <div class="mapouter">
+                <div class="gmap_canvas h-100"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=global%20wakaf&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h-100 w-100 p-0"></iframe></div>
             </div>
-          </div>
-         </li>
-         <li>
-           <div class="dropdown">
-  <button class="btn btn-secondary btn-sm shadow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Area
-  </button>
-  <div class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item text-dark" href="#">Action</a>
-    <a class="dropdown-item text-dark" href="#">Another action</a>
-    <a class="dropdown-item text-dark" href="#">Something else here</a>
-  </div>
-</div>
-         </li>
-       </ul>
-      </div>
-      
-      <div class="mapouter"><div class="gmap_canvas h-100"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=global%20wakaf&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h-100 w-100 p-0"></iframe></div></div>
-    </div>
-  </div>
-  <div class="brand-section">
-    <div class="brand-wrapper">
-      <div class="container">
-       <div class="row pt-3 pb-5">
-         <div class="col-md-12">
-            <h5 class="text-center"> JARINGAN FILANTROPI <span class="font-weight-bold">GLOBAL WAKAF</span></h5>
-         </div>
-       </div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset8.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset4.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset5.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset7.svg">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-               <div class="d-flex flex-wrap justify-content-center">
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset8.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset4.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset5.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset7.svg">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset8.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset4.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset5.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset6.svg">
-                  </div>
-                </div>
-                <div class="d-inline p-2">
-                  <div class="brand-card">
-                    <img src="style/assets/images/Asset7.svg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <div class="bottom-prev">
-                  <i class="fas fa-angle-left"></i>
-              </div>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <div class="bottom-next">
-                <i class="fas fa-angle-right"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="subscribe-section">
-    <div class="container">
-        <div class="subscribe-wrapper">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-7">
-                  <div class="subscribe-container">
-                    <h6 class="text-light font-weight-bold mr-5 my-auto">Berlangganan Email</h6>
-                      <form class="form-inline">
-                          <input class="form-control mr-sm-2 search-form" type="email" placeholder="Email" aria-label="Search" />
-                      </form>
-                      <button class="btn btn-sm bg-green py-2 px-4">Berlangganan</button>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="social-footer">
-                      <ul class="social-bottom my-auto">
-                        <h6 class="text-light font-weight-bold mr-5 my-auto">Ikuti Kami</h6>
-                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-instagram"></i></a></li>
-                        <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-youtube"></i></a></li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
         </div>
     </div>
-  </div>
+    <div class="brand-section">
+        <div class="brand-wrapper">
+            <div class="container">
+                <div class="row pt-3 pb-5">
+                    <div class="col-md-12">
+                        <h5 class="text-center"> JARINGAN FILANTROPI <span class="font-weight-bold">GLOBAL WAKAF</span></h5>
+                    </div>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset8.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset4.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset5.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset7.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset8.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset4.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset5.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset7.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset8.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset4.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset5.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset6.svg">
+                                    </div>
+                                </div>
+                                <div class="d-inline p-2">
+                                    <div class="brand-card">
+                                        <img src="style/assets/images/Asset7.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <div class="bottom-prev">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <div class="bottom-next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-wrapper">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7">
+                        <div class="subscribe-container">
+                            <h6 class="text-light font-weight-bold mr-5 my-auto">Berlangganan Email</h6>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2 search-form" type="email" placeholder="Email" aria-label="Search" />
+                            </form>
+                            <button class="btn btn-sm bg-green py-2 px-4">Berlangganan</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="social-footer">
+                            <ul class="social-bottom my-auto">
+                                <h6 class="text-light font-weight-bold mr-5 my-auto">Ikuti Kami</h6>
+                                <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                                <li class="social-item-bottom bg-white"><a href="" class="text-dark"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-3">
+                    <div class="footer-program">
+                        <h3 class="font-weight-bold text-light">Program Wakaf</h3>
+                        <ul class="program-list">
+                            <li class="program-item"><a href="#">
+                                    <h6>Ritel Wakaf</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Perahu Wakaf</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Warung Wakaf</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Sumur Wakaf</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Lumbung Ternak</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Warung Wakaf Mikro</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Lumbung pangan</h6>
+                                </a></li>
+                            <li class="program-item"><a href="#">
+                                    <h6>Wakaf Saham</h6>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="nav-footer">
+                        <ul>
+                            <li><a href="index.html">
+                                    <h4 class="text-light font-weight-bold">Beranda</h4>
+                                </a></li>
+                            <li><a href="program.html">
+                                    <h4 class="text-light font-weight-bold">Program Wakaf</h4>
+                                </a></li>
+                            <li><a href="profile.html">
+                                    <h4 class="text-light font-weight-bold">Profil</h4>
+                                </a></li>
+                            <li><a href="sobat.html">
+                                    <h4 class="text-light font-weight-bold">Sobat Berkah</h4>
+                                </a></li>
+                            <li><a href="blog.html">
+                                    <h4 class="text-light font-weight-bold">Berita</h4>
+                                </a></li>
+                            <li><a href="peta.html">
+                                    <h4 class="text-light font-weight-bold">Peta Sebaran</h4>
+                                </a></li>
+                            <li><a href="kontak.html">
+                                    <h4 class="text-light font-weight-bold">Kontak</h4>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <img src="style/assets/icons/logo.svg">
+                        <p class="text-left text-light">Menara 165 Office Tower <br>
+                            Lantai 11 Jl. TB. Simatupang <br>
+                            Cilandak Timur, Jakarta Selatan <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- modal news -->
+    <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="1200" height="860" src="https://www.youtube.com/embed/7cLCxYWas8k">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script>
+    $(window).scroll(function() {
+        drawLine($('#route'),
+            document.getElementById('path'));
+    });
 
-  <footer>
-    <div class="container">
-      <div class="row py-5">
-        <div class="col-md-3">
-          <div class="footer-program">
-              <h3 class="font-weight-bold text-light">Program Wakaf</h3>
-            <ul class="program-list">
-              <li class="program-item"><a href="#"><h6>Ritel Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Perahu Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Warung Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Sumur Wakaf</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Lumbung Ternak</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Warung Wakaf Mikro</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Lumbung pangan</h6></a></li>
-              <li class="program-item"><a href="#"><h6>Wakaf Saham</h6></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="nav-footer">
-            <ul>
-              <li><a href="index.html"><h4 class="text-light font-weight-bold">Beranda</h4></a></li>
-              <li><a href="program.html"><h4 class="text-light font-weight-bold">Program Wakaf</h4></a></li>
-              <li><a href="profile.html"><h4 class="text-light font-weight-bold">Profil</h4></a></li>
-              <li><a href="sobat.html"><h4 class="text-light font-weight-bold">Sobat Berkah</h4></a></li>
-              <li><a href="blog.html"><h4 class="text-light font-weight-bold">Berita</h4></a></li>
-              <li><a href="peta.html"><h4 class="text-light font-weight-bold">Peta Sebaran</h4></a></li>
-              <li><a href="kontak.html"><h4 class="text-light font-weight-bold">Kontak</h4></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="footer-logo">
-           
-                <img src="style/assets/icons/logo.svg">
-            
-            <p class="text-left text-light">Menara 165 Office Tower <br>
-            Lantai 11 Jl. TB. Simatupang <br>
-          Cilandak Timur, Jakarta Selatan <br> 
-        </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    // init the line length
+    drawLine($('#route'),
+        document.getElementById('path'));
 
-  <!-- modal news -->
-  <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header"></div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <iframe width="1200" height="860"
-            src="https://www.youtube.com/embed/7cLCxYWas8k">
-            </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
+    //draw the line
+    function drawLine(container, line) {
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/slick/slick.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-  <script>
-   AOS.init();
-</script>
-<script>
-  $(window).scroll(function() {
-  drawLine( $('#route'),
-            document.getElementById('path') );
-});
-
-// init the line length
-  drawLine( $('#route'),
-            document.getElementById('path') );
-
-//draw the line
-function drawLine(container, line){
-  
-  var pathLength = line.getTotalLength(),
-      maxScrollTop = $(document).height() - $(window).height(),
-      percentDone = $(window).scrollTop() / maxScrollTop,
-      length = (percentDone * pathLength)*1.5;
-  line.style.strokeDasharray = [ length ,pathLength].join(' ');
-};
- 
-</script>
+        var pathLength = line.getTotalLength(),
+            maxScrollTop = $(document).height() - $(window).height(),
+            percentDone = $(window).scrollTop() / maxScrollTop,
+            length = (percentDone * pathLength) * 1.5;
+        line.style.strokeDasharray = [length, pathLength].join(' ');
+    };
+    </script>
 </body>
 
 </html>

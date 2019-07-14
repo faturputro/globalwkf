@@ -45,4 +45,10 @@ $(".rotate").click(function(){
  $(this).toggleClass("down")  ; 
 })
 
+if ($(window).width() < 960 ) {
+  $('.tree-wrapper-mobile').removeClass('d-none');
+} else {
+  $('.tree-wrapper-mobile').addClass('d-none');
+}
+
 });
