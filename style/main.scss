@@ -1860,6 +1860,10 @@ button.btn.btn-sm.bg-green {
         width: 100px;
     }
 
+    iframe {
+    	top: 0 !important;
+    }
+
 }
 
 // =========== Contact
@@ -2402,6 +2406,10 @@ button.btn.btn-sm.bg-green {
     }
 }
 
+.mobile-carousel {
+    display: none;
+}
+
 .bottom-next {
     width: 30px;
     height: 30px;
@@ -2696,6 +2704,13 @@ footer {
     	}
     }
 
+    .video-container {
+
+    	iframe {
+    		top:4rem !important;
+    	}
+    }
+
     .feature-wrapper {
         background-image: url('assets/images/mobile-feature-bg.png');
         width: 100%;
@@ -2750,11 +2765,17 @@ footer {
     }
 
     .brand-card {
-        width: 150px;
-        min-height: 50px;
+    	position:relative;
+        width: 80% !important;
 
         img {
+        	position: absolute;
+        	top:50%;
+        	left:50%;
+        	transform: translate(-50%,-50%);
             max-width: 100%;
+            height: auto;
+            padding:2rem;
         }
     }
 
@@ -2861,6 +2882,15 @@ footer {
     .footer-logo {
         left: 0;
         margin-left: 1rem;
+    }
+
+    .mobile-carousel {
+    	display: block;
+    	height:20vh;
+    }
+
+    .desktop-carousel {
+    	display: none;
     }
 
     .feature-profile {

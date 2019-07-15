@@ -1421,6 +1421,8 @@ button.btn.btn-sm.bg-green {
     transform: translate(-50%, -50%);
     height: 100px;
     width: 100px; }
+  .video-container iframe {
+    top: 0 !important; }
 
 .s-contact {
   background-image: url("assets/images/img/bg-brown-sm.jpg");
@@ -1808,6 +1810,9 @@ button.btn.btn-sm.bg-green {
     transform: translate(-50%, -50%);
     font-size: 24px; }
 
+.mobile-carousel {
+  display: none; }
+
 .bottom-next {
   width: 30px;
   height: 30px;
@@ -2005,6 +2010,8 @@ footer {
     width: 100%; }
   #carouselProgram .carousel-inner .carousel-item .row .col-sm-4.px-2 {
     margin-bottom: 2.5rem; }
+  .video-container iframe {
+    top: 4rem !important; }
   .feature-wrapper {
     background-image: url("assets/images/mobile-feature-bg.png");
     width: 100%; }
@@ -2035,10 +2042,16 @@ footer {
       top: 0;
       transform: translateY(0); }
   .brand-card {
-    width: 150px;
-    min-height: 50px; }
+    position: relative;
+    width: 80% !important; }
     .brand-card img {
-      max-width: 100%; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: auto;
+      padding: 2rem; }
   .s-program h2 {
     margin-top: 5rem !important; }
   .program-img {
@@ -2100,6 +2113,11 @@ footer {
   .footer-logo {
     left: 0;
     margin-left: 1rem; }
+  .mobile-carousel {
+    display: block;
+    height: 20vh; }
+  .desktop-carousel {
+    display: none; }
   .feature-profile img {
     max-width: 100%; }
   #sobat-gallery {
