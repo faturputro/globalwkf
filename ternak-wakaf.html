@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,43 +23,34 @@
 </head>
 
 <body>
-    <section>
+     <section>
         <header class="fixed-header bg-gradient">
             <div class="header_wrap d-flex flex-row align-items-center justify-content-center py-0">
                 <div class="container">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
+                        <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="img-fluid" /></a>
                     </div>
-                    <div class="nav-toggle">
-                        <button id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
+                    
                     <!-- Main Nav -->
                     <nav class="main_nav">
                         <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
                             <li>
                                 <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
                             </li>
-                            <li class="d-flex align-items-center">
+                            <li class="d-flex align-items-center search-header">
                                 <form class="example" action="action_page.php">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit" class="w-25"><i class="fa fa-search"></i></button>
+                                    <input type="text" placeholder="Search.." name="search" class="w-75">
                                 </form>
                             </li>
                             <li>
                                 <a href="wakaf-form.html" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
                             </li>
-                        </ul>
-                    </nav>
-                    <!-- language -->
-                    <div class="language header_language">
+                            <div class="language header_language">
                         <ul class="d-flex flex-row align-items-center justify-content-center">
                             <li class="language-item mr-3">
-                                <div href="#" class="dropdown text-light font-weight-bold">ID <i class="fas fa-sort-down"></i>
+                                <div href="#" class="dropdown text-light font-weight-bold d-flex"><span class="mr-1">ID</span> <i class="fas fa-sort-down"></i>
                                     <ul class="lang dropdown-menu border-0 shadow">
                                         <li class="p-0 language-list">
                                             <a href="#" class="text-dark text-center">EN</a>
@@ -68,7 +60,19 @@
                             </li>
                         </ul>
                     </div>
+                        </ul>
+
+                    </nav>
+                    <!-- language -->
+                    
                 </div>
+                <div class="nav-toggle">
+                        <button id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
             </div>
             <div class="mobile-container">
                 <!-- mobile nav -->
@@ -91,8 +95,8 @@
                             <li class="mb-3">
                                 <a href="index.html" class="text-white">Beranda</a>
                             </li>
-                            <li class="text-white mb-3">
-                                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class=" page-active">Program Wakaf<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
+                            <li class="text-white mb-3 page-active">
+                                <span class="py-2"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Program Wakaf<i class="fa fa-chevron-down rotate ml-3"></i></a></span>
                                 <div id="collapseOne" class="collapse" aria-labelledby="nav" data-parent="#accordionExample">
                                     <ul class="border-0 px-3 bg-dark">
                                         <li class="pl-2 py-2"><a href="perahu.html" class="text-white text-center">Perahu Wakaf</a></li>
@@ -120,6 +124,9 @@
                                 <a href="sobat.html" class="text-white">Sobat Berkah</a>
                             </li>
                             <li class="mb-3">
+                                <a href="sobat.html" class="text-green">Wakaf Korporat</a>
+                            </li>
+                            <li class="mb-3">
                                 <a href="blog.html" class="text-white">Berita</a>
                             </li>
                             <li class="mb-3">
@@ -130,9 +137,7 @@
                             </li>
                         </ul>
                     </ul>
-                    <div class="d-flex justify-content-center">
-                        <a href="wakaf-form.html" class="btn btn-md btn-wakaf text-green museo700 h6 mt-3 px-4">Wakaf Sekarang</a>
-                    </div>
+
                 </nav>
             </div>
         </header>
@@ -151,7 +156,7 @@
                     <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
                     <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
                     <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
-                    <li class="pl-2 py-2"><a href="konsultasi.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
+                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mikro</a></li>
                     <li class="pl-2 py-2"><a href="wakaf-saham.html" class="text-green text-center">Wakaf Saham</a></li>
                     <li class="pl-2 py-2"><a href="lumbung-pangan-wakaf.html" class="text-green text-center">Lumbung Pangan Wakaf</a></li>
                 </ul>
@@ -165,6 +170,9 @@
             </li>
             <li class="col text-center">
                 <a href="sobat.html" class="text-green">Sobat Berkah</a>
+            </li>
+            <li class="col text-center">
+                <a href="sobat.html" class="text-green">Wakaf Korporat</a>
             </li>
             <li class="col text-center">
                 <a href="blog.html" class="text-green">Berita</a>

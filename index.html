@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -28,34 +29,25 @@
                 <div class="container">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="h-40" /></a>
+                        <a href="index.html"><img src="style/assets/icons/logo.svg" alt="" class="img-fluid" /></a>
                     </div>
-                    <div class="nav-toggle">
-                        <button id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
+                    
                     <!-- Main Nav -->
                     <nav class="main_nav">
                         <ul class="d-flex flex-row align-items-center justify-content-end my-1 mr-5">
                             <li>
                                 <a href="" class="invisible"><img src="style/assets/icons/Asset 1.svg" class="h-30" /></a>
                             </li>
-                            <li class="d-flex align-items-center">
+                            <li class="d-flex align-items-center search-header">
                                 <form class="example" action="action_page.php">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit" class="w-25"><i class="fa fa-search"></i></button>
+                                    <input type="text" placeholder="Search.." name="search" class="w-75">
                                 </form>
                             </li>
                             <li>
                                 <a href="wakaf-form.html" class="btn btn-lg btn-wakaf text-green museo700">Wakaf Sekarang</a>
                             </li>
-                        </ul>
-                    </nav>
-                    <!-- language -->
-                    <div class="language header_language">
+                            <div class="language header_language">
                         <ul class="d-flex flex-row align-items-center justify-content-center">
                             <li class="language-item mr-3">
                                 <div href="#" class="dropdown text-light font-weight-bold d-flex"><span class="mr-1">ID</span> <i class="fas fa-sort-down"></i>
@@ -68,7 +60,19 @@
                             </li>
                         </ul>
                     </div>
+                        </ul>
+
+                    </nav>
+                    <!-- language -->
+                    
                 </div>
+                <div class="nav-toggle">
+                        <button id="nav-toggle" class="hamburger hamburger--squeeze d-flex align-items-center justify-content-center toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
             </div>
             <div class="mobile-container">
                 <!-- mobile nav -->
@@ -120,6 +124,9 @@
                                 <a href="sobat.html" class="text-white">Sobat Berkah</a>
                             </li>
                             <li class="mb-3">
+                                <a href="sobat.html" class="text-green">Wakaf Korporat</a>
+                            </li>
+                            <li class="mb-3">
                                 <a href="blog.html" class="text-white">Berita</a>
                             </li>
                             <li class="mb-3">
@@ -130,9 +137,7 @@
                             </li>
                         </ul>
                     </ul>
-                    <div class="d-flex justify-content-center">
-                        <a href="wakaf-form.html" class="btn btn-md btn-wakaf text-green museo700 h6 mt-3 px-4">Wakaf Sekarang</a>
-                    </div>
+
                 </nav>
             </div>
         </header>
@@ -147,7 +152,7 @@
                 <ul class="dropdown-menu border-0 px-3">
                     <li class="pl-2 py-2"><a href="perahu.html" class="text-green text-center">Perahu Wakaf</a></li>
                     <li class="pl-2 py-2"><a href="ritel.html" class="text-green text-center">Ritel Wakaf</a></li>
-                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>h
+                    <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf Mobile</a></li>
                     <li class="pl-2 py-2"><a href="sumur.html" class="text-green text-center">Sumur Wakaf</a></li>
                     <li class="pl-2 py-2"><a href="ternak-wakaf.html" class="text-green text-center">Lumbung Ternak Wakaf</a></li>
                     <li class="pl-2 py-2"><a href="warung.html" class="text-green text-center">Warung Wakaf</a></li>
@@ -165,6 +170,9 @@
             </li>
             <li class="col text-center">
                 <a href="sobat.html" class="text-green">Sobat Berkah</a>
+            </li>
+            <li class="col text-center">
+                <a href="sobat.html" class="text-green">Wakaf Korporat</a>
             </li>
             <li class="col text-center">
                 <a href="blog.html" class="text-green">Berita</a>
@@ -343,90 +351,90 @@
                         <line stroke-linecap="null" stroke-linejoin="null" id="svg_7" y2="756.87496" x2="306.49998" y1="754.87496" x1="78.49999" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ececec" fill="none" />
                     </g>
                 </svg>
-               <div class="d-flex justify-content-center">
-               	 <div class="program-category-mobile">
-                	<div class="row no-gutters">
-                		<div class="col">
-                			 <div class="category category-1 mr-1">
-                        <a href="ritel.html">
-                            <img src="style/assets/images/ritel.png">
-                        </a>
+                <div class="d-flex justify-content-center">
+                    <div class="program-category-mobile">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <div class="category category-1 mr-1">
+                                    <a href="ritel.html">
+                                        <img src="style/assets/images/ritel.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="category category-2">
+                                    <a href="perahu.html">
+                                        <img src="style/assets/images/perahu.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters mb-4">
+                            <div class="col">
+                                <div class="category category-3">
+                                    <a href="sumur.html">
+                                        <img src="style/assets/images/sumur.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="category category-4">
+                                    <a href="warung-mobile.html">
+                                        <img src="style/assets/images/mobile.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters mb-4">
+                            <div class="col">
+                                <div class="category category-5">
+                                    <a href="ternak-wakaf.html">
+                                        <img src="style/assets/images/lumbung.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="category category-6">
+                                    <a href="warung.html">
+                                        <img src="style/assets/images/warung.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters mb-4">
+                            <div class="col">
+                                <div class="category category-7 mr-2">
+                                    <a href="warung-mikro.html">
+                                        <img src="style/assets/images/mikro.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="category category-8">
+                                    <a href="wakaf-saham.html">
+                                        <img src="style/assets/images/saham.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <div class="category category-9">
+                                    <a href="lumbung-pangan-wakaf.html">
+                                        <img src="style/assets/images/pangan.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="category category-10">
+                                    <a href="program.html">
+                                        <img src="style/assets/images/bottom.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                		</div>
-                		<div class="col">
-                			<div class="category category-2">
-                        <a href="perahu.html">
-                            <img src="style/assets/images/perahu.png">
-                        </a>
-                    </div>
-                		</div>
-                	</div>
-                	<div class="row no-gutters mb-4">
-                		<div class="col">
-                			 <div class="category category-3">
-                        <a href="sumur.html">
-                            <img src="style/assets/images/sumur.png">
-                        </a>
-                    </div>
-                		</div>
-                		<div class="col">
-                			 <div class="category category-4">
-                        <a href="warung-mobile.html">
-                            <img src="style/assets/images/mobile.png">
-                        </a>
-                    </div>
-                		</div>
-                	</div>
-                	<div class="row no-gutters mb-4">
-                		<div class="col">
-                			  <div class="category category-5">
-                        <a href="ternak-wakaf.html">
-                            <img src="style/assets/images/lumbung.png">
-                        </a>
-                    </div>
-                		</div>
-                		<div class="col">
-                			 <div class="category category-6">
-                        <a href="warung.html">
-                            <img src="style/assets/images/warung.png">
-                        </a>
-                    </div>
-                		</div>
-                	</div>
-                	<div class="row no-gutters mb-4">
-                		<div class="col">
-                			 <div class="category category-7 mr-2">
-                        <a href="warung-mikro.html">
-                            <img src="style/assets/images/mikro.png">
-                        </a>
-                    </div>
-                		</div>
-                		<div class="col">
-                			 <div class="category category-8">
-                        <a href="wakaf-saham.html">
-                            <img src="style/assets/images/saham.png">
-                        </a>
-                    </div>
-                		</div>
-                	</div>
-                	<div class="row no-gutters">
-                		<div class="col">
-                			  <div class="category category-9">
-                        <a href="lumbung-pangan-wakaf.html">
-                            <img src="style/assets/images/pangan.png">
-                        </a>
-                    </div>
-                		</div>
-                		<div class="col">
-                			 <div class="category category-10">
-                        <a href="program.html">
-                            <img src="style/assets/images/bottom.png">
-                        </a>
-                    </div>
-                		</div>
-                	</div>
                 </div>
-               </div>
             </div>
         </div>
     </section>
@@ -775,7 +783,7 @@
                         </div>
                     </a>
                 </div>
-                 <div id="carouselMobileControls" class="mobile-carousel carousel slide" data-ride="carousel" data-interval="false">
+                <div id="carouselMobileControls" class="mobile-carousel carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="d-flex flex-wrap justify-content-center align-items-center">
@@ -843,7 +851,6 @@
                         </div>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>

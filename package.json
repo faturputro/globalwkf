@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "run",
-    "scss": "node-sass --watch style/main.scss -o style/"
+    "scss": "node-sass --watch style/main.scss -o style/",
+    "resp-scss": "node-sass --watch style/responsive.scss -o style/"
   },
   "repository": {
     "type": "git",

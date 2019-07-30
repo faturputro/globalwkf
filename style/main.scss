@@ -182,7 +182,7 @@ label:focus,
 }
 
 .btn.btn-lg.btn-wakaf {
-    padding: 5px 20px;
+    padding: 5px 1rem;
     border-radius: 27px;
     background-color: #b5e22b;
 }
@@ -226,21 +226,18 @@ button.btn.btn-md.btn-yellow.text-dark {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 108px;
-
-    .logo {
-        a {
-            img {
-                height: 30px;
-            }
-
-        }
-    }
-
+    left: 8vw;
+    width:10vw;
 }
 
 .main_nav ul li:not(:last-of-type) {
     margin-right: 20px;
+}
+
+.main_nav ul {
+    .search-header {
+        width:16vw;
+    }
 }
 
 .onCanvas {
@@ -569,9 +566,7 @@ ul.offCanvas_menu_social li a:hover {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 53px;
-    padding-top: 12px;
-    width: 10%;
+    right: 5%;
 }
 
 .language ul li {
@@ -737,17 +732,22 @@ ul.offCanvas_menu_social li a:hover {
     background-color: white;
 }
 
-.nav-list {
+.top-nav .nav-list {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     font-family: museo700;
+
+    li {
+        font-size: 1vw;
+    }
 }
 
 .header-carousel {
     height: 70vh;
     margin-top: 14.3vh;
     z-index: -1000;
+    width:100vw;
 
     div {
         height: 100%;
@@ -760,6 +760,8 @@ ul.offCanvas_menu_social li a:hover {
 
 .header-carousel-mobile {
     display: none !important;
+    height: 84vh;
+    overflow-y: hidden;
 }
 
 .slick-dots {
@@ -921,6 +923,8 @@ a img {
 
 .nav-toggle {
     display: none;
+    position:absolute;
+    right:4vw;
 }
 
 .rotate {
@@ -1025,13 +1029,13 @@ a img {
 
 
 .counter-wrapper {
-    height: 18vh;
     width: 100%;
     background-image: $bg-linear;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-top:1.7rem;
+    padding-bottom:1.7rem;
 }
 
 .counter-item {
@@ -1071,6 +1075,10 @@ a img {
         text-align: center;
         color: #e5e808;
     }
+}
+
+.program-wrapper {
+    overflow-x: hidden;
 }
 
 .tree-title {
@@ -1122,9 +1130,7 @@ a img {
         }
 
         .category-1 {
-
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: -755px 0 0 114px;
 
             a {
@@ -1147,8 +1153,8 @@ a img {
         }
 
         .category-2 {
-            height: 300px;
-            width: 300px;
+          
+            width: 20vw;
             margin: -703px 0 0 -33%;
 
             a {
@@ -1165,9 +1171,7 @@ a img {
         }
 
         .category-3 {
-
-            height: 3200px;
-            width: 320px;
+            width: 22vw;
             margin: -360px 0 0 5%;
 
             a {
@@ -1182,9 +1186,7 @@ a img {
         }
 
         .category-4 {
-
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: -379px 0 0 -41%;
 
             a {
@@ -1199,8 +1201,7 @@ a img {
         }
 
         .category-5 {
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: -227px 0 0 26%;
 
             a {
@@ -1215,8 +1216,8 @@ a img {
         }
 
         .category-6 {
-            height: 300px;
-            width: 300px;
+
+            width: 20vw;
             margin: -97px 0 0 -30%;
 
             a {
@@ -1231,9 +1232,7 @@ a img {
         }
 
         .category-7 {
-
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: 81px 0 0 17%;
 
             a {
@@ -1248,9 +1247,7 @@ a img {
         }
 
         .category-8 {
-
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: 243px 0 0 -39%;
 
             a {
@@ -1265,9 +1262,7 @@ a img {
         }
 
         .category-9 {
-
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: 419px 0 0 9%;
 
             a {
@@ -1282,8 +1277,7 @@ a img {
         }
 
         .category-10 {
-            height: 300px;
-            width: 300px;
+            width: 20vw;
             margin: 490px 0 0 -17%;
 
             a {
@@ -1325,7 +1319,7 @@ a img {
 // =================
 
 .feature-1 {
-    padding-top: 100px;
+    padding-top: 2.5rem;
     color: white;
 
     h3 {
@@ -1344,7 +1338,7 @@ a img {
 }
 
 .sub-brand {
-    width: 35%;
+    width: 15vw;
     position: absolute;
     right: 0;
 
@@ -1360,7 +1354,7 @@ a img {
 }
 
 .carousel-feature {
-    width: 350px;
+    width: 30vw;
 
     img {
         max-width: 100%;
@@ -1435,15 +1429,6 @@ a img {
 
 .tab-pane {
 
-    h1 {
-        min-height: 140px;
-        max-height: 140px;
-    }
-
-    p {
-        min-height: 120px;
-        max-height: 120px;
-    }
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -1574,15 +1559,15 @@ ul#nav-tab {
 
 .sub-news {
     height: 100px;
-    width: 180px;
+    width: 30%;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
 
     a {
         position: absolute;
 
         img {
-            width: 220px;
+            max-width: 100%;
             height: auto;
         }
     }
@@ -1744,15 +1729,10 @@ button.btn.btn-sm.bg-green {
 }
 
 .brand-section {
-    height: 35%;
     position: relative;
     background-color: #ececec;
-}
-
-.brand-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding-top:1.5rem;
+    padding-bottom:2rem;
 }
 
 .brand-card {
@@ -1777,15 +1757,15 @@ button.btn.btn-sm.bg-green {
     background-repeat: no-repeat;
     margin-top: 8%;
 
-    h2 {
+    .row {
+        justify-content: center;
+
+        h2 {
         display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 35%;
         text-transform: uppercase;
         padding-bottom: 30px;
         border-bottom: 2px solid #bfc10d;
+        }
     }
 
     .card-wrapper-program {
@@ -1794,18 +1774,15 @@ button.btn.btn-sm.bg-green {
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        margin-top: 15%;
+        margin-top: 1.5rem;
     }
+
 }
 
 .program-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 330px;
-    width: 330px;
-    transform: translate(-50%, -50%);
-
+    width: 85%;
+    margin:auto;
+  
     img {
         max-width: 100%;
     }
@@ -2543,402 +2520,4 @@ footer {
 
 .sobat-item {
 	display: none;
-}
-
-// =====================================
-// ============== RESPONSIVE ===========
-//======================================
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media (min-width: 320px) and (max-width: 480px) {
-
-    .fixed-header {
-        position: fixed;
-    }
-
-    .main_nav {
-        display: none;
-    }
-
-    .nav-toggle {
-        display: flex;
-        position: relative;
-
-        button {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-
-            span {
-                font-size: 30px;
-            }
-        }
-    }
-
-    .header-carousel {
-        display: none !important;
-    }
-
-    .header-carousel-mobile {
-        display: block !important;
-    }
-
-    .header_language {
-        display: none;
-    }
-
-    .logo {
-        left: 0;
-        padding-left: 1rem;
-    }
-
-    .header-carousel {
-        margin-top: 0;
-    }
-
-    .top-nav {
-        display: none;
-    }
-
-    .counter-wrapper {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .counter-item {
-        margin: 10px 0;
-    }
-
-    .svg-container {
-        width: 80vw;
-    }
-
-    .tree-wrapper {
-        display: none;
-        overflow-x: hidden;
-    }
-
-    .tree-wrapper-mobile {
-        position: relative;
-        width: auto;
-        height: 1000px;
-
-        svg {
-            position: relative;
-        }
-
-        .program-category-mobile {
-            position: absolute;
-            top:6rem;
-
-            .category {
-                position: relative;
-                margin-bottom: 2rem;
-            }
-
-            .category-1,
-            .category-2,
-            .category-3,
-            .category-4,
-            .category-5,
-            .category-6,
-            .category-7,
-            .category-8,
-            .category-9,
-            .category-10 {
-                width: 9rem;
-
-                a {
-
-                    img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-
-            .category-2,
-            .category-4,
-            .category-6,
-            .category-8,
-            .category-10 {
-            	margin-left:3.2rem;
-            }
-        }
-    }
-
-    .nav-list {
-        top: 0;
-        transform: none;
-    }
-
-    .nav-logo-mobile {
-        width: 50%;
-
-        img {
-            max-width: 100%;
-        }
-    }
-
-    a.btn.btn-md.btn-wakaf.text-green.museo700.h6 {
-        background-color: #B5E22B;
-    }
-
-    .carousel-feature {
-        width: 100%;
-    }
-
-    #carouselProgram {
-
-    	.carousel-inner {
-    		.carousel-item {
-    			.row {
-    				.col-sm-4.px-2 {
-    					margin-bottom: 2.5rem;
-    				}
-    			}
-    		}
-    	}
-    }
-
-    .video-container {
-
-    	iframe {
-    		top:4rem !important;
-    	}
-    }
-
-    .feature-wrapper {
-        background-image: url('assets/images/mobile-feature-bg.png');
-        width: 100%;
-    }
-
-    .feature-1 {
-        padding-top: 1.5rem;
-        flex-direction: column-reverse !important;
-    }
-
-    .feature-1-wrapper {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .sub-brand {
-        position: relative !important;
-        float: right;
-        margin-bottom: 1rem;
-    }
-
-    .sub-news {
-        width: 32%;
-    }
-
-    // bootstrap overrides
-
-    .bottom-next {
-        right: 10%;
-        bottom: 60%;
-    }
-
-    .bottom-prev {
-        left: 10%;
-        bottom: 60%;
-    }
-
-    .tab-pane {
-        h1 {
-            max-height: 500px;
-        }
-    }
-
-    .brand-section {
-        height: auto;
-        padding-bottom: 1rem;
-
-        .brand-wrapper {
-            top: 0;
-            transform: translateY(0);
-        }
-    }
-
-    .brand-card {
-    	position:relative;
-        width: 80% !important;
-
-        img {
-        	position: absolute;
-        	top:50%;
-        	left:50%;
-        	transform: translate(-50%,-50%);
-            max-width: 100%;
-            height: auto;
-            padding:2rem;
-        }
-    }
-
-    .s-program h2 {
-        margin-top: 5rem !important;
-    }
-
-    .program-img {
-        position: relative;
-        height: auto;
-        width: 60vw;
-    }
-
-    .section-title {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0 !important;
-        position: relative !important;
-        top: initial;
-        left: initial;
-        transform: none;
-    }
-
-    .search-form {
-        max-width: 70%;
-    }
-
-    .social-footer .social-bottom {
-        padding-left: 0;
-    }
-
-    .subscribe-section {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .subscribe-container {
-        display: block;
-
-        h6 {
-            margin: 10px 0;
-        }
-
-        form {
-            margin: 10px 0;
-        }
-
-        button {
-            position: relative !important;
-            margin-bottom: 20px;
-        }
-    }
-
-    .social-item-bottom {
-        height: 30px;
-        width: 30px;
-
-        a {
-            font-size: 18px;
-        }
-    }
-
-    .nav-footer {
-        ul {
-            padding-left: 0;
-        }
-    }
-
-    .news-thumb {
-        position: relative !important;
-    }
-
-    ul#nav-tab {
-        position: relative !important;
-        margin: 0 !important;
-    }
-
-    .berita {
-        position: relative !important;
-        top: initial;
-        margin-top: 10px;
-    }
-
-    .news-section {
-        max-height: 100%;
-    }
-
-    .tab-content {
-        padding: 0 !important;
-    }
-
-    button.btn.btn-sm.bg-green {
-        position: relative;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-
-    footer {
-        height: 125vh;
-    }
-
-    .footer-logo {
-        left: 0;
-        margin-left: 1rem;
-    }
-
-    .mobile-carousel {
-    	display: block;
-    	height:20vh;
-    }
-
-    .desktop-carousel {
-    	display: none;
-    }
-
-    .feature-profile {
-        img {
-            max-width: 100%;
-        }
-    }
-
-    #sobat-gallery {
-        padding: 0 !important;
-    }
-
-    .container-pers {
-        h1 {
-            position: relative;
-            top: initial;
-            left: initial;
-            transform: none;
-            margin-left: 1rem;
-            margin-right: 1rem;
-            margin-top: 1.5rem;
-        }
-    }
-
-    .partner-box {
-        margin-bottom: 1rem;
-    }
-
-    .wakaf-form {
-        padding: 0 !important;
-    }
-
-    .sidebar-wrapper {
-        display: none;
-    }
-
-    .blog-img-container {
-        margin: auto;
-        width: 100% !important;
-        min-height: 0 !important;
-    }
-}
-
-// Small Devices
-
-@media (min-width: 320px) and (max-width: 568px) {
-	.brand-card {
-		width:125px;
-		height:70px;
-	}
 }
