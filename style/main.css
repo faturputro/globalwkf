@@ -91,8 +91,7 @@ label {
 
 input.form-control.mr-sm-2.search-form {
   border-radius: 27px;
-  width: 110%;
-  height: 32px;
+  width: 15vw;
   border: none; }
   input.form-control.mr-sm-2.search-form:active, input.form-control.mr-sm-2.search-form:focus {
     border: none; }
@@ -554,7 +553,8 @@ ul.offCanvas_menu_social li a:hover {
   top: 70px;
   text-transform: uppercase;
   height: 40px;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); }
 
 .dropdown-menu .sub-menu {
   left: 100%;
@@ -884,7 +884,8 @@ a img {
 .tree-wrapper {
   position: relative;
   height: auto;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .tree-wrapper svg#route {
     position: relative;
     left: 50%;
@@ -1036,8 +1037,7 @@ a img {
 
 .sub-brand {
   width: 15vw;
-  position: absolute;
-  right: 0; }
+  float: right; }
   .sub-brand img {
     max-width: 100%; }
 
@@ -1047,7 +1047,7 @@ a img {
   padding-top: 50px; }
 
 .carousel-feature {
-  width: 30vw; }
+  width: 100%; }
   .carousel-feature img {
     max-width: 100%; }
   .carousel-feature h6 {
@@ -1078,9 +1078,7 @@ a img {
 .news-section {
   position: relative;
   margin-top: 50px;
-  background-image: linear-gradient(to right, #3AB54A, #38A495, #126839);
-  min-height: 61.5vh;
-  max-height: 70vh; }
+  background-image: linear-gradient(to right, #3AB54A, #38A495, #126839); }
 
 .news-wrapper {
   display: flex;
@@ -1091,7 +1089,7 @@ a img {
   margin-top: 10%; }
 
 .news-thumb {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 370px;
   top: -70px;
@@ -1109,7 +1107,7 @@ a img {
   border: none !important; }
 
 ul#nav-tab {
-  position: absolute;
+  position: relative;
   bottom: 0; }
 
 .hamburger {
@@ -1243,8 +1241,6 @@ a.nav-item:hover {
     padding-bottom: 20px; }
 
 button.btn.btn-sm.bg-green {
-  position: absolute;
-  right: 0;
   background-color: #9bca0b;
   border-radius: 27px;
   padding: 5px 20px 5px 20px; }
@@ -1840,7 +1836,10 @@ footer {
   padding: 0; }
 
 .nav-footer ul li {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 1vw; }
+  .nav-footer ul li a h4 {
+    font-size: 1.5vw; }
 
 .footer-logo {
   width: 40%;

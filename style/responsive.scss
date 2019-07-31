@@ -7,7 +7,9 @@
 /* Portrait and Landscape */
 @media (min-width: 320px) and 
 (max-width: 480px) {
-
+ .fixed-header {
+        box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    }
     .logo{
         width:32vw;
     }
@@ -187,7 +189,8 @@
     .sub-brand {
         position: relative !important;
         float: right;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        width:35vw;
     }
 
     .sub-news {
@@ -257,8 +260,8 @@
         transform: none;
     }
 
-    .search-form {
-        max-width: 70%;
+    input.form-control.mr-sm-2.search-form {
+        width:100%;
     }
 
     .social-footer .social-bottom {
@@ -332,12 +335,12 @@
         padding-bottom: 10px;
     }
 
-    footer {
-        height: 125vh;
+    .footer-logo {
+        position: relative !important;
     }
 
     .footer-logo {
-        left: 0;
+        left:0;
         margin-left: 1rem;
     }
 
@@ -389,6 +392,21 @@
         width: 100% !important;
         min-height: 0 !important;
     }
+
+    .nav-footer {
+        ul li {
+            a {
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .footer-nav-programs,
+   .footer-nav-container {
+    display: none;
+   }
 }
 
 // Small Devices
@@ -402,7 +420,9 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+   .fixed-header {
+        box-shadow:0 3px 20px rgba(0,0,0,0.3);
+    }
   .top-nav {
     display: none !important;
   }
@@ -434,10 +454,26 @@
     .nav-toggle {
         display: inline !important;
     }
+
+     .feature-1 {
+    flex-direction: column-reverse; 
+   }
+
+   .footer-nav-programs,
+   .footer-nav-container {
+    display: none;
+   }
+
+   .social-bottom {
+    padding-left:0;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+    .fixed-header {
+        box-shadow:0 3px 20px rgba(0,0,0,0.3);
+    }
+
     .top-nav {
         display: none !important;
     }
@@ -469,6 +505,37 @@
    .tree-wrapper-mobile {
     display: none !important;
    } 
+
+   .feature-1 {
+    flex-direction: column-reverse; 
+   }
+
+   .footer-nav-programs,
+   .footer-nav-container {
+    display: none;
+   }
+
+   .subscribe-row {
+    flex-direction: row;
+   }
+
+   .footer-logo {
+        position: relative !important;
+    }
+
+    .footer-logo {
+        left:0;
+        margin-left: 1rem;
+    }
+
+    input.form-control.mr-sm-2.search-form {
+        width:100%;
+        margin-bottom: .5rem;
+    }
+
+    .social-bottom {
+        padding-left: 0;
+    }
 }
 
 @media (min-width:1024) {
@@ -476,5 +543,8 @@
         display: none !important;
     }
 
-
+    .footer-nav-programs,
+   .footer-nav-container {
+    display: block;
+   }
 }
