@@ -1422,8 +1422,7 @@ button.btn.btn-sm.bg-green {
   max-width: 100%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin-top: 15%; }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .s-profile {
   background-image: url("assets/images/img/bg-brown-sm.jpg");
@@ -1442,8 +1441,7 @@ button.btn.btn-sm.bg-green {
     max-width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin-top: 15%; }
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 #card-faq {
   overflow-y: hidden; }
