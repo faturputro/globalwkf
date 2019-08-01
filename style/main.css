@@ -1359,7 +1359,10 @@ button.btn.btn-sm.bg-green {
 
 .program-img {
   width: 85%;
-  margin: auto; }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
   .program-img img {
     max-width: 100%; }
 
@@ -1410,10 +1413,6 @@ button.btn.btn-sm.bg-green {
   margin-top: 8%; }
   .s-contact h2 {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
     text-transform: uppercase;
     padding-bottom: 30px;
     border-bottom: 2px solid #bfc10d; }
@@ -1434,9 +1433,6 @@ button.btn.btn-sm.bg-green {
   background-attachment: fixed; }
   .s-profile h2 {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 35%;
     text-transform: uppercase;
     padding-bottom: 30px;
@@ -1518,7 +1514,16 @@ button.btn.btn-sm.bg-green {
   height: auto;
   overflow: hidden; }
   .img-splitter img {
-    width: 100%;
+    max-width: 100%;
+    height: auto; }
+
+.img-splitter-mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .img-splitter-mobile img {
+    max-width: 100%;
     height: auto; }
 
 .s-majalah {
@@ -1644,10 +1649,6 @@ button.btn.btn-sm.bg-green {
   margin-top: 8%; }
   .s-sobat h2 {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
     text-transform: uppercase;
     padding-bottom: 30px;
     border-bottom: 2px solid #bfc10d; }
@@ -1656,15 +1657,17 @@ button.btn.btn-sm.bg-green {
 
 .partner-box {
   width: 100%;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-bottom: 1.5rem; }
   .partner-box .partner-logo {
     display: flex;
     align-items: center;
     height: 250px;
-    width: 250px;
+    width: 90%;
     padding: 20px; }
     .partner-box .partner-logo img {
-      max-width: 100%; }
+      max-width: 100%;
+      margin: auto; }
 
 .sobat-slider {
   height: 30vh;
@@ -1693,10 +1696,6 @@ button.btn.btn-sm.bg-green {
   max-width: 100%; }
   .s-single h2 {
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
     text-transform: uppercase;
     padding-bottom: 30px;
     border-bottom: 2px solid #bfc10d; }
@@ -1844,7 +1843,6 @@ footer {
 .footer-logo {
   width: 40%;
   height: auto;
-  position: absolute;
   top: 0;
   left: 150px; }
   .footer-logo img {

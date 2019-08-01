@@ -216,6 +216,10 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1.5rem; }
+  .img-splitter-mobile {
+    display: block !important; }
+  .img-splitter {
+    display: none; }
   .partner-box {
     margin-bottom: 1rem; }
   .wakaf-form {
@@ -230,7 +234,19 @@
     font-size: 1em; }
   .footer-nav-programs,
   .footer-nav-container {
-    display: none; } }
+    display: none; }
+  .faq-title {
+    font-size: 1rem !important; }
+  .s-single .card-wrapper-single {
+    margin-top: 0 !important; }
+  .s-profile .card-wrapper-program {
+    margin-top: 0 !important; }
+  .sidebar-wrapper {
+    display: none !important; }
+  .s-contact .card-wrapper-program {
+    margin-top: 0 !important; }
+  .s-sobat .card-wrapper-sobat {
+    margin-top: 5%; } }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
   .brand-card {
@@ -258,11 +274,29 @@
     display: inline !important; }
   .feature-1 {
     flex-direction: column-reverse; }
+  .img-splitter-mobile {
+    display: block; }
+  .img-splitter {
+    display: none; }
   .footer-nav-programs,
   .footer-nav-container {
     display: none; }
   .social-bottom {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .faq-title {
+    font-size: 1rem !important; }
+  .s-single .card-wrapper-single {
+    margin-top: 0 !important; }
+  .s-profile .card-wrapper-program {
+    margin-top: 0 !important; }
+  .sidebar-wrapper {
+    display: none !important; }
+  .blog-img-container {
+    min-height: 0 !important; }
+  .s-contact .card-wrapper-program {
+    margin-top: 0 !important; }
+  .s-sobat .card-wrapper-sobat {
+    margin-top: 5%; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .fixed-header {
@@ -285,6 +319,10 @@
     display: none !important; }
   .feature-1 {
     flex-direction: column-reverse; }
+  .img-splitter {
+    display: none; }
+  .img-splitter-mobile {
+    display: block !important; }
   .footer-nav-programs,
   .footer-nav-container {
     display: none; }
@@ -299,7 +337,21 @@
     width: 100%;
     margin-bottom: .5rem; }
   .social-bottom {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .s-single .card-wrapper-single {
+    margin-top: 0 !important; }
+  .s-profile .card-wrapper-program {
+    margin-top: 0 !important; }
+  .sidebar-wrapper {
+    display: none !important; }
+  .blog-img-container {
+    min-height: 0 !important; }
+  .s-contact .card-wrapper-program {
+    margin-top: 0 !important; }
+  input.form-control.mr-sm-2.search-form {
+    width: 25vw; }
+  .s-sobat .card-wrapper-sobat {
+    margin-top: 5%; } }
 
 @media (min-width: 1024) {
   .top-nav {
