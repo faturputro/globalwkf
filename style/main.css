@@ -656,7 +656,7 @@ ul.offCanvas_menu_social li a:hover {
 .gallery-program {
   margin-bottom: 20px; }
 
-a.gallery-program img {
+.gallery-container .gallery-program img {
   width: 300px;
   height: auto; }
 

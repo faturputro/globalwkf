@@ -807,10 +807,12 @@ ul.offCanvas_menu_social li a:hover {
     margin-bottom: 20px
 }
 
-a.gallery-program {
-    img {
-        width:300px;
-        height: auto;
+.gallery-container {
+    .gallery-program {
+        img {
+            width:300px;
+            height: auto;
+        }
     }
 }
 
