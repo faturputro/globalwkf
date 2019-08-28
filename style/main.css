@@ -648,11 +648,17 @@ ul.offCanvas_menu_social li a:hover {
   .slick-dots li.slick-active button {
     background-color: red; }
 
+.gallery-container {
+  overflow: hidden;
+  width: 100%;
+  max-height: 150px; }
+
 .gallery-program {
   margin-bottom: 20px; }
 
 a.gallery-program img {
-  max-width: 100%; }
+  width: 300px;
+  height: auto; }
 
 ol.carousel-indicators.custom-p {
   bottom: 0 !important; }
