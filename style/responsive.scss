@@ -44,6 +44,7 @@
 
     .header-carousel-mobile {
         display: block !important;
+        margin-top:70px;
     }
 
     .header_language {
@@ -443,6 +444,16 @@
     textarea.form-control {
         height:300px !important;
     }
+
+    .gallery-program {
+        a {
+            img {
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+    }
+
 }
 
 // Small Devices
@@ -453,6 +464,13 @@
 		width:125px;
 		height:70px;
 	}
+
+    .gallery-program {
+        a {
+            max-width: 100% !important;
+            height: auto;
+        }
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -473,6 +491,7 @@
 
     .header-carousel-mobile {
         display: block !important;
+        margin-top:70px;
     }
 
    .tree-wrapper {
@@ -650,6 +669,13 @@
 
     textarea.form-control {
         height:300px !important;
+    }
+
+    .gallery-program {
+        a {
+            max-width: 100% !important;
+            height: auto;
+        }
     }
 }
 

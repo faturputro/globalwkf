@@ -22,7 +22,8 @@
   .header-carousel {
     display: none !important; }
   .header-carousel-mobile {
-    display: block !important; }
+    display: block !important;
+    margin-top: 70px; }
   .header_language {
     display: none; }
   .logo {
@@ -248,12 +249,18 @@
   .s-sobat .card-wrapper-sobat {
     margin-top: 5%; }
   textarea.form-control {
-    height: 300px !important; } }
+    height: 300px !important; }
+  .gallery-program a img {
+    max-width: 100% !important;
+    height: auto; } }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
   .brand-card {
     width: 125px;
-    height: 70px; } }
+    height: 70px; }
+  .gallery-program a {
+    max-width: 100% !important;
+    height: auto; } }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .fixed-header {
@@ -265,7 +272,8 @@
   .header-carousel {
     display: none !important; }
   .header-carousel-mobile {
-    display: block !important; }
+    display: block !important;
+    margin-top: 70px; }
   .tree-wrapper {
     display: none !important; }
   .tree-wrapper-mobile {
@@ -357,7 +365,10 @@
   .s-sobat .card-wrapper-sobat {
     margin-top: 5%; }
   textarea.form-control {
-    height: 300px !important; } }
+    height: 300px !important; }
+  .gallery-program a {
+    max-width: 100% !important;
+    height: auto; } }
 
 @media (min-width: 1024) {
   .top-nav {
