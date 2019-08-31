@@ -613,7 +613,6 @@ ul.offCanvas_menu_social li a:hover {
     font-size: 1vw; }
 
 .header-carousel {
-  height: 70vh;
   margin-top: 110px;
   z-index: -1000;
   width: 100vw; }
@@ -624,7 +623,6 @@ ul.offCanvas_menu_social li a:hover {
 
 .header-carousel-mobile {
   display: none !important;
-  height: 84vh;
   overflow-y: hidden; }
 
 .slick-dots {
@@ -1270,9 +1268,8 @@ button.btn.btn-sm.bg-green {
   background-image: url("assets/images/img/bg-grey-sm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 100px; }
-  .maps-section h3 {
-    margin-top: 7rem; }
+  padding-bottom: 100px;
+  margin-top: 110px; }
 
 .maps-wrapper {
   padding-top: 50px;
@@ -1651,7 +1648,7 @@ button.btn.btn-sm.bg-green {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -5px 0%;
-  width: 102%;
+  width: 100%;
   margin-top: 8%; }
   .s-sobat h2 {
     display: block;

@@ -252,7 +252,9 @@
     height: 300px !important; }
   .gallery-program a img {
     max-width: 100% !important;
-    height: auto; } }
+    height: auto; }
+  .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
+    margin-top: 70px !important; } }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
   .brand-card {
@@ -306,9 +308,11 @@
   .s-contact .card-wrapper-program {
     margin-top: 0 !important; }
   .s-sobat .card-wrapper-sobat {
-    margin-top: 5%; }
+    margin-top: 70px; }
   textarea.form-control {
-    height: 300px !important; } }
+    height: 300px !important; }
+  .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
+    margin-top: 70px !important; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .fixed-header {
@@ -368,7 +372,9 @@
     height: 300px !important; }
   .gallery-program a {
     max-width: 100% !important;
-    height: auto; } }
+    height: auto; }
+  .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
+    margin-top: 70px !important; } }
 
 @media (min-width: 1024) {
   .top-nav {

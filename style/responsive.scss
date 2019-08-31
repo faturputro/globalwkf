@@ -454,6 +454,10 @@
         }
     }
 
+    .s-sobat, .s-blog,.maps-section, .s-contact,.s-profile{
+        margin-top: 70px !important;
+    }
+
 }
 
 // Small Devices
@@ -555,11 +559,15 @@
     }
 
      .s-sobat .card-wrapper-sobat {
-        margin-top: 5%;
+        margin-top: 70px;
     }
 
     textarea.form-control {
         height:300px !important;
+    }
+
+    .s-sobat, .s-blog,.maps-section, .s-contact,.s-profile{
+        margin-top: 70px !important;
     }
 }
 
@@ -676,6 +684,10 @@
             max-width: 100% !important;
             height: auto;
         }
+    }
+
+    .s-sobat, .s-blog,.maps-section, .s-contact,.s-profile{
+        margin-top: 70px !important;
     }
 }
 

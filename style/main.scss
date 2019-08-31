@@ -744,7 +744,6 @@ ul.offCanvas_menu_social li a:hover {
 }
 
 .header-carousel {
-    height: 70vh;
     margin-top: 110px;
     z-index: -1000;
     width:100vw;
@@ -760,7 +759,6 @@ ul.offCanvas_menu_social li a:hover {
 
 .header-carousel-mobile {
     display: none !important;
-    height: 84vh;
     overflow-y: hidden;
 }
 
@@ -1663,10 +1661,7 @@ button.btn.btn-sm.bg-green {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 100px;
-
-    h3 {
-        margin-top:7rem;
-    }
+    margin-top:110px;
 }
 
 .maps-wrapper {
@@ -2198,7 +2193,7 @@ button.btn.btn-sm.bg-green {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -5px 0%;
-    width: 102%;
+    width: 100%;
     margin-top: 8%;
 
     h2 {
