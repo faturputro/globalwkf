@@ -148,6 +148,11 @@
         background-color: #B5E22B;
     }
 
+    .btn-wakaf {
+        font-size:.8rem !important;
+        margin-left:1.5rem;
+    }
+
     .carousel-feature {
         width: 100%;
     }
@@ -229,6 +234,7 @@
     .brand-card {
     	position:relative;
         width: 80% !important;
+        padding:3rem;
 
         img {
         	position: absolute;
@@ -262,7 +268,9 @@
     }
 
     input.form-control.mr-sm-2.search-form {
-        width:100%;
+        width:58%;
+        font-size:.8rem;
+        margin-right:1rem;
     }
 
     .social-footer .social-bottom {
@@ -334,6 +342,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding-bottom: 10px;
+        font-size:.6rem;
     }
 
     .footer-logo {

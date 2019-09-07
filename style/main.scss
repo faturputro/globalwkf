@@ -2465,11 +2465,15 @@ footer {
 }
 
 .footer-logo {
-    width: 40%;
     height: auto;
     top: 0;
     left: 150px;
 
+}
+
+.footer-logo--container {
+    width: 40%;
+    
     img {
         padding-bottom: 20px;
     }
