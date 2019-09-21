@@ -367,6 +367,25 @@
   .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
     margin-top: 70px !important;
   }
+  #sobat-gallery {
+    display: none;
+  }
+  .container.wakaf-form {
+    padding: 0 30px !important;
+  }
+  .flex-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-pers h1 {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
@@ -377,6 +396,71 @@
   .gallery-program a {
     max-width: 100% !important;
     height: auto;
+  }
+  .tree-wrapper-mobile {
+    position: relative;
+    width: auto;
+    height: 1000px;
+  }
+  .tree-wrapper-mobile svg {
+    position: relative;
+  }
+  .tree-wrapper-mobile .program-category-mobile {
+    position: absolute;
+    top: 6rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-1,
+  .tree-wrapper-mobile .program-category-mobile .category-2,
+  .tree-wrapper-mobile .program-category-mobile .category-3,
+  .tree-wrapper-mobile .program-category-mobile .category-4,
+  .tree-wrapper-mobile .program-category-mobile .category-5,
+  .tree-wrapper-mobile .program-category-mobile .category-6,
+  .tree-wrapper-mobile .program-category-mobile .category-7,
+  .tree-wrapper-mobile .program-category-mobile .category-8,
+  .tree-wrapper-mobile .program-category-mobile .category-9,
+  .tree-wrapper-mobile .program-category-mobile .category-10 {
+    width: 9rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-1 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-2 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-3 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-4 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-5 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-6 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-7 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-8 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-9 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-10 a img {
+    max-width: 100%;
+    height: auto;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-2,
+  .tree-wrapper-mobile .program-category-mobile .category-4,
+  .tree-wrapper-mobile .program-category-mobile .category-6,
+  .tree-wrapper-mobile .program-category-mobile .category-8,
+  .tree-wrapper-mobile .program-category-mobile .category-10 {
+    margin-left: 3.2rem;
+  }
+  .berita {
+    position: relative;
+    top: 0 !important;
+  }
+  .flex-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-pers h1 {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -455,6 +539,81 @@
   }
   .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
     margin-top: 70px !important;
+  }
+  #sobat-gallery {
+    display: none;
+  }
+  .tree-wrapper-mobile {
+    position: relative;
+    width: auto;
+    height: 1000px;
+  }
+  .tree-wrapper-mobile svg {
+    position: relative;
+  }
+  .tree-wrapper-mobile .program-category-mobile {
+    position: absolute;
+    top: 6rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-1,
+  .tree-wrapper-mobile .program-category-mobile .category-2,
+  .tree-wrapper-mobile .program-category-mobile .category-3,
+  .tree-wrapper-mobile .program-category-mobile .category-4,
+  .tree-wrapper-mobile .program-category-mobile .category-5,
+  .tree-wrapper-mobile .program-category-mobile .category-6,
+  .tree-wrapper-mobile .program-category-mobile .category-7,
+  .tree-wrapper-mobile .program-category-mobile .category-8,
+  .tree-wrapper-mobile .program-category-mobile .category-9,
+  .tree-wrapper-mobile .program-category-mobile .category-10 {
+    width: 9rem;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-1 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-2 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-3 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-4 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-5 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-6 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-7 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-8 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-9 a img,
+  .tree-wrapper-mobile .program-category-mobile .category-10 a img {
+    max-width: 100%;
+    height: auto;
+  }
+  .tree-wrapper-mobile .program-category-mobile .category-2,
+  .tree-wrapper-mobile .program-category-mobile .category-4,
+  .tree-wrapper-mobile .program-category-mobile .category-6,
+  .tree-wrapper-mobile .program-category-mobile .category-8,
+  .tree-wrapper-mobile .program-category-mobile .category-10 {
+    margin-left: 3.2rem;
+  }
+  .berita {
+    position: relative;
+    top: 0 !important;
+  }
+  .flex-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-pers h1 {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .subscribe-container {
+    padding-bottom: 1rem;
+  }
+  input.form-control.mr-sm-2.search-form {
+    width: 28vw;
+    margin-right: 1rem;
   }
 }
 
@@ -553,6 +712,29 @@
   }
   .s-sobat, .s-blog, .maps-section, .s-contact, .s-profile {
     margin-top: 70px !important;
+  }
+  #sobat-gallery {
+    display: none;
+  }
+  .berita {
+    position: relative;
+    top: 0 !important;
+  }
+  .container.wakaf-form {
+    padding: 0 30px !important;
+  }
+  .flex-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container-pers h1 {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 

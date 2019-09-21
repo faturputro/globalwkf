@@ -467,6 +467,28 @@
         margin-top: 70px !important;
     }
 
+    #sobat-gallery {
+        display: none;
+    }
+
+    .container.wakaf-form {
+        padding: 0 30px !important;
+    }
+
+    .flex-sm {
+        flex-direction: column;
+    }
+
+    .container-pers {
+        
+        h1 {
+            position:relative;
+            top:unset;
+            left:unset;
+            transform: none;
+        }
+    }
+
 }
 
 // Small Devices
@@ -482,6 +504,74 @@
         a {
             max-width: 100% !important;
             height: auto;
+        }
+    }
+
+    .tree-wrapper-mobile {
+        position: relative;
+        width: auto;
+        height: 1000px;
+
+        svg {
+            position: relative;
+        }
+
+        .program-category-mobile {
+            position: absolute;
+            top:6rem;
+
+            .category {
+                position: relative;
+                margin-bottom: 2rem;
+            }
+
+            .category-1,
+            .category-2,
+            .category-3,
+            .category-4,
+            .category-5,
+            .category-6,
+            .category-7,
+            .category-8,
+            .category-9,
+            .category-10 {
+                width: 9rem;
+
+                a {
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .category-2,
+            .category-4,
+            .category-6,
+            .category-8,
+            .category-10 {
+            	margin-left:3.2rem;
+            }
+        }
+    }
+
+    .berita {
+        position: relative;
+        top: 0 !important;
+    }
+
+    .flex-sm {
+        flex-direction: column;
+    }
+
+    .container-pers {
+        
+        h1 {
+            position:relative;
+            top:unset;
+            left:unset;
+            transform: none;
         }
     }
 }
@@ -577,6 +667,87 @@
 
     .s-sobat, .s-blog,.maps-section, .s-contact,.s-profile{
         margin-top: 70px !important;
+    }
+
+    #sobat-gallery {
+        display: none;
+    }
+
+    .tree-wrapper-mobile {
+        position: relative;
+        width: auto;
+        height: 1000px;
+
+        svg {
+            position: relative;
+        }
+
+        .program-category-mobile {
+            position: absolute;
+            top:6rem;
+
+            .category {
+                position: relative;
+                margin-bottom: 2rem;
+            }
+
+            .category-1,
+            .category-2,
+            .category-3,
+            .category-4,
+            .category-5,
+            .category-6,
+            .category-7,
+            .category-8,
+            .category-9,
+            .category-10 {
+                width: 9rem;
+
+                a {
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .category-2,
+            .category-4,
+            .category-6,
+            .category-8,
+            .category-10 {
+            	margin-left:3.2rem;
+            }
+        }
+    }
+
+    .berita {
+        position: relative;
+        top: 0 !important;
+    }
+
+    .flex-sm {
+        flex-direction: column;
+    }
+
+    .container-pers {
+        
+        h1 {
+            position:relative;
+            top:unset;
+            left:unset;
+            transform: none;
+        }
+    }
+
+    .subscribe-container {
+        padding-bottom: 1rem;
+    }
+
+    input.form-control.mr-sm-2.search-form {
+        width:28vw;
+        margin-right:1rem;
     }
 }
 
@@ -697,6 +868,34 @@
 
     .s-sobat, .s-blog,.maps-section, .s-contact,.s-profile{
         margin-top: 70px !important;
+    }
+
+    
+    #sobat-gallery {
+        display: none;
+    }
+
+    .berita {
+        position: relative;
+        top: 0 !important;
+    }
+
+    .container.wakaf-form {
+        padding: 0 30px !important;
+    }
+
+    .flex-sm {
+        flex-direction: column-reverse;
+    }
+
+    .container-pers {
+        
+        h1 {
+            position:relative;
+            top:unset;
+            left:unset;
+            transform: none;
+        }
     }
 }
 

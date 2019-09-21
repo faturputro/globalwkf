@@ -17,6 +17,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style/baguetteBox.min.css">
+  <script type="text/javascript" src="style/baguetteBox.min.js"></script>
   <!-- custom demo style -->
   <link rel="stylesheet" type="text/css" href="style/baguetteBox.min.css">
   <script type="text/javascript" src="style/baguetteBox.min.js"></script>
@@ -229,6 +231,46 @@
                   </div>
                 </div>
               </div>
+              <div class="row justify-content-center">
+                <div id="carouselMobileSobat" class="mobile-carousel carousel slide pb-3" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-4 px-2 gallery-container">
+                                    <a class="gallery-program" href="style/assets/images/lpw/1.jpeg"><img src="style/assets/images/lpw/1.jpeg" class="img-fluid"></a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4 px-2 gallery-container">
+                                    <a class="gallery-program" href="style/assets/images/lpw/4.jpeg"><img src="style/assets/images/lpw/4.jpeg" class="img-fluid"></a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4 px-2 gallery-container">
+                                    <a class="gallery-program" href="style/assets/images/lpw/7.jpeg"><img src="style/assets/images/lpw/7.jpeg" class="img-fluid"></a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselMobileSobat" role="button" data-slide="prev" style="top:75%;">
+                    <div class="bottom-prev bg-white mr-5">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#carouselMobileSobat" role="button" data-slide="next" style="top:75%;">
+                    <div class="bottom-next bg-white">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </a>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-12 col-md-12 mt-4 px-3 pb-4" data-aos="fade-up" data-aos-duration="300">
                   <div class="video-container">
@@ -377,6 +419,7 @@
 </script>
 <script>
   baguetteBox.run('#sobat-gallery');
+  baguetteBox.run('#carouselMobileSobat');
 </script>
 </body>
 </html>
