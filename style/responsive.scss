@@ -749,6 +749,11 @@
         width:28vw;
         margin-right:1rem;
     }
+
+    .mobile-carousel {
+    	display: block;
+    	height:20vh;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -895,6 +900,34 @@
             top:unset;
             left:unset;
             transform: none;
+        }
+    }
+
+    #carouselMobileSobat {
+    	display: block;
+        height:20vh;
+        width: 90%;
+        display: flex;
+        align-items: center;
+
+        .carousel-inner {
+            .carousel-item {
+                .row {
+                    .gallery-container {
+                        .gallery-program {
+                            img {
+                                width:auto !important;
+                                max-width:100% !important;
+                                height:auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        a[href="#carouselMobileSobat"] {
+            top: 0 !important;
         }
     }
 }
