@@ -2334,7 +2334,8 @@ button.btn.btn-sm.bg-green {
 
 .subscribe-section {
     display: flex;
-    height: 15%;
+    height: auto;
+    padding:25px 0;
     background-color: #222222;
 
 }
@@ -2522,11 +2523,6 @@ footer {
     -o-transform: translate(260px, 0px);
     -ms-transform: translate(260px, 0px);
     transform: translate(260px, 0px);
-}
-
-// Form Wakaf
-.container.wakaf-form {
-    padding: 0 200px;
 }
 
 .form-review {
